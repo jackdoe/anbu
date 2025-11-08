@@ -134,6 +134,13 @@
       color: #000;
     }
 
+    .btn-help {
+      background: #a9d3ab;
+      color: #000;
+      padding: 10px 18px;
+      font-size: 13px;
+    }
+
     .main-content {
       display: flex;
       flex: 1;
@@ -576,12 +583,14 @@
         background: #f7f7f7;
         border-bottom: 5px solid #000;
         box-shadow: 0 5px 0 #000;
+        flex-wrap: wrap;
       }
 
       .mobile-action-buttons .btn {
-        padding: 12px 24px;
-        font-size: 13px;
+        padding: 10px 16px;
+        font-size: 12px;
         flex: 1;
+        min-width: 90px;
       }
 
       .main-content {
@@ -691,13 +700,15 @@
         padding: 12px 15px;
         border-bottom: 4px solid #000;
         box-shadow: 0 4px 0 #000;
+        gap: 8px;
       }
 
       .mobile-action-buttons .btn {
-        padding: 10px 18px;
-        font-size: 12px;
+        padding: 9px 14px;
+        font-size: 11px;
         border: 3px solid #000;
         box-shadow: 4px 4px 0 #000;
+        min-width: 80px;
       }
 
       .sidebar {
@@ -855,7 +866,10 @@
         </div>
         <div class="action-buttons">
           <button class="btn btn-games" onclick="openGames()">
-            🎮 Games
+            Games
+          </button>
+          <button class="btn btn-help" onclick="askClaude()">
+            Help
           </button>
           <button class="btn btn-reset" onclick="resetChallenge()">
             Reset
@@ -885,6 +899,9 @@
       </div>
 
       <div class="mobile-action-buttons">
+        <button class="btn btn-help" onclick="askClaude()">
+          Help
+        </button>
         <button class="btn btn-reset" onclick="resetChallenge()">
           Reset
         </button>
@@ -2576,6 +2593,58 @@
       if (currentChallenge < CHALLENGES.length - 1) {
         changeChallenge(currentChallenge + 1);
       }
+    }
+
+    function askClaude() {
+      const challenge = CHALLENGES[currentChallenge];
+      const userCode = editor ? editor.getValue() : challenge.starterCode;
+
+      // Format test cases nicely
+      let testCasesText = challenge.tests.map(function(test, idx) {
+        let inputDisplay;
+        if (test.input.length === 1) {
+          inputDisplay = JSON.stringify(test.input[0]);
+        } else {
+          inputDisplay = test.input.map(function(arg) { return JSON.stringify(arg); }).join(', ');
+        }
+        return 'Test ' + (idx + 1) + ':\n  Input: ' + inputDisplay + '\n  Expected Output: ' + JSON.stringify(test.expected);
+      }).join('\n\n');
+
+      // Create a well-structured educational prompt
+      const prompt = `I'm learning Python and I'm stuck on this coding challenge. I need help understanding how to solve it, not just the answer.
+
+**Challenge: ${challenge.title}**
+Category: ${challenge.category}
+Difficulty: ${challenge.difficulty}/10
+Tags: ${challenge.tags.join(', ')}
+
+**Problem Description:**
+${challenge.description}
+
+**Test Cases:**
+${testCasesText}
+
+**My Current Code:**
+\`\`\`python
+${userCode}
+\`\`\`
+
+**Please help me by:**
+1. First, help me understand what the problem is really asking for in simple terms
+2. Break down the problem into smaller steps I need to solve
+3. Guide me through the thought process and algorithm/approach needed
+4. Explain any key concepts or patterns I should understand
+5. Point out what might be wrong with my current approach (if applicable)
+6. Give me hints to guide me toward the solution, rather than giving me the complete answer
+7. Help me understand why this approach works and when I might use similar patterns in the future
+
+Please be patient and explain things clearly - I'm here to learn and understand deeply, not just copy code. Thank you! 🙏`;
+
+      // URL encode the prompt
+      const encodedPrompt = encodeURIComponent(prompt);
+
+      // Open Claude with the pre-filled prompt
+      window.open('https://claude.ai/new?q=' + encodedPrompt, '_blank');
     }
 
     async function resetChallenge() {
