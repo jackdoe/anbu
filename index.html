@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ANBU: Python Coding Challenges</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS@main/NeoBrutalismCSS.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matifandy8/NeoBrutalismCSS/dist/index.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -990,8 +990,8 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.44.0/min/vs/loader.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.53.0/min/vs/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.28.3/full/pyodide.js"></script>
 
   <script>
     // Storage API fallback using localStorage
@@ -2787,9 +2787,16 @@ Please be patient and explain things clearly - I'm here to learn and understand 
     }
 
     document.getElementById('loadingIndicator').style.display = 'flex';
-    
-    require.config({ paths: { vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.44.0/min/vs' } });
-    require(['vs/editor/editor.main'], async function() {
+
+    // Wait for Monaco loader to be ready
+    function initMonaco() {
+      if (typeof require === 'undefined') {
+        setTimeout(initMonaco, 50);
+        return;
+      }
+
+      require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.53.0/min/vs' } });
+      require(['vs/editor/editor.main'], async function() {
       await loadProgress();
       
       const challenge = CHALLENGES[currentChallenge];
@@ -2817,16 +2824,31 @@ Please be patient and explain things clearly - I'm here to learn and understand 
         saveCode(editor.getValue());
       });
     });
+    }
 
-    loadPyodide({
-      indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.24.1/full/'
-    }).then(function(py) {
-      pyodide = py;
-      pyodideLoaded = true;
-      document.getElementById('loadingIndicator').style.display = 'none';
-      document.getElementById('submitBtn').disabled = false;
-      document.getElementById('submitBtnMobile').disabled = false;
-    });
+    // Start Monaco initialization
+    initMonaco();
+
+    // Wait for Pyodide loader to be ready
+    function initPyodide() {
+      if (typeof loadPyodide === 'undefined') {
+        setTimeout(initPyodide, 50);
+        return;
+      }
+
+      loadPyodide({
+        indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.28.3/full/'
+      }).then(function(py) {
+        pyodide = py;
+        pyodideLoaded = true;
+        document.getElementById('loadingIndicator').style.display = 'none';
+        document.getElementById('submitBtn').disabled = false;
+        document.getElementById('submitBtnMobile').disabled = false;
+      });
+    }
+
+    // Start Pyodide initialization
+    initPyodide();
 
     // Games Functions
     function openGames() {
