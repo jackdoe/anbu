@@ -794,7 +794,7 @@
         <div class="challenge-nav">
           <button class="nav-btn" id="prevBtn" onclick="prevChallenge()">◀</button>
           <div class="challenge-counter">
-            Challenge <span id="currentNum">1</span> / <span id="totalNum">20</span>
+            <span id="currentNum">1</span> / <span id="totalNum">20</span>
           </div>
           <button class="nav-btn" id="nextBtn" onclick="nextChallenge()">▶</button>
         </div>
@@ -2434,7 +2434,14 @@
       const challenge = CHALLENGES[currentChallenge];
       document.getElementById('challengeTitle').textContent = challenge.title;
       document.getElementById('challengeDescription').textContent = challenge.description;
-      document.getElementById('fileName').textContent = (currentChallenge + 1) + '.py';
+
+      // Check if challenge is completed
+      const isCompleted = await isChallengeCompleted(currentChallenge);
+      const fileName = (currentChallenge + 1) + '.py';
+      const badge = isCompleted ? ' [done]' : '';
+      document.getElementById('fileName').textContent = fileName + badge;
+      document.getElementById('fileName').style.color = isCompleted ? '#4ecdc4' : '#000';
+
       document.getElementById('currentNum').textContent = currentChallenge + 1;
       document.getElementById('totalNum').textContent = CHALLENGES.length;
       
@@ -2512,6 +2519,23 @@
       }
     }
 
+    async function markChallengeCompleted(challengeIndex) {
+      try {
+        await window.storage.set('completed-' + challengeIndex, 'true', false);
+      } catch (error) {
+        console.error('Failed to save completion status');
+      }
+    }
+
+    async function isChallengeCompleted(challengeIndex) {
+      try {
+        const result = await window.storage.get('completed-' + challengeIndex);
+        return result && result.value === 'true';
+      } catch (error) {
+        return false;
+      }
+    }
+
     async function submitCode() {
       if (!pyodideLoaded) {
         document.getElementById('output').textContent = 'Python runtime is still loading...';
@@ -2567,7 +2591,7 @@
 
         const passed = results.filter(function(r) { return r.passed; }).length;
         const total = results.length;
-        
+
         let outputMsg = '';
         if (stdout) {
           outputMsg += 'Debug Output:\n' + stdout + '\n\n';
@@ -2575,13 +2599,19 @@
         if (stderr) {
           outputMsg += 'Errors:\n' + stderr + '\n\n';
         }
-        
+
         if (passed === total) {
           outputMsg += 'All tests passed! (' + passed + '/' + total + ')';
+          // Mark challenge as completed
+          await markChallengeCompleted(currentChallenge);
+          // Update the filename badge
+          const fileName = (currentChallenge + 1) + '.py';
+          document.getElementById('fileName').textContent = fileName + ' [done]';
+          document.getElementById('fileName').style.color = '#4ecdc4';
         } else {
           outputMsg += 'Tests passed: ' + passed + '/' + total;
         }
-        
+
         document.getElementById('output').textContent = outputMsg;
 
         const testResultsHtml = results.map(function(result, idx) {
