@@ -424,6 +424,60 @@
       line-height: 1.6;
     }
 
+    .game-over-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+    }
+
+    .game-over-box {
+      background: #ffd700;
+      border: 5px solid #000;
+      box-shadow: 10px 10px 0 #000;
+      padding: 40px;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .game-over-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    .game-over-message {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #000;
+    }
+
+    .game-over-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .btn-restart {
+      background: #4ecdc4;
+      color: #000;
+      padding: 12px 24px;
+    }
+
+    .btn-menu {
+      background: #ff8c42;
+      color: #000;
+      padding: 12px 24px;
+      font-size: 0.9rem;
+    }
+
     .mobile-game-controls {
       margin-top: 20px;
       display: flex;
@@ -903,6 +957,18 @@
             <button class="control-btn" onclick="handleMobileControl('down')">▼</button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Over Overlay -->
+  <div id="gameOverOverlay" class="game-over-overlay" style="display: none;">
+    <div class="game-over-box">
+      <div class="game-over-title" id="gameOverTitle">Game Over!</div>
+      <div class="game-over-message" id="gameOverMessage">Final Score: 0</div>
+      <div class="game-over-buttons">
+        <button class="btn btn-restart" onclick="restartGame()">Play Again</button>
+        <button class="btn btn-menu" onclick="backToCoding()" id="backToCodeBtn">Back to Coding</button>
       </div>
     </div>
   </div>
@@ -2427,6 +2493,7 @@
 
     // Games Variables
     let currentGame = null;
+    let lastPlayedGame = null;
     let gameInterval = null;
     let gameAnimationFrame = null;
 
@@ -2736,6 +2803,7 @@
       document.getElementById('gamesMenu').style.display = 'none';
       document.getElementById('gameArea').style.display = 'block';
       currentGame = game;
+      lastPlayedGame = game;
 
       // Show mobile controls for games that need them
       if (window.innerWidth <= 768 && (game === 'snake' || game === 'tetris')) {
@@ -3066,6 +3134,58 @@
       }
     }
 
+    function showGameOver(title, message) {
+      document.getElementById('gameOverTitle').textContent = title;
+      document.getElementById('gameOverMessage').textContent = message;
+      updateBackToCodeButton();
+      document.getElementById('gameOverOverlay').style.display = 'flex';
+    }
+
+    const funkyMessages = [
+      "Code > Games 💻",
+      "Python Won't Judge You",
+      "Algorithms Never Lose",
+      "Debug Life Instead",
+      "Real Winners Code",
+      "Time to Actually Win",
+      "Coding = No Game Overs",
+      "Be a 10x Coder Instead",
+      "Your Code > Your Score",
+      "Python Believes in You",
+      "Git Gud at Python",
+      "Compile Your Feelings",
+      "Return to Greatness",
+      "Function > Frustration",
+      "Loop Back to Learning",
+      "Try Code, Catch Skills",
+      "if(skills): code()",
+      "Level Up IRL",
+      "Rage Quit? Nah, Rage Code!"
+    ];
+
+    function closeGameOver() {
+      document.getElementById('gameOverOverlay').style.display = 'none';
+      backToMenu();
+    }
+
+    function backToCoding() {
+      document.getElementById('gameOverOverlay').style.display = 'none';
+      closeGames();
+    }
+
+    function restartGame() {
+      document.getElementById('gameOverOverlay').style.display = 'none';
+      stopCurrentGame();
+      if (lastPlayedGame) {
+        startGame(lastPlayedGame);
+      }
+    }
+
+    function updateBackToCodeButton() {
+      const randomMessage = funkyMessages[Math.floor(Math.random() * funkyMessages.length)];
+      document.getElementById('backToCodeBtn').textContent = randomMessage;
+    }
+
     function gameOver(gameName) {
       stopCurrentGame();
       let score = 0;
@@ -3074,8 +3194,12 @@
       else if (gameName === 'Breakout') score = breakoutScore;
       else if (gameName === 'Memory') score = memoryScore;
       else if (gameName === 'Space Shooter') score = spaceShooterScore;
-      alert('Game Over! ' + gameName + ' - Final Score: ' + score);
-      backToMenu();
+      showGameOver('Game Over!', gameName + ' - Final Score: ' + score);
+    }
+
+    function gameWin(gameName, score) {
+      stopCurrentGame();
+      showGameOver('You Win! 🎉', gameName + ' - Final Score: ' + score);
     }
 
     // Breakout Game
@@ -3180,8 +3304,7 @@
 
               // Check win
               if (breakoutScore === BRICK_ROWS * BRICK_COLS * 10) {
-                alert('You Win! Final Score: ' + breakoutScore);
-                backToMenu();
+                gameWin('Breakout', breakoutScore);
                 return;
               }
             }
@@ -3311,8 +3434,7 @@
 
         if (memoryMatched === 8) {
           setTimeout(function() {
-            alert('You Win! All pairs matched!');
-            backToMenu();
+            gameWin('Memory Match', memoryScore);
           }, 300);
         }
       } else {
