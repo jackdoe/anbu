@@ -2788,15 +2788,8 @@ Please be patient and explain things clearly - I'm here to learn and understand 
 
     document.getElementById('loadingIndicator').style.display = 'flex';
 
-    // Wait for Monaco loader to be ready
-    function initMonaco() {
-      if (typeof require === 'undefined') {
-        setTimeout(initMonaco, 50);
-        return;
-      }
-
-      require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.53.0/min/vs' } });
-      require(['vs/editor/editor.main'], async function() {
+    require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.53.0/min/vs' } });
+    require(['vs/editor/editor.main'], async function() {
       await loadProgress();
       
       const challenge = CHALLENGES[currentChallenge];
@@ -2824,31 +2817,16 @@ Please be patient and explain things clearly - I'm here to learn and understand 
         saveCode(editor.getValue());
       });
     });
-    }
 
-    // Start Monaco initialization
-    initMonaco();
-
-    // Wait for Pyodide loader to be ready
-    function initPyodide() {
-      if (typeof loadPyodide === 'undefined') {
-        setTimeout(initPyodide, 50);
-        return;
-      }
-
-      loadPyodide({
-        indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.28.3/full/'
-      }).then(function(py) {
-        pyodide = py;
-        pyodideLoaded = true;
-        document.getElementById('loadingIndicator').style.display = 'none';
-        document.getElementById('submitBtn').disabled = false;
-        document.getElementById('submitBtnMobile').disabled = false;
-      });
-    }
-
-    // Start Pyodide initialization
-    initPyodide();
+    loadPyodide({
+      indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.28.3/full/'
+    }).then(function(py) {
+      pyodide = py;
+      pyodideLoaded = true;
+      document.getElementById('loadingIndicator').style.display = 'none';
+      document.getElementById('submitBtn').disabled = false;
+      document.getElementById('submitBtnMobile').disabled = false;
+    });
 
     // Games Functions
     function openGames() {
