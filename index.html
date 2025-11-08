@@ -1682,6 +1682,727 @@
           { input: [1], expected: true },
           { input: [7], expected: true }
         ]
+      },
+      {
+        id: 51,
+        title: "Bubble Sort",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "array"],
+        difficulty: 3,
+        description: "Write a function that implements bubble sort to sort a list in ascending order.",
+        starterCode: "def bubble_sort(arr):\n    pass",
+        tests: [
+          { input: [[64, 34, 25, 12, 22, 11, 90]], expected: [11, 12, 22, 25, 34, 64, 90] },
+          { input: [[5, 1, 4, 2, 8]], expected: [1, 2, 4, 5, 8] },
+          { input: [[1, 2, 3]], expected: [1, 2, 3] },
+          { input: [[3, 2, 1]], expected: [1, 2, 3] }
+        ]
+      },
+      {
+        id: 52,
+        title: "Selection Sort",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "array"],
+        difficulty: 3,
+        description: "Write a function that implements selection sort to sort a list in ascending order.",
+        starterCode: "def selection_sort(arr):\n    pass",
+        tests: [
+          { input: [[64, 25, 12, 22, 11]], expected: [11, 12, 22, 25, 64] },
+          { input: [[5, 3, 8, 1]], expected: [1, 3, 5, 8] },
+          { input: [[1]], expected: [1] },
+          { input: [[]], expected: [] }
+        ]
+      },
+      {
+        id: 53,
+        title: "Merge Two Sorted Arrays",
+        category: "array",
+        tags: ["array", "merging", "two-pointer"],
+        difficulty: 3,
+        description: "Write a function that merges two sorted arrays without using extra space for one array.",
+        starterCode: "def merge_arrays(arr1, arr2):\n    pass",
+        tests: [
+          { input: [[1, 3, 5, 7], [2, 4, 6, 8]], expected: [1, 2, 3, 4, 5, 6, 7, 8] },
+          { input: [[1, 2, 3], [4, 5, 6]], expected: [1, 2, 3, 4, 5, 6] },
+          { input: [[], [1, 2, 3]], expected: [1, 2, 3] },
+          { input: [[1, 5, 9], [2, 3, 10]], expected: [1, 2, 3, 5, 9, 10] }
+        ]
+      },
+      {
+        id: 54,
+        title: "Binary Search",
+        category: "searching",
+        tags: ["searching", "binary-search", "algorithm"],
+        difficulty: 4,
+        description: "Write a function that implements binary search to find the index of a target in a sorted array. Return -1 if not found.",
+        starterCode: "def binary_search(arr, target):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5, 6, 7], 4], expected: 3 },
+          { input: [[1, 2, 3, 4, 5], 1], expected: 0 },
+          { input: [[1, 2, 3, 4, 5], 5], expected: 4 },
+          { input: [[1, 2, 3, 4, 5], 6], expected: -1 }
+        ]
+      },
+      {
+        id: 55,
+        title: "Group Anagrams",
+        category: "string",
+        tags: ["string", "hashmap", "sorting"],
+        difficulty: 5,
+        description: "Write a function that groups anagrams together from a list of strings.",
+        starterCode: "def group_anagrams(words):\n    pass",
+        tests: [
+          { input: [["eat", "tea", "tan", "ate", "nat", "bat"]], expected: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]] },
+          { input: [["a"]], expected: [["a"]] },
+          { input: [["", ""]], expected: [["", ""]] }
+        ]
+      },
+      {
+        id: 56,
+        title: "Insertion Sort",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "array"],
+        difficulty: 3,
+        description: "Write a function that implements insertion sort to sort a list in ascending order.",
+        starterCode: "def insertion_sort(arr):\n    pass",
+        tests: [
+          { input: [[12, 11, 13, 5, 6]], expected: [5, 6, 11, 12, 13] },
+          { input: [[5, 2, 4, 6, 1, 3]], expected: [1, 2, 3, 4, 5, 6] },
+          { input: [[1, 2, 3]], expected: [1, 2, 3] },
+          { input: [[]], expected: [] }
+        ]
+      },
+      {
+        id: 57,
+        title: "Top K Frequent Elements",
+        category: "array",
+        tags: ["hashmap", "sorting", "frequency"],
+        difficulty: 5,
+        description: "Write a function that returns the k most frequent elements in a list.",
+        starterCode: "def top_k_frequent(nums, k):\n    pass",
+        tests: [
+          { input: [[1, 1, 1, 2, 2, 3], 2], expected: [1, 2] },
+          { input: [[1], 1], expected: [1] },
+          { input: [[4, 4, 4, 2, 2, 3], 1], expected: [4] }
+        ]
+      },
+      {
+        id: 58,
+        title: "Subarray Sum Equals K",
+        category: "array",
+        tags: ["array", "hashmap", "prefix-sum"],
+        difficulty: 5,
+        description: "Write a function that counts the number of continuous subarrays whose sum equals k.",
+        starterCode: "def subarray_sum(nums, k):\n    pass",
+        tests: [
+          { input: [[1, 1, 1], 2], expected: 2 },
+          { input: [[1, 2, 3], 3], expected: 2 },
+          { input: [[1, -1, 0], 0], expected: 3 },
+          { input: [[1], 0], expected: 0 }
+        ]
+      },
+      {
+        id: 59,
+        title: "Longest Consecutive Sequence",
+        category: "array",
+        tags: ["array", "hashmap", "sequence"],
+        difficulty: 6,
+        description: "Write a function that finds the length of the longest consecutive sequence in an unsorted array.",
+        starterCode: "def longest_consecutive(nums):\n    pass",
+        tests: [
+          { input: [[100, 4, 200, 1, 3, 2]], expected: 4 },
+          { input: [[0, 3, 7, 2, 5, 8, 4, 6, 0, 1]], expected: 9 },
+          { input: [[]], expected: 0 },
+          { input: [[9, 1, 4, 7, 3]], expected: 2 }
+        ]
+      },
+      {
+        id: 60,
+        title: "Implement Queue Using Stacks",
+        category: "stack",
+        tags: ["stack", "queue", "data-structures"],
+        difficulty: 5,
+        description: "Write a Queue class that implements a queue using two stacks with push and pop methods.",
+        starterCode: "class Queue:\n    def __init__(self):\n        pass\n    \n    def push(self, x):\n        pass\n    \n    def pop(self):\n        pass",
+        tests: [
+          { input: [["push", 1], ["push", 2], ["pop"], ["push", 3], ["pop"]], expected: [null, null, 1, null, 2] }
+        ]
+      },
+      {
+        id: 61,
+        title: "Valid Sudoku",
+        category: "array",
+        tags: ["hashmap", "matrix", "validation"],
+        difficulty: 6,
+        description: "Write a function that checks if a 9x9 Sudoku board is valid (only filled cells need to be validated).",
+        starterCode: "def is_valid_sudoku(board):\n    pass",
+        tests: [
+          { input: [[["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]], expected: true }
+        ]
+      },
+      {
+        id: 62,
+        title: "Kth Largest Element",
+        category: "array",
+        tags: ["array", "sorting", "heap"],
+        difficulty: 5,
+        description: "Write a function that finds the kth largest element in an unsorted array.",
+        starterCode: "def find_kth_largest(nums, k):\n    pass",
+        tests: [
+          { input: [[3, 2, 1, 5, 6, 4], 2], expected: 5 },
+          { input: [[3, 2, 3, 1, 2, 4, 5, 5, 6], 4], expected: 4 },
+          { input: [[1], 1], expected: 1 },
+          { input: [[7, 6, 5, 4, 3, 2, 1], 5], expected: 3 }
+        ]
+      },
+      {
+        id: 63,
+        title: "Merge Intervals",
+        category: "array",
+        tags: ["array", "sorting", "intervals"],
+        difficulty: 5,
+        description: "Write a function that merges overlapping intervals.",
+        starterCode: "def merge_intervals(intervals):\n    pass",
+        tests: [
+          { input: [[[1,3],[2,6],[8,10],[15,18]]], expected: [[1,6],[8,10],[15,18]] },
+          { input: [[[1,4],[4,5]]], expected: [[1,5]] },
+          { input: [[[1,4],[0,4]]], expected: [[0,4]] },
+          { input: [[[1,4]]], expected: [[1,4]] }
+        ]
+      },
+      {
+        id: 64,
+        title: "Set Bits Count",
+        category: "math",
+        tags: ["bit-manipulation", "binary"],
+        difficulty: 3,
+        description: "Write a function that counts the number of 1 bits (set bits) in a number.",
+        starterCode: "def count_bits(n):\n    pass",
+        tests: [
+          { input: [11], expected: 3 },
+          { input: [128], expected: 1 },
+          { input: [0], expected: 0 },
+          { input: [7], expected: 3 }
+        ]
+      },
+      {
+        id: 65,
+        title: "Single Number",
+        category: "array",
+        tags: ["array", "bit-manipulation", "hashmap"],
+        difficulty: 4,
+        description: "Write a function that finds the single number in a list where every other number appears twice.",
+        starterCode: "def single_number(nums):\n    pass",
+        tests: [
+          { input: [[2, 2, 1]], expected: 1 },
+          { input: [[4, 1, 2, 1, 2]], expected: 4 },
+          { input: [[1]], expected: 1 },
+          { input: [[7, 3, 5, 3, 7]], expected: 5 }
+        ]
+      },
+      {
+        id: 66,
+        title: "Trapping Rain Water",
+        category: "array",
+        tags: ["array", "two-pointer", "stack"],
+        difficulty: 7,
+        description: "Write a function that calculates how much rain water can be trapped given an elevation map.",
+        starterCode: "def trap_water(heights):\n    pass",
+        tests: [
+          { input: [[0,1,0,2,1,0,1,3,2,1,2,1]], expected: 6 },
+          { input: [[4,2,0,3,2,5]], expected: 9 },
+          { input: [[1,2,3,4]], expected: 0 },
+          { input: [[3,0,2,0,4]], expected: 7 }
+        ]
+      },
+      {
+        id: 67,
+        title: "Quick Sort",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "recursion"],
+        difficulty: 6,
+        description: "Write a function that implements quick sort to sort a list in ascending order.",
+        starterCode: "def quick_sort(arr):\n    pass",
+        tests: [
+          { input: [[10, 7, 8, 9, 1, 5]], expected: [1, 5, 7, 8, 9, 10] },
+          { input: [[3, 6, 8, 10, 1, 2, 1]], expected: [1, 1, 2, 3, 6, 8, 10] },
+          { input: [[1, 2, 3]], expected: [1, 2, 3] },
+          { input: [[]], expected: [] }
+        ]
+      },
+      {
+        id: 68,
+        title: "Merge Sort",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "recursion", "divide-conquer"],
+        difficulty: 6,
+        description: "Write a function that implements merge sort to sort a list in ascending order.",
+        starterCode: "def merge_sort(arr):\n    pass",
+        tests: [
+          { input: [[12, 11, 13, 5, 6, 7]], expected: [5, 6, 7, 11, 12, 13] },
+          { input: [[5, 2, 3, 1]], expected: [1, 2, 3, 5] },
+          { input: [[1]], expected: [1] },
+          { input: [[3, 2, 1]], expected: [1, 2, 3] }
+        ]
+      },
+      {
+        id: 69,
+        title: "Minimum Window Substring",
+        category: "string",
+        tags: ["string", "sliding-window", "hashmap"],
+        difficulty: 8,
+        description: "Write a function that finds the minimum window substring containing all characters of another string.",
+        starterCode: "def min_window(s, t):\n    pass",
+        tests: [
+          { input: ["ADOBECODEBANC", "ABC"], expected: "BANC" },
+          { input: ["a", "a"], expected: "a" },
+          { input: ["a", "aa"], expected: "" }
+        ]
+      },
+      {
+        id: 70,
+        title: "Max Sliding Window",
+        category: "array",
+        tags: ["array", "sliding-window", "queue"],
+        difficulty: 7,
+        description: "Write a function that finds the maximum value in each sliding window of size k.",
+        starterCode: "def max_sliding_window(nums, k):\n    pass",
+        tests: [
+          { input: [[1,3,-1,-3,5,3,6,7], 3], expected: [3,3,5,5,6,7] },
+          { input: [[1], 1], expected: [1] },
+          { input: [[1,-1], 1], expected: [1,-1] }
+        ]
+      },
+      {
+        id: 71,
+        title: "LRU Cache",
+        category: "design",
+        tags: ["hashmap", "linked-list", "design"],
+        difficulty: 7,
+        description: "Design a Least Recently Used (LRU) cache with get and put methods.",
+        starterCode: "class LRUCache:\n    def __init__(self, capacity):\n        pass\n    \n    def get(self, key):\n        pass\n    \n    def put(self, key, value):\n        pass",
+        tests: [
+          { input: [[2], ["put", 1, 1], ["put", 2, 2], ["get", 1], ["put", 3, 3], ["get", 2]], expected: [null, null, null, 1, null, -1] }
+        ]
+      },
+      {
+        id: 72,
+        title: "Course Schedule",
+        category: "graph",
+        tags: ["graph", "topological-sort", "dfs"],
+        difficulty: 6,
+        description: "Write a function that checks if you can finish all courses given prerequisites (detect cycle in directed graph).",
+        starterCode: "def can_finish(num_courses, prerequisites):\n    pass",
+        tests: [
+          { input: [2, [[1,0]]], expected: true },
+          { input: [2, [[1,0],[0,1]]], expected: false },
+          { input: [3, [[1,0],[2,1]]], expected: true },
+          { input: [1, []], expected: true }
+        ]
+      },
+      {
+        id: 73,
+        title: "Number of Islands",
+        category: "graph",
+        tags: ["graph", "dfs", "bfs", "matrix"],
+        difficulty: 6,
+        description: "Write a function that counts the number of islands in a 2D grid (1 = land, 0 = water).",
+        starterCode: "def num_islands(grid):\n    pass",
+        tests: [
+          { input: [[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]], expected: 3 },
+          { input: [[["1","1","1"],["0","1","0"],["1","1","1"]]], expected: 1 }
+        ]
+      },
+      {
+        id: 74,
+        title: "Word Search",
+        category: "backtracking",
+        tags: ["backtracking", "dfs", "matrix"],
+        difficulty: 7,
+        description: "Write a function that checks if a word exists in a 2D board by connecting adjacent cells.",
+        starterCode: "def exist(board, word):\n    pass",
+        tests: [
+          { input: [[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCCED"], expected: true },
+          { input: [[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "SEE"], expected: true },
+          { input: [[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCB"], expected: false }
+        ]
+      },
+      {
+        id: 75,
+        title: "Permutations",
+        category: "backtracking",
+        tags: ["backtracking", "recursion", "array"],
+        difficulty: 5,
+        description: "Write a function that returns all possible permutations of a list of numbers.",
+        starterCode: "def permutations(nums):\n    pass",
+        tests: [
+          { input: [[1,2,3]], expected: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]] },
+          { input: [[1,2]], expected: [[1,2],[2,1]] },
+          { input: [[1]], expected: [[1]] }
+        ]
+      },
+      {
+        id: 76,
+        title: "Combination Sum",
+        category: "backtracking",
+        tags: ["backtracking", "recursion", "array"],
+        difficulty: 6,
+        description: "Write a function that finds all unique combinations that sum to a target (numbers can be reused).",
+        starterCode: "def combination_sum(candidates, target):\n    pass",
+        tests: [
+          { input: [[2,3,6,7], 7], expected: [[2,2,3],[7]] },
+          { input: [[2,3,5], 8], expected: [[2,2,2,2],[2,3,3],[3,5]] },
+          { input: [[2], 1], expected: [] }
+        ]
+      },
+      {
+        id: 77,
+        title: "Generate Parentheses",
+        category: "backtracking",
+        tags: ["backtracking", "string", "recursion"],
+        difficulty: 6,
+        description: "Write a function that generates all valid combinations of n pairs of parentheses.",
+        starterCode: "def generate_parentheses(n):\n    pass",
+        tests: [
+          { input: [3], expected: ["((()))","(()())","(())()","()(())","()()()"] },
+          { input: [1], expected: ["()"] },
+          { input: [2], expected: ["(())","()()"] }
+        ]
+      },
+      {
+        id: 78,
+        title: "Coin Change",
+        category: "dynamic-programming",
+        tags: ["dynamic-programming", "array", "optimization"],
+        difficulty: 6,
+        description: "Write a function that finds the minimum number of coins needed to make a given amount.",
+        starterCode: "def coin_change(coins, amount):\n    pass",
+        tests: [
+          { input: [[1,2,5], 11], expected: 3 },
+          { input: [[2], 3], expected: -1 },
+          { input: [[1], 0], expected: 0 },
+          { input: [[1,2,5], 100], expected: 20 }
+        ]
+      },
+      {
+        id: 79,
+        title: "Longest Increasing Subsequence",
+        category: "dynamic-programming",
+        tags: ["dynamic-programming", "array", "binary-search"],
+        difficulty: 6,
+        description: "Write a function that finds the length of the longest increasing subsequence in an array.",
+        starterCode: "def length_of_lis(nums):\n    pass",
+        tests: [
+          { input: [[10,9,2,5,3,7,101,18]], expected: 4 },
+          { input: [[0,1,0,3,2,3]], expected: 4 },
+          { input: [[7,7,7,7,7,7,7]], expected: 1 },
+          { input: [[1,3,6,7,9,4,10,5,6]], expected: 6 }
+        ]
+      },
+      {
+        id: 80,
+        title: "House Robber",
+        category: "dynamic-programming",
+        tags: ["dynamic-programming", "array"],
+        difficulty: 5,
+        description: "Write a function that finds the maximum money you can rob from houses without robbing adjacent ones.",
+        starterCode: "def rob(nums):\n    pass",
+        tests: [
+          { input: [[1,2,3,1]], expected: 4 },
+          { input: [[2,7,9,3,1]], expected: 12 },
+          { input: [[2,1,1,2]], expected: 4 },
+          { input: [[5]], expected: 5 }
+        ]
+      },
+      {
+        id: 81,
+        title: "Climbing Stairs",
+        category: "dynamic-programming",
+        tags: ["dynamic-programming", "fibonacci", "math"],
+        difficulty: 4,
+        description: "Write a function that calculates how many distinct ways you can climb n stairs (1 or 2 steps at a time).",
+        starterCode: "def climb_stairs(n):\n    pass",
+        tests: [
+          { input: [2], expected: 2 },
+          { input: [3], expected: 3 },
+          { input: [4], expected: 5 },
+          { input: [5], expected: 8 }
+        ]
+      },
+      {
+        id: 82,
+        title: "Decode Ways",
+        category: "dynamic-programming",
+        tags: ["dynamic-programming", "string", "recursion"],
+        difficulty: 6,
+        description: "Write a function that counts how many ways a numeric string can be decoded (A=1, B=2, ..., Z=26).",
+        starterCode: "def num_decodings(s):\n    pass",
+        tests: [
+          { input: ["12"], expected: 2 },
+          { input: ["226"], expected: 3 },
+          { input: ["06"], expected: 0 },
+          { input: ["10"], expected: 1 }
+        ]
+      },
+      {
+        id: 83,
+        title: "Word Break",
+        category: "dynamic-programming",
+        tags: ["dynamic-programming", "string", "hashmap"],
+        difficulty: 6,
+        description: "Write a function that checks if a string can be segmented into words from a dictionary.",
+        starterCode: "def word_break(s, word_dict):\n    pass",
+        tests: [
+          { input: ["leetcode", ["leet","code"]], expected: true },
+          { input: ["applepenapple", ["apple","pen"]], expected: true },
+          { input: ["catsandog", ["cats","dog","sand","and","cat"]], expected: false }
+        ]
+      },
+      {
+        id: 84,
+        title: "Unique Paths",
+        category: "dynamic-programming",
+        tags: ["dynamic-programming", "grid", "math"],
+        difficulty: 5,
+        description: "Write a function that counts unique paths from top-left to bottom-right in an m×n grid (only right and down moves).",
+        starterCode: "def unique_paths(m, n):\n    pass",
+        tests: [
+          { input: [3, 7], expected: 28 },
+          { input: [3, 2], expected: 3 },
+          { input: [1, 1], expected: 1 },
+          { input: [3, 3], expected: 6 }
+        ]
+      },
+      {
+        id: 85,
+        title: "Jump Game",
+        category: "greedy",
+        tags: ["greedy", "array", "dynamic-programming"],
+        difficulty: 5,
+        description: "Write a function that checks if you can jump from the first to last index (each element is max jump length).",
+        starterCode: "def can_jump(nums):\n    pass",
+        tests: [
+          { input: [[2,3,1,1,4]], expected: true },
+          { input: [[3,2,1,0,4]], expected: false },
+          { input: [[0]], expected: true },
+          { input: [[2,0,0]], expected: true }
+        ]
+      },
+      {
+        id: 86,
+        title: "Container With Most Water",
+        category: "array",
+        tags: ["array", "two-pointer", "greedy"],
+        difficulty: 5,
+        description: "Write a function that finds two lines that form a container holding the most water.",
+        starterCode: "def max_area(heights):\n    pass",
+        tests: [
+          { input: [[1,8,6,2,5,4,8,3,7]], expected: 49 },
+          { input: [[1,1]], expected: 1 },
+          { input: [[4,3,2,1,4]], expected: 16 },
+          { input: [[1,2,1]], expected: 2 }
+        ]
+      },
+      {
+        id: 87,
+        title: "3Sum",
+        category: "array",
+        tags: ["array", "two-pointer", "sorting"],
+        difficulty: 6,
+        description: "Write a function that finds all unique triplets that sum to zero.",
+        starterCode: "def three_sum(nums):\n    pass",
+        tests: [
+          { input: [[-1,0,1,2,-1,-4]], expected: [[-1,-1,2],[-1,0,1]] },
+          { input: [[]], expected: [] },
+          { input: [[0]], expected: [] },
+          { input: [[0,0,0]], expected: [[0,0,0]] }
+        ]
+      },
+      {
+        id: 88,
+        title: "Letter Combinations",
+        category: "backtracking",
+        tags: ["backtracking", "string", "recursion"],
+        difficulty: 5,
+        description: "Write a function that returns all letter combinations of a phone number (2-9).",
+        starterCode: "def letter_combinations(digits):\n    pass",
+        tests: [
+          { input: ["23"], expected: ["ad","ae","af","bd","be","bf","cd","ce","cf"] },
+          { input: [""], expected: [] },
+          { input: ["2"], expected: ["a","b","c"] }
+        ]
+      },
+      {
+        id: 89,
+        title: "Sort Colors",
+        category: "sorting",
+        tags: ["sorting", "array", "two-pointer"],
+        difficulty: 4,
+        description: "Write a function that sorts an array with values 0, 1, and 2 in-place (Dutch National Flag problem).",
+        starterCode: "def sort_colors(nums):\n    pass",
+        tests: [
+          { input: [[2,0,2,1,1,0]], expected: [0,0,1,1,2,2] },
+          { input: [[2,0,1]], expected: [0,1,2] },
+          { input: [[0]], expected: [0] },
+          { input: [[1,2,0]], expected: [0,1,2] }
+        ]
+      },
+      {
+        id: 90,
+        title: "Search in Rotated Array",
+        category: "searching",
+        tags: ["binary-search", "array", "algorithm"],
+        difficulty: 6,
+        description: "Write a function that searches for a target in a rotated sorted array.",
+        starterCode: "def search_rotated(nums, target):\n    pass",
+        tests: [
+          { input: [[4,5,6,7,0,1,2], 0], expected: 4 },
+          { input: [[4,5,6,7,0,1,2], 3], expected: -1 },
+          { input: [[1], 0], expected: -1 },
+          { input: [[1,3], 3], expected: 1 }
+        ]
+      },
+      {
+        id: 91,
+        title: "Find Median of Two Sorted Arrays",
+        category: "array",
+        tags: ["binary-search", "array", "divide-conquer"],
+        difficulty: 8,
+        description: "Write a function that finds the median of two sorted arrays.",
+        starterCode: "def find_median_sorted_arrays(nums1, nums2):\n    pass",
+        tests: [
+          { input: [[1,3], [2]], expected: 2.0 },
+          { input: [[1,2], [3,4]], expected: 2.5 },
+          { input: [[0,0], [0,0]], expected: 0.0 },
+          { input: [[], [1]], expected: 1.0 }
+        ]
+      },
+      {
+        id: 92,
+        title: "Spiral Matrix",
+        category: "matrix",
+        tags: ["matrix", "array", "simulation"],
+        difficulty: 5,
+        description: "Write a function that returns all elements of a matrix in spiral order.",
+        starterCode: "def spiral_order(matrix):\n    pass",
+        tests: [
+          { input: [[[1,2,3],[4,5,6],[7,8,9]]], expected: [1,2,3,6,9,8,7,4,5] },
+          { input: [[[1,2,3,4],[5,6,7,8],[9,10,11,12]]], expected: [1,2,3,4,8,12,11,10,9,5,6,7] }
+        ]
+      },
+      {
+        id: 93,
+        title: "Rotate Matrix",
+        category: "matrix",
+        tags: ["matrix", "array", "in-place"],
+        difficulty: 5,
+        description: "Write a function that rotates a square matrix 90 degrees clockwise in-place.",
+        starterCode: "def rotate_matrix(matrix):\n    pass",
+        tests: [
+          { input: [[[1,2,3],[4,5,6],[7,8,9]]], expected: [[7,4,1],[8,5,2],[9,6,3]] },
+          { input: [[[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]], expected: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]] }
+        ]
+      },
+      {
+        id: 94,
+        title: "Pow(x, n)",
+        category: "math",
+        tags: ["math", "recursion", "binary-exponentiation"],
+        difficulty: 5,
+        description: "Write a function that calculates x raised to the power n (x^n).",
+        starterCode: "def my_pow(x, n):\n    pass",
+        tests: [
+          { input: [2.0, 10], expected: 1024.0 },
+          { input: [2.1, 3], expected: 9.261 },
+          { input: [2.0, -2], expected: 0.25 },
+          { input: [1.0, 2147483647], expected: 1.0 }
+        ]
+      },
+      {
+        id: 95,
+        title: "Find All Duplicates",
+        category: "array",
+        tags: ["array", "hashmap", "in-place"],
+        difficulty: 5,
+        description: "Write a function that finds all elements that appear twice in an array (1 ≤ a[i] ≤ n).",
+        starterCode: "def find_all_duplicates(nums):\n    pass",
+        tests: [
+          { input: [[4,3,2,7,8,2,3,1]], expected: [2,3] },
+          { input: [[1,1,2]], expected: [1] },
+          { input: [[1]], expected: [] },
+          { input: [[10,2,5,10,9,1,1,4,3,7]], expected: [10,1] }
+        ]
+      },
+      {
+        id: 96,
+        title: "String to Integer (atoi)",
+        category: "string",
+        tags: ["string", "parsing", "conversion"],
+        difficulty: 5,
+        description: "Write a function that converts a string to an integer (implement atoi).",
+        starterCode: "def my_atoi(s):\n    pass",
+        tests: [
+          { input: ["42"], expected: 42 },
+          { input: ["   -42"], expected: -42 },
+          { input: ["4193 with words"], expected: 4193 },
+          { input: ["words and 987"], expected: 0 }
+        ]
+      },
+      {
+        id: 97,
+        title: "Zigzag Conversion",
+        category: "string",
+        tags: ["string", "simulation", "pattern"],
+        difficulty: 5,
+        description: "Write a function that converts a string to zigzag pattern with n rows and reads it row by row.",
+        starterCode: "def convert_zigzag(s, num_rows):\n    pass",
+        tests: [
+          { input: ["PAYPALISHIRING", 3], expected: "PAHNAPLSIIGYIR" },
+          { input: ["PAYPALISHIRING", 4], expected: "PINALSIGYAHRPI" },
+          { input: ["A", 1], expected: "A" }
+        ]
+      },
+      {
+        id: 98,
+        title: "Regular Expression Matching",
+        category: "string",
+        tags: ["string", "dynamic-programming", "recursion"],
+        difficulty: 9,
+        description: "Write a function that implements regex matching with '.' and '*' support.",
+        starterCode: "def is_match(s, p):\n    pass",
+        tests: [
+          { input: ["aa", "a"], expected: false },
+          { input: ["aa", "a*"], expected: true },
+          { input: ["ab", ".*"], expected: true },
+          { input: ["mississippi", "mis*is*p*."], expected: false }
+        ]
+      },
+      {
+        id: 99,
+        title: "Wildcard Matching",
+        category: "string",
+        tags: ["string", "dynamic-programming", "greedy"],
+        difficulty: 8,
+        description: "Write a function that implements wildcard pattern matching with '?' and '*'.",
+        starterCode: "def is_wildcard_match(s, p):\n    pass",
+        tests: [
+          { input: ["aa", "a"], expected: false },
+          { input: ["aa", "*"], expected: true },
+          { input: ["cb", "?a"], expected: false },
+          { input: ["adceb", "*a*b"], expected: true }
+        ]
+      },
+      {
+        id: 100,
+        title: "Median of Data Stream",
+        category: "design",
+        tags: ["design", "heap", "sorting"],
+        difficulty: 7,
+        description: "Design a class that finds the median from a stream of numbers.",
+        starterCode: "class MedianFinder:\n    def __init__(self):\n        pass\n    \n    def add_num(self, num):\n        pass\n    \n    def find_median(self):\n        pass",
+        tests: [
+          { input: [["add_num", 1], ["add_num", 2], ["find_median"], ["add_num", 3], ["find_median"]], expected: [null, null, 1.5, null, 2.0] }
+        ]
       }
     ];
 
