@@ -2515,6 +2515,19 @@
     let gameAnimationFrame = null;
 
     async function loadProgress() {
+      // Check URL hash first (e.g., #5 for challenge 5)
+      const hash = window.location.hash.slice(1); // Remove the '#'
+      if (hash && !isNaN(hash)) {
+        const hashChallenge = parseInt(hash) - 1; // Convert to 0-indexed
+        if (hashChallenge >= 0 && hashChallenge < CHALLENGES.length) {
+          currentChallenge = hashChallenge;
+          storageLoaded = true;
+          await loadChallenge();
+          return;
+        }
+      }
+
+      // Otherwise, load from storage
       try {
         const savedChallenge = await window.storage.get('current-challenge');
         if (savedChallenge) {
@@ -2531,6 +2544,12 @@
       const challenge = CHALLENGES[currentChallenge];
       document.getElementById('challengeTitle').textContent = challenge.title;
       document.getElementById('challengeDescription').textContent = challenge.description;
+
+      // Update URL hash (1-indexed for user-friendly URLs)
+      const newHash = '#' + (currentChallenge + 1);
+      if (window.location.hash !== newHash) {
+        window.location.hash = newHash;
+      }
 
       // Check if challenge is completed
       const isCompleted = await isChallengeCompleted(currentChallenge);
@@ -2574,6 +2593,7 @@
     }
 
     async function changeChallenge(index) {
+      if (index === currentChallenge) return; // Avoid unnecessary updates
       currentChallenge = index;
       try {
         await window.storage.set('current-challenge', index.toString(), false);
@@ -2787,6 +2807,17 @@ Please be patient and explain things clearly - I'm here to learn and understand 
     }
 
     document.getElementById('loadingIndicator').style.display = 'flex';
+
+    // Listen for hash changes (browser back/forward buttons, direct URL changes)
+    window.addEventListener('hashchange', async function() {
+      const hash = window.location.hash.slice(1);
+      if (hash && !isNaN(hash)) {
+        const hashChallenge = parseInt(hash) - 1;
+        if (hashChallenge >= 0 && hashChallenge < CHALLENGES.length && hashChallenge !== currentChallenge) {
+          await changeChallenge(hashChallenge);
+        }
+      }
+    });
 
     require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.53.0/min/vs' } });
 
