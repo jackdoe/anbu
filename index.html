@@ -1591,13 +1591,13 @@
         category: "array",
         tags: ["array", "binary-search", "optimization"],
         difficulty: 5,
-        description: "Write a function that finds a peak element in a list (element greater than its neighbors).",
+        description: "Write a function that returns the index of a peak element (element greater than or equal to its neighbors).",
         starterCode: "def find_peak(numbers):\n    pass",
         tests: [
-          { input: [[1, 2, 3, 1]], expected: 3 },
-          { input: [[1, 2, 1, 3, 5, 6, 4]], expected: 6 },
-          { input: [[5]], expected: 5 },
-          { input: [[1, 2, 3]], expected: 3 }
+          { input: [[1, 2, 3, 1]], expected: 2 },
+          { input: [[1, 2, 1, 3, 5, 6, 4]], expected: 5 },
+          { input: [[5]], expected: 0 },
+          { input: [[1, 2, 3]], expected: 2 }
         ]
       },
       {
@@ -1681,7 +1681,7 @@
         category: "math",
         tags: ["math", "digit-manipulation"],
         difficulty: 3,
-        description: "Write a function that checks if a number is an Armstrong number (sum of cubes of digits equals the number).",
+        description: "Write a function that checks if a number is an Armstrong number (sum of each digit raised to the power of the number of digits equals the number). Example: 153 = 1³ + 5³ + 3³, 9 = 9¹.",
         starterCode: "def is_armstrong(n):\n    pass",
         tests: [
           { input: [153], expected: true },
@@ -1847,10 +1847,10 @@
         category: "string",
         tags: ["string", "hashmap", "sorting"],
         difficulty: 5,
-        description: "Write a function that groups anagrams together from a list of strings.",
+        description: "Write a function that groups anagrams together from a list of strings. Return groups sorted by the first word in each group.",
         starterCode: "def group_anagrams(words):\n    pass",
         tests: [
-          { input: [["eat", "tea", "tan", "ate", "nat", "bat"]], expected: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]] },
+          { input: [["eat", "tea", "tan", "ate", "nat", "bat"]], expected: [["bat"], ["eat", "tea", "ate"], ["tan", "nat"]] },
           { input: [["a"]], expected: [["a"]] },
           { input: [["", ""]], expected: [["", ""]] }
         ]
@@ -1876,7 +1876,7 @@
         category: "array",
         tags: ["hashmap", "sorting", "frequency"],
         difficulty: 5,
-        description: "Write a function that returns the k most frequent elements in a list.",
+        description: "Write a function that returns the k most frequent elements in a list. Return them sorted by frequency (descending), then by value (ascending) if frequencies are equal.",
         starterCode: "def top_k_frequent(nums, k):\n    pass",
         tests: [
           { input: [[1, 1, 1, 2, 2, 3], 2], expected: [1, 2] },
@@ -2314,7 +2314,7 @@
         category: "array",
         tags: ["array", "two-pointer", "sorting"],
         difficulty: 6,
-        description: "Write a function that finds all unique triplets that sum to zero.",
+        description: "Write a function that finds all unique triplets that sum to zero. Return triplets sorted, and the list of triplets sorted as well.",
         starterCode: "def three_sum(nums):\n    pass",
         tests: [
           { input: [[-1, 0, 1, 2, -1, -4]], expected: [[-1, -1, 2], [-1, 0, 1]] },
@@ -2414,7 +2414,7 @@
         category: "math",
         tags: ["math", "recursion", "binary-exponentiation"],
         difficulty: 5,
-        description: "Write a function that calculates x raised to the power n (x^n).",
+        description: "Write a function that calculates x raised to the power n (x^n). Round the result to 5 decimal places.",
         starterCode: "def my_pow(x, n):\n    pass",
         tests: [
           { input: [2.0, 10], expected: 1024.0 },
@@ -2738,6 +2738,43 @@ Please be patient and explain things clearly - I'm here to learn and understand 
       }
     }
 
+    function areEqual(actual, expected, epsilon = 0.00001) {
+      // Handle null/undefined
+      if (actual === expected) return true;
+      if (actual == null || expected == null) return false;
+
+      // Handle numbers with floating point tolerance
+      if (typeof actual === 'number' && typeof expected === 'number') {
+        if (Number.isInteger(actual) && Number.isInteger(expected)) {
+          return actual === expected;
+        }
+        return Math.abs(actual - expected) < epsilon;
+      }
+
+      // Handle arrays
+      if (Array.isArray(actual) && Array.isArray(expected)) {
+        if (actual.length !== expected.length) return false;
+        for (let i = 0; i < actual.length; i++) {
+          if (!areEqual(actual[i], expected[i], epsilon)) return false;
+        }
+        return true;
+      }
+
+      // Handle objects/dictionaries
+      if (typeof actual === 'object' && typeof expected === 'object') {
+        const actualKeys = Object.keys(actual).sort();
+        const expectedKeys = Object.keys(expected).sort();
+        if (JSON.stringify(actualKeys) !== JSON.stringify(expectedKeys)) return false;
+        for (const key of actualKeys) {
+          if (!areEqual(actual[key], expected[key], epsilon)) return false;
+        }
+        return true;
+      }
+
+      // Default comparison
+      return actual === expected;
+    }
+
     async function submitCode() {
       if (!pyodideLoaded) {
         document.getElementById('output').textContent = 'Python runtime is still loading...';
@@ -2770,7 +2807,7 @@ Please be patient and explain things clearly - I'm here to learn and understand 
             const args = JSON.stringify(test.input);
             const result = await pyodide.runPythonAsync('import json; json.dumps(' + funcName + '(*' + args + '))');
             const parsed = JSON.parse(result);
-            const passed = JSON.stringify(parsed) === JSON.stringify(test.expected);
+            const passed = areEqual(parsed, test.expected);
 
             results.push({
               passed: passed,
