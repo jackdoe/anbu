@@ -1032,7 +1032,6 @@
 
     var CHALLENGES = [
       {
-        id: 1,
         title: "Add Two Numbers",
         category: "math",
         tags: ["basics", "arithmetic"],
@@ -1047,7 +1046,34 @@
         ]
       },
       {
-        id: 2,
+        title: "Subtract Two Numbers",
+        category: "math",
+        tags: ["basics", "arithmetic"],
+        difficulty: 0,
+        description: "Write a function that subtracts the second number from the first.",
+        starterCode: "def subtract(a, b):\n    pass",
+        tests: [
+          { input: [5, 3], expected: 2 },
+          { input: [0, 0], expected: 0 },
+          { input: [1, -1], expected: 2 },
+          { input: [100, 50], expected: 50 }
+        ]
+      },
+      {
+        title: "Multiply Two Numbers",
+        category: "math",
+        tags: ["basics", "arithmetic"],
+        difficulty: 0,
+        description: "Write a function that multiplies two numbers together.",
+        starterCode: "def multiply(a, b):\n    pass",
+        tests: [
+          { input: [2, 3], expected: 6 },
+          { input: [0, 5], expected: 0 },
+          { input: [-2, 3], expected: -6 },
+          { input: [10, 10], expected: 100 }
+        ]
+      },
+      {
         title: "Reverse a String",
         category: "string",
         tags: ["basics", "string-manipulation"],
@@ -1062,7 +1088,34 @@
         ]
       },
       {
-        id: 3,
+        title: "Reverse Words in String",
+        category: "string",
+        tags: ["basics", "string-manipulation"],
+        difficulty: 1,
+        description: "Write a function that reverses each word in a string individually (not the word order).",
+        starterCode: "def reverse_each_word(s):\n    pass",
+        tests: [
+          { input: ["hello world"], expected: "olleh dlrow" },
+          { input: [""], expected: "" },
+          { input: ["Python"], expected: "nohtyP" },
+          { input: ["a b c"], expected: "a b c" }
+        ]
+      },
+      {
+        title: "Check String Reverse",
+        category: "string",
+        tags: ["basics", "string-manipulation", "comparison"],
+        difficulty: 1,
+        description: "Write a function that checks if two strings are reverses of each other.",
+        starterCode: "def are_reverse(s1, s2):\n    pass",
+        tests: [
+          { input: ["hello", "olleh"], expected: true },
+          { input: ["abc", "xyz"], expected: false },
+          { input: ["", ""], expected: true },
+          { input: ["a", "a"], expected: true }
+        ]
+      },
+      {
         title: "Find Maximum",
         category: "array",
         tags: ["basics", "iteration"],
@@ -1077,7 +1130,34 @@
         ]
       },
       {
-        id: 4,
+        title: "Find Minimum",
+        category: "array",
+        tags: ["basics", "iteration"],
+        difficulty: 1,
+        description: "Write a function that finds the minimum number in a list.",
+        starterCode: "def find_min(numbers):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5]], expected: 1 },
+          { input: [[-1, -2, -3]], expected: -3 },
+          { input: [[42]], expected: 42 },
+          { input: [[3, 7, 2, 9, 1]], expected: 1 }
+        ]
+      },
+      {
+        title: "Find Max Index",
+        category: "array",
+        tags: ["basics", "iteration", "index"],
+        difficulty: 1,
+        description: "Write a function that returns the index of the maximum number in a list.",
+        starterCode: "def find_max_index(numbers):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5]], expected: 4 },
+          { input: [[-1, -2, -3]], expected: 0 },
+          { input: [[42]], expected: 0 },
+          { input: [[3, 7, 2, 9, 1]], expected: 3 }
+        ]
+      },
+      {
         title: "Count Vowels",
         category: "string",
         tags: ["basics", "counting", "iteration"],
@@ -1092,7 +1172,34 @@
         ]
       },
       {
-        id: 5,
+        title: "Count Consonants Advanced",
+        category: "string",
+        tags: ["basics", "counting", "iteration"],
+        difficulty: 1,
+        description: "Write a function that counts the number of consonants in a string (ignore non-alphabetic characters).",
+        starterCode: "def count_consonants_advanced(s):\n    pass",
+        tests: [
+          { input: ["hello"], expected: 3 },
+          { input: ["aeiou"], expected: 0 },
+          { input: ["xyz123"], expected: 3 },
+          { input: ["Programming!"], expected: 8 }
+        ]
+      },
+      {
+        title: "Vowel Percentage",
+        category: "string",
+        tags: ["basics", "counting", "math"],
+        difficulty: 1,
+        description: "Write a function that returns the percentage of vowels in a string (letters only). Round to 2 decimal places.",
+        starterCode: "def vowel_percentage(s):\n    pass",
+        tests: [
+          { input: ["hello"], expected: 40.0 },
+          { input: ["aeiou"], expected: 100.0 },
+          { input: ["xyz"], expected: 0.0 },
+          { input: ["ab"], expected: 50.0 }
+        ]
+      },
+      {
         title: "Is Palindrome",
         category: "string",
         tags: ["basics", "two-pointer", "string-manipulation"],
@@ -1107,7 +1214,34 @@
         ]
       },
       {
-        id: 6,
+        title: "Ignore Case Palindrome",
+        category: "string",
+        tags: ["basics", "two-pointer", "string-manipulation"],
+        difficulty: 2,
+        description: "Write a function that checks if a string is a palindrome, ignoring case.",
+        starterCode: "def is_palindrome_ignore_case(s):\n    pass",
+        tests: [
+          { input: ["Racecar"], expected: true },
+          { input: ["Hello"], expected: false },
+          { input: ["A"], expected: true },
+          { input: ["MaDaM"], expected: true }
+        ]
+      },
+      {
+        title: "Alphanumeric Palindrome",
+        category: "string",
+        tags: ["basics", "two-pointer", "string-manipulation"],
+        difficulty: 2,
+        description: "Write a function that checks if a string is a palindrome, considering only alphanumeric characters and ignoring case.",
+        starterCode: "def is_alphanumeric_palindrome(s):\n    pass",
+        tests: [
+          { input: ["A man, a plan, a canal: Panama"], expected: true },
+          { input: ["race a car"], expected: false },
+          { input: [""], expected: true },
+          { input: ["0P"], expected: false }
+        ]
+      },
+      {
         title: "Factorial",
         category: "math",
         tags: ["recursion", "iteration", "math"],
@@ -1122,7 +1256,34 @@
         ]
       },
       {
-        id: 7,
+        title: "Double Factorial",
+        category: "math",
+        tags: ["recursion", "iteration", "math"],
+        difficulty: 2,
+        description: "Write a function that calculates the double factorial (n!! = n × (n-2) × (n-4) × ... × 2 or 1).",
+        starterCode: "def double_factorial(n):\n    pass",
+        tests: [
+          { input: [5], expected: 15 },
+          { input: [6], expected: 48 },
+          { input: [0], expected: 1 },
+          { input: [1], expected: 1 }
+        ]
+      },
+      {
+        title: "Factorial Digits Sum",
+        category: "math",
+        tags: ["recursion", "iteration", "math"],
+        difficulty: 2,
+        description: "Write a function that returns the sum of digits in the factorial of a number.",
+        starterCode: "def factorial_digit_sum(n):\n    pass",
+        tests: [
+          { input: [5], expected: 3 },
+          { input: [4], expected: 6 },
+          { input: [10], expected: 27 },
+          { input: [0], expected: 1 }
+        ]
+      },
+      {
         title: "Remove Duplicates",
         category: "array",
         tags: ["array", "hashmap", "order-preservation"],
@@ -1137,7 +1298,34 @@
         ]
       },
       {
-        id: 8,
+        title: "Count Duplicates",
+        category: "array",
+        tags: ["array", "hashmap", "counting"],
+        difficulty: 2,
+        description: "Write a function that counts how many elements appear more than once in a list.",
+        starterCode: "def count_duplicates(lst):\n    pass",
+        tests: [
+          { input: [[1, 2, 2, 3, 4, 4, 5]], expected: 2 },
+          { input: [[1, 1, 1]], expected: 1 },
+          { input: [[1, 2, 3]], expected: 0 },
+          { input: [["a", "b", "a", "c", "c"]], expected: 2 }
+        ]
+      },
+      {
+        title: "Most Frequent Element",
+        category: "array",
+        tags: ["array", "hashmap", "frequency"],
+        difficulty: 2,
+        description: "Write a function that returns the most frequently occurring element in a list.",
+        starterCode: "def most_frequent(lst):\n    pass",
+        tests: [
+          { input: [[1, 2, 2, 3, 3, 3]], expected: 3 },
+          { input: [[1, 1, 1]], expected: 1 },
+          { input: [[5, 5, 2, 2, 1]], expected: 5 },
+          { input: [["a", "b", "a"]], expected: "a" }
+        ]
+      },
+      {
         title: "FizzBuzz",
         category: "algorithm",
         tags: ["iteration", "conditionals", "modulo"],
@@ -1151,7 +1339,33 @@
         ]
       },
       {
-        id: 9,
+        title: "Custom FizzBuzz",
+        category: "algorithm",
+        tags: ["iteration", "conditionals", "modulo"],
+        difficulty: 2,
+        description: "Return a list of numbers from 1 to n, replacing multiples of a with first string, multiples of b with second string, and multiples of both with both strings concatenated.",
+        starterCode: "def custom_fizzbuzz(n, a, b, str1, str2):\n    pass",
+        tests: [
+          { input: [10, 2, 3, "Even", "Triple"], expected: [1, "Even", "Triple", "Even", 5, "EvenTriple", 7, "Even", "Triple", "Even"] },
+          { input: [5, 2, 5, "X", "Y"], expected: [1, "X", 3, "X", "Y"] },
+          { input: [6, 3, 3, "A", "A"], expected: [1, 2, "AA", 4, 5, "AA"] }
+        ]
+      },
+      {
+        title: "FizzBuzz Sum",
+        category: "algorithm",
+        tags: ["iteration", "conditionals", "math"],
+        difficulty: 2,
+        description: "Return the sum of numbers from 1 to n that are NOT replaced in FizzBuzz (not divisible by 3 or 5).",
+        starterCode: "def fizzbuzz_sum(n):\n    pass",
+        tests: [
+          { input: [15], expected: 60 },
+          { input: [10], expected: 23 },
+          { input: [5], expected: 7 },
+          { input: [3], expected: 3 }
+        ]
+      },
+      {
         title: "Sum of Digits",
         category: "math",
         tags: ["math", "string-manipulation", "iteration"],
@@ -1166,7 +1380,6 @@
         ]
       },
       {
-        id: 10,
         title: "Is Prime",
         category: "math",
         tags: ["math", "optimization", "iteration"],
@@ -1182,7 +1395,6 @@
         ]
       },
       {
-        id: 11,
         title: "Merge Sorted Lists",
         category: "array",
         tags: ["array", "two-pointer", "sorting", "merge"],
@@ -1197,7 +1409,6 @@
         ]
       },
       {
-        id: 12,
         title: "Count Word Frequency",
         category: "string",
         tags: ["hashmap", "string", "counting"],
@@ -1211,7 +1422,6 @@
         ]
       },
       {
-        id: 13,
         title: "Longest Word",
         category: "string",
         tags: ["string", "iteration", "comparison"],
@@ -1225,7 +1435,6 @@
         ]
       },
       {
-        id: 14,
         title: "Binary to Decimal",
         category: "math",
         tags: ["math", "conversion", "binary"],
@@ -1240,7 +1449,6 @@
         ]
       },
       {
-        id: 15,
         title: "Two Sum",
         category: "array",
         tags: ["array", "hashmap", "optimization"],
@@ -1254,7 +1462,6 @@
         ]
       },
       {
-        id: 16,
         title: "Anagram Check",
         category: "string",
         tags: ["string", "hashmap", "sorting"],
@@ -1269,7 +1476,6 @@
         ]
       },
       {
-        id: 17,
         title: "Fibonacci Sequence",
         category: "math",
         tags: ["recursion", "dynamic-programming", "math"],
@@ -1284,7 +1490,6 @@
         ]
       },
       {
-        id: 18,
         title: "Rotate Array",
         category: "array",
         tags: ["array", "manipulation", "modulo"],
@@ -1298,7 +1503,6 @@
         ]
       },
       {
-        id: 19,
         title: "Valid Parentheses",
         category: "stack",
         tags: ["stack", "string", "matching"],
@@ -1314,7 +1518,6 @@
         ]
       },
       {
-        id: 20,
         title: "Longest Common Prefix",
         category: "string",
         tags: ["string", "comparison", "iteration"],
@@ -1328,7 +1531,6 @@
         ]
       },
       {
-        id: 21,
         title: "Remove Vowels",
         category: "string",
         tags: ["string", "filtering", "iteration"],
@@ -1343,7 +1545,6 @@
         ]
       },
       {
-        id: 22,
         title: "Title Case",
         category: "string",
         tags: ["string", "string-manipulation", "formatting"],
@@ -1358,7 +1559,6 @@
         ]
       },
       {
-        id: 23,
         title: "Find Second Largest",
         category: "array",
         tags: ["array", "sorting", "comparison"],
@@ -1373,7 +1573,6 @@
         ]
       },
       {
-        id: 24,
         title: "Flatten List",
         category: "array",
         tags: ["array", "iteration", "nested-structures"],
@@ -1388,7 +1587,6 @@
         ]
       },
       {
-        id: 25,
         title: "Reverse Words",
         category: "string",
         tags: ["string", "array", "manipulation"],
@@ -1403,7 +1601,6 @@
         ]
       },
       {
-        id: 26,
         title: "Is Leap Year",
         category: "math",
         tags: ["math", "conditionals", "date"],
@@ -1419,7 +1616,6 @@
         ]
       },
       {
-        id: 27,
         title: "Find Missing Number",
         category: "array",
         tags: ["array", "math", "bit-manipulation"],
@@ -1434,7 +1630,6 @@
         ]
       },
       {
-        id: 28,
         title: "Compress String",
         category: "string",
         tags: ["string", "iteration", "counting"],
@@ -1449,7 +1644,6 @@
         ]
       },
       {
-        id: 29,
         title: "Move Zeros",
         category: "array",
         tags: ["array", "two-pointer", "in-place"],
@@ -1464,7 +1658,6 @@
         ]
       },
       {
-        id: 30,
         title: "Find Intersection",
         category: "array",
         tags: ["array", "hashmap", "set-operations"],
@@ -1479,7 +1672,6 @@
         ]
       },
       {
-        id: 31,
         title: "Is Power of Two",
         category: "math",
         tags: ["math", "bit-manipulation", "optimization"],
@@ -1495,7 +1687,6 @@
         ]
       },
       {
-        id: 32,
         title: "Chunk Array",
         category: "array",
         tags: ["array", "slicing", "iteration"],
@@ -1510,7 +1701,6 @@
         ]
       },
       {
-        id: 33,
         title: "First Non-Repeating Character",
         category: "string",
         tags: ["string", "hashmap", "counting"],
@@ -1525,7 +1715,6 @@
         ]
       },
       {
-        id: 34,
         title: "Greatest Common Divisor",
         category: "math",
         tags: ["math", "recursion", "euclidean-algorithm"],
@@ -1540,7 +1729,6 @@
         ]
       },
       {
-        id: 35,
         title: "Remove Duplicates Sorted",
         category: "array",
         tags: ["array", "two-pointer", "in-place"],
@@ -1555,7 +1743,6 @@
         ]
       },
       {
-        id: 36,
         title: "Pascal's Triangle Row",
         category: "math",
         tags: ["math", "dynamic-programming", "combinatorics"],
@@ -1571,7 +1758,6 @@
         ]
       },
       {
-        id: 37,
         title: "String Rotation",
         category: "string",
         tags: ["string", "string-manipulation", "pattern-matching"],
@@ -1586,7 +1772,6 @@
         ]
       },
       {
-        id: 38,
         title: "Find Peak Element",
         category: "array",
         tags: ["array", "binary-search", "optimization"],
@@ -1601,7 +1786,6 @@
         ]
       },
       {
-        id: 39,
         title: "Count Consonants",
         category: "string",
         tags: ["string", "counting", "iteration"],
@@ -1616,7 +1800,6 @@
         ]
       },
       {
-        id: 40,
         title: "Majority Element",
         category: "array",
         tags: ["array", "hashmap", "boyer-moore"],
@@ -1631,7 +1814,6 @@
         ]
       },
       {
-        id: 41,
         title: "Product Except Self",
         category: "array",
         tags: ["array", "prefix-sum", "optimization"],
@@ -1646,7 +1828,6 @@
         ]
       },
       {
-        id: 42,
         title: "Camel Case to Snake Case",
         category: "string",
         tags: ["string", "regex", "formatting"],
@@ -1661,7 +1842,6 @@
         ]
       },
       {
-        id: 43,
         title: "Find Duplicates",
         category: "array",
         tags: ["array", "hashmap", "set-operations"],
@@ -1676,7 +1856,6 @@
         ]
       },
       {
-        id: 44,
         title: "Is Armstrong Number",
         category: "math",
         tags: ["math", "digit-manipulation"],
@@ -1691,7 +1870,6 @@
         ]
       },
       {
-        id: 45,
         title: "Longest Substring Without Repeating",
         category: "string",
         tags: ["string", "sliding-window", "hashmap"],
@@ -1706,7 +1884,6 @@
         ]
       },
       {
-        id: 46,
         title: "Find Union",
         category: "array",
         tags: ["array", "set-operations", "hashmap"],
@@ -1721,7 +1898,6 @@
         ]
       },
       {
-        id: 47,
         title: "Is Perfect Square",
         category: "math",
         tags: ["math", "binary-search", "sqrt"],
@@ -1737,7 +1913,6 @@
         ]
       },
       {
-        id: 48,
         title: "Reverse Integer",
         category: "math",
         tags: ["math", "digit-manipulation"],
@@ -1752,7 +1927,6 @@
         ]
       },
       {
-        id: 49,
         title: "Contains Duplicate",
         category: "array",
         tags: ["array", "hashmap", "set-operations"],
@@ -1767,7 +1941,6 @@
         ]
       },
       {
-        id: 50,
         title: "Happy Number",
         category: "math",
         tags: ["math", "hashmap", "cycle-detection"],
@@ -1782,7 +1955,6 @@
         ]
       },
       {
-        id: 51,
         title: "Bubble Sort",
         category: "sorting",
         tags: ["sorting", "algorithm", "array"],
@@ -1797,7 +1969,6 @@
         ]
       },
       {
-        id: 52,
         title: "Selection Sort",
         category: "sorting",
         tags: ["sorting", "algorithm", "array"],
@@ -1812,7 +1983,6 @@
         ]
       },
       {
-        id: 53,
         title: "Merge Two Sorted Arrays",
         category: "array",
         tags: ["array", "merging", "two-pointer"],
@@ -1827,7 +1997,6 @@
         ]
       },
       {
-        id: 54,
         title: "Binary Search",
         category: "searching",
         tags: ["searching", "binary-search", "algorithm"],
@@ -1842,7 +2011,6 @@
         ]
       },
       {
-        id: 55,
         title: "Group Anagrams",
         category: "string",
         tags: ["string", "hashmap", "sorting"],
@@ -1856,7 +2024,6 @@
         ]
       },
       {
-        id: 56,
         title: "Insertion Sort",
         category: "sorting",
         tags: ["sorting", "algorithm", "array"],
@@ -1871,7 +2038,6 @@
         ]
       },
       {
-        id: 57,
         title: "Top K Frequent Elements",
         category: "array",
         tags: ["hashmap", "sorting", "frequency"],
@@ -1885,7 +2051,6 @@
         ]
       },
       {
-        id: 58,
         title: "Subarray Sum Equals K",
         category: "array",
         tags: ["array", "hashmap", "prefix-sum"],
@@ -1900,7 +2065,6 @@
         ]
       },
       {
-        id: 59,
         title: "Longest Consecutive Sequence",
         category: "array",
         tags: ["array", "hashmap", "sequence"],
@@ -1915,7 +2079,6 @@
         ]
       },
       {
-        id: 60,
         title: "Missing Ranges",
         category: "array",
         tags: ["array", "intervals", "iteration"],
@@ -1930,7 +2093,6 @@
         ]
       },
       {
-        id: 61,
         title: "Valid Sudoku",
         category: "array",
         tags: ["hashmap", "matrix", "validation"],
@@ -1942,7 +2104,6 @@
         ]
       },
       {
-        id: 62,
         title: "Kth Largest Element",
         category: "array",
         tags: ["array", "sorting", "heap"],
@@ -1957,7 +2118,6 @@
         ]
       },
       {
-        id: 63,
         title: "Merge Intervals",
         category: "array",
         tags: ["array", "sorting", "intervals"],
@@ -1972,7 +2132,6 @@
         ]
       },
       {
-        id: 64,
         title: "Set Bits Count",
         category: "math",
         tags: ["bit-manipulation", "binary"],
@@ -1987,7 +2146,6 @@
         ]
       },
       {
-        id: 65,
         title: "Single Number",
         category: "array",
         tags: ["array", "bit-manipulation", "hashmap"],
@@ -2002,7 +2160,6 @@
         ]
       },
       {
-        id: 66,
         title: "Trapping Rain Water",
         category: "array",
         tags: ["array", "two-pointer", "stack"],
@@ -2017,7 +2174,6 @@
         ]
       },
       {
-        id: 67,
         title: "Quick Sort",
         category: "sorting",
         tags: ["sorting", "algorithm", "recursion"],
@@ -2032,7 +2188,6 @@
         ]
       },
       {
-        id: 68,
         title: "Merge Sort",
         category: "sorting",
         tags: ["sorting", "algorithm", "recursion", "divide-conquer"],
@@ -2047,7 +2202,6 @@
         ]
       },
       {
-        id: 69,
         title: "Minimum Window Substring",
         category: "string",
         tags: ["string", "sliding-window", "hashmap"],
@@ -2061,7 +2215,6 @@
         ]
       },
       {
-        id: 70,
         title: "Max Sliding Window",
         category: "array",
         tags: ["array", "sliding-window", "queue"],
@@ -2075,7 +2228,6 @@
         ]
       },
       {
-        id: 71,
         title: "Simplify Path",
         category: "stack",
         tags: ["stack", "string", "parsing"],
@@ -2091,7 +2243,6 @@
         ]
       },
       {
-        id: 72,
         title: "Course Schedule",
         category: "graph",
         tags: ["graph", "topological-sort", "dfs"],
@@ -2106,7 +2257,6 @@
         ]
       },
       {
-        id: 73,
         title: "Number of Islands",
         category: "graph",
         tags: ["graph", "dfs", "bfs", "matrix"],
@@ -2119,7 +2269,6 @@
         ]
       },
       {
-        id: 74,
         title: "Word Search",
         category: "backtracking",
         tags: ["backtracking", "dfs", "matrix"],
@@ -2133,7 +2282,6 @@
         ]
       },
       {
-        id: 75,
         title: "Permutations",
         category: "backtracking",
         tags: ["backtracking", "recursion", "array"],
@@ -2147,7 +2295,6 @@
         ]
       },
       {
-        id: 76,
         title: "Combination Sum",
         category: "backtracking",
         tags: ["backtracking", "recursion", "array"],
@@ -2161,7 +2308,6 @@
         ]
       },
       {
-        id: 77,
         title: "Generate Parentheses",
         category: "backtracking",
         tags: ["backtracking", "string", "recursion"],
@@ -2175,7 +2321,6 @@
         ]
       },
       {
-        id: 78,
         title: "Coin Change",
         category: "dynamic-programming",
         tags: ["dynamic-programming", "array", "optimization"],
@@ -2190,7 +2335,6 @@
         ]
       },
       {
-        id: 79,
         title: "Longest Increasing Subsequence",
         category: "dynamic-programming",
         tags: ["dynamic-programming", "array", "binary-search"],
@@ -2205,7 +2349,6 @@
         ]
       },
       {
-        id: 80,
         title: "House Robber",
         category: "dynamic-programming",
         tags: ["dynamic-programming", "array"],
@@ -2220,7 +2363,6 @@
         ]
       },
       {
-        id: 81,
         title: "Climbing Stairs",
         category: "dynamic-programming",
         tags: ["dynamic-programming", "fibonacci", "math"],
@@ -2235,7 +2377,6 @@
         ]
       },
       {
-        id: 82,
         title: "Decode Ways",
         category: "dynamic-programming",
         tags: ["dynamic-programming", "string", "recursion"],
@@ -2250,7 +2391,6 @@
         ]
       },
       {
-        id: 83,
         title: "Word Break",
         category: "dynamic-programming",
         tags: ["dynamic-programming", "string", "hashmap"],
@@ -2264,7 +2404,6 @@
         ]
       },
       {
-        id: 84,
         title: "Unique Paths",
         category: "dynamic-programming",
         tags: ["dynamic-programming", "grid", "math"],
@@ -2279,7 +2418,6 @@
         ]
       },
       {
-        id: 85,
         title: "Jump Game",
         category: "greedy",
         tags: ["greedy", "array", "dynamic-programming"],
@@ -2294,7 +2432,6 @@
         ]
       },
       {
-        id: 86,
         title: "Container With Most Water",
         category: "array",
         tags: ["array", "two-pointer", "greedy"],
@@ -2309,7 +2446,6 @@
         ]
       },
       {
-        id: 87,
         title: "3Sum",
         category: "array",
         tags: ["array", "two-pointer", "sorting"],
@@ -2324,7 +2460,6 @@
         ]
       },
       {
-        id: 88,
         title: "Letter Combinations",
         category: "backtracking",
         tags: ["backtracking", "string", "recursion"],
@@ -2338,7 +2473,6 @@
         ]
       },
       {
-        id: 89,
         title: "Sort Colors",
         category: "sorting",
         tags: ["sorting", "array", "two-pointer"],
@@ -2353,7 +2487,6 @@
         ]
       },
       {
-        id: 90,
         title: "Search in Rotated Array",
         category: "searching",
         tags: ["binary-search", "array", "algorithm"],
@@ -2368,7 +2501,6 @@
         ]
       },
       {
-        id: 91,
         title: "Find Median of Two Sorted Arrays",
         category: "array",
         tags: ["binary-search", "array", "divide-conquer"],
@@ -2383,7 +2515,6 @@
         ]
       },
       {
-        id: 92,
         title: "Spiral Matrix",
         category: "matrix",
         tags: ["matrix", "array", "simulation"],
@@ -2396,7 +2527,6 @@
         ]
       },
       {
-        id: 93,
         title: "Rotate Matrix",
         category: "matrix",
         tags: ["matrix", "array", "in-place"],
@@ -2409,7 +2539,6 @@
         ]
       },
       {
-        id: 94,
         title: "Pow(x, n)",
         category: "math",
         tags: ["math", "recursion", "binary-exponentiation"],
@@ -2424,7 +2553,6 @@
         ]
       },
       {
-        id: 95,
         title: "Find All Duplicates",
         category: "array",
         tags: ["array", "hashmap", "in-place"],
@@ -2439,7 +2567,6 @@
         ]
       },
       {
-        id: 96,
         title: "String to Integer (atoi)",
         category: "string",
         tags: ["string", "parsing", "conversion"],
@@ -2454,7 +2581,6 @@
         ]
       },
       {
-        id: 97,
         title: "Zigzag Conversion",
         category: "string",
         tags: ["string", "simulation", "pattern"],
@@ -2468,7 +2594,6 @@
         ]
       },
       {
-        id: 98,
         title: "Regular Expression Matching",
         category: "string",
         tags: ["string", "dynamic-programming", "recursion"],
@@ -2483,7 +2608,6 @@
         ]
       },
       {
-        id: 99,
         title: "Wildcard Matching",
         category: "string",
         tags: ["string", "dynamic-programming", "greedy"],
@@ -2498,7 +2622,6 @@
         ]
       },
       {
-        id: 100,
         title: "Next Permutation",
         category: "array",
         tags: ["array", "two-pointer", "algorithm"],
@@ -2513,7 +2636,6 @@
         ]
       },
       {
-        id: 101,
         title: "Matrix Multiplication",
         category: "matrix",
         tags: ["matrix", "linear-algebra", "nested-loops"],
@@ -2528,7 +2650,6 @@
         ]
       },
       {
-        id: 102,
         title: "Transpose Matrix",
         category: "matrix",
         tags: ["matrix", "linear-algebra", "manipulation"],
@@ -2543,7 +2664,6 @@
         ]
       },
       {
-        id: 103,
         title: "Dot Product",
         category: "vector",
         tags: ["vector", "linear-algebra", "math"],
@@ -2558,7 +2678,6 @@
         ]
       },
       {
-        id: 104,
         title: "Matrix Addition",
         category: "matrix",
         tags: ["matrix", "linear-algebra", "element-wise"],
@@ -2573,7 +2692,6 @@
         ]
       },
       {
-        id: 105,
         title: "Scalar Multiplication",
         category: "matrix",
         tags: ["matrix", "linear-algebra", "scalar"],
@@ -2588,7 +2706,6 @@
         ]
       },
       {
-        id: 106,
         title: "Matrix Trace",
         category: "matrix",
         tags: ["matrix", "linear-algebra", "diagonal"],
@@ -2603,7 +2720,6 @@
         ]
       },
       {
-        id: 107,
         title: "Identity Matrix",
         category: "matrix",
         tags: ["matrix", "linear-algebra", "validation"],
@@ -2618,7 +2734,6 @@
         ]
       },
       {
-        id: 108,
         title: "Vector Magnitude",
         category: "vector",
         tags: ["vector", "linear-algebra", "euclidean"],
@@ -2633,7 +2748,6 @@
         ]
       },
       {
-        id: 109,
         title: "Cross Product",
         category: "vector",
         tags: ["vector", "linear-algebra", "3d"],
@@ -2648,7 +2762,6 @@
         ]
       },
       {
-        id: 110,
         title: "Matrix Determinant 2x2",
         category: "matrix",
         tags: ["matrix", "linear-algebra", "determinant"],
