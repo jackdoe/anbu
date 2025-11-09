@@ -2789,32 +2789,50 @@ Please be patient and explain things clearly - I'm here to learn and understand 
     document.getElementById('loadingIndicator').style.display = 'flex';
 
     require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.53.0/min/vs' } });
-    require(['vs/editor/editor.main'], async function() {
-      await loadProgress();
-      
-      const challenge = CHALLENGES[currentChallenge];
-      let code;
-      try {
-        const savedCode = await window.storage.get('challenge-' + currentChallenge);
-        code = savedCode ? savedCode.value : challenge.starterCode;
-      } catch (error) {
-        code = challenge.starterCode;
-      }
 
-      editor = monaco.editor.create(document.getElementById('editor'), {
-        value: code,
-        language: 'python',
-        theme: 'vs-dark',
-        minimap: { enabled: false },
-        fontSize: 15,
-        lineNumbers: 'on',
-        roundedSelection: false,
-        scrollBeyondLastLine: false,
-        automaticLayout: true
-      });
+    // Wait for DOM to be fully ready
+    window.addEventListener('DOMContentLoaded', function() {
+      require(['vs/editor/editor.main'], async function() {
+        // Add a small delay to ensure Monaco is fully loaded
+        await new Promise(resolve => setTimeout(resolve, 100));
 
-      editor.onDidChangeModelContent(function() {
-        saveCode(editor.getValue());
+        await loadProgress();
+
+        const challenge = CHALLENGES[currentChallenge];
+        let code;
+        try {
+          const savedCode = await window.storage.get('challenge-' + currentChallenge);
+          code = savedCode ? savedCode.value : challenge.starterCode;
+        } catch (error) {
+          code = challenge.starterCode;
+        }
+
+        // Ensure the editor container exists
+        const editorContainer = document.getElementById('editor');
+        if (!editorContainer) {
+          console.error('Editor container not found');
+          return;
+        }
+
+        try {
+          editor = monaco.editor.create(editorContainer, {
+            value: code,
+            language: 'python',
+            theme: 'vs-dark',
+            minimap: { enabled: false },
+            fontSize: 15,
+            lineNumbers: 'on',
+            roundedSelection: false,
+            scrollBeyondLastLine: false,
+            automaticLayout: true
+          });
+
+          editor.onDidChangeModelContent(function() {
+            saveCode(editor.getValue());
+          });
+        } catch (error) {
+          console.error('Failed to create Monaco editor:', error);
+        }
       });
     });
 
