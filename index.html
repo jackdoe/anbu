@@ -1380,6 +1380,34 @@
         ]
       },
       {
+        title: "Product of Digits",
+        category: "math",
+        tags: ["math", "string-manipulation", "iteration"],
+        difficulty: 2,
+        description: "Write a function that returns the product of all digits in a number. Return 0 if any digit is 0.",
+        starterCode: "def product_of_digits(n):\n    pass",
+        tests: [
+          { input: [123], expected: 6 },
+          { input: [0], expected: 0 },
+          { input: [999], expected: 729 },
+          { input: [105], expected: 0 }
+        ]
+      },
+      {
+        title: "Digital Root",
+        category: "math",
+        tags: ["math", "iteration", "recursion"],
+        difficulty: 2,
+        description: "Write a function that returns the digital root of a number (repeatedly sum digits until a single digit remains).",
+        starterCode: "def digital_root(n):\n    pass",
+        tests: [
+          { input: [38], expected: 2 },
+          { input: [0], expected: 0 },
+          { input: [9999], expected: 9 },
+          { input: [123], expected: 6 }
+        ]
+      },
+      {
         title: "Is Prime",
         category: "math",
         tags: ["math", "optimization", "iteration"],
@@ -1392,6 +1420,34 @@
           { input: [2], expected: true },
           { input: [1], expected: false },
           { input: [17], expected: true }
+        ]
+      },
+      {
+        title: "Prime Count",
+        category: "math",
+        tags: ["math", "optimization", "counting"],
+        difficulty: 3,
+        description: "Write a function that counts how many prime numbers are less than or equal to n.",
+        starterCode: "def prime_count(n):\n    pass",
+        tests: [
+          { input: [10], expected: 4 },
+          { input: [1], expected: 0 },
+          { input: [20], expected: 8 },
+          { input: [2], expected: 1 }
+        ]
+      },
+      {
+        title: "Next Prime",
+        category: "math",
+        tags: ["math", "optimization", "iteration"],
+        difficulty: 3,
+        description: "Write a function that returns the smallest prime number greater than n.",
+        starterCode: "def next_prime(n):\n    pass",
+        tests: [
+          { input: [10], expected: 11 },
+          { input: [7], expected: 11 },
+          { input: [2], expected: 3 },
+          { input: [13], expected: 17 }
         ]
       },
       {
@@ -1409,6 +1465,34 @@
         ]
       },
       {
+        title: "Intersection of Sorted Lists",
+        category: "array",
+        tags: ["array", "two-pointer", "set-operations"],
+        difficulty: 3,
+        description: "Write a function that returns the intersection of two sorted lists (elements that appear in both).",
+        starterCode: "def intersection_sorted(list1, list2):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4], [2, 3, 5]], expected: [2, 3] },
+          { input: [[1, 3, 5], [2, 4, 6]], expected: [] },
+          { input: [[1, 2, 2, 3], [2, 2, 3, 4]], expected: [2, 2, 3] },
+          { input: [[], [1, 2]], expected: [] }
+        ]
+      },
+      {
+        title: "Union of Sorted Lists",
+        category: "array",
+        tags: ["array", "two-pointer", "set-operations"],
+        difficulty: 3,
+        description: "Write a function that returns the union of two sorted lists without duplicates.",
+        starterCode: "def union_sorted(list1, list2):\n    pass",
+        tests: [
+          { input: [[1, 2, 3], [2, 3, 4]], expected: [1, 2, 3, 4] },
+          { input: [[1, 3, 5], [2, 4, 6]], expected: [1, 2, 3, 4, 5, 6] },
+          { input: [[], [1, 2]], expected: [1, 2] },
+          { input: [[1, 1, 2], [2, 3]], expected: [1, 2, 3] }
+        ]
+      },
+      {
         title: "Count Word Frequency",
         category: "string",
         tags: ["hashmap", "string", "counting"],
@@ -1422,6 +1506,34 @@
         ]
       },
       {
+        title: "Most Frequent Word",
+        category: "string",
+        tags: ["hashmap", "string", "max-finding"],
+        difficulty: 3,
+        description: "Write a function that returns the most frequently occurring word in a string. Return the first one if there's a tie.",
+        starterCode: "def most_frequent_word(text):\n    pass",
+        tests: [
+          { input: ["hello world hello"], expected: "hello" },
+          { input: ["the quick brown fox jumps"], expected: "the" },
+          { input: ["a a b b c c c"], expected: "c" },
+          { input: ["test"], expected: "test" }
+        ]
+      },
+      {
+        title: "Words Appearing N Times",
+        category: "string",
+        tags: ["hashmap", "string", "filtering"],
+        difficulty: 3,
+        description: "Write a function that returns a list of words that appear exactly n times in a string.",
+        starterCode: "def words_appearing_n_times(text, n):\n    pass",
+        tests: [
+          { input: ["hello world hello", 2], expected: ["hello"] },
+          { input: ["the quick brown fox jumps", 1], expected: ["the", "quick", "brown", "fox", "jumps"] },
+          { input: ["a a b b c c c", 2], expected: ["a", "b"] },
+          { input: ["test", 1], expected: ["test"] }
+        ]
+      },
+      {
         title: "Longest Word",
         category: "string",
         tags: ["string", "iteration", "comparison"],
@@ -1432,6 +1544,32 @@
           { input: ["the quick brown fox"], expected: "quick" },
           { input: ["hello world"], expected: "hello" },
           { input: ["Python programming is fun"], expected: "programming" }
+        ]
+      },
+      {
+        title: "Shortest Word",
+        category: "string",
+        tags: ["string", "iteration", "comparison"],
+        difficulty: 2,
+        description: "Write a function that finds the shortest word in a sentence.",
+        starterCode: "def shortest_word(sentence):\n    pass",
+        tests: [
+          { input: ["the quick brown fox"], expected: "the" },
+          { input: ["hello world"], expected: "hello" },
+          { input: ["Python programming is fun"], expected: "is" }
+        ]
+      },
+      {
+        title: "Average Word Length",
+        category: "string",
+        tags: ["string", "iteration", "math"],
+        difficulty: 2,
+        description: "Write a function that calculates the average length of words in a sentence.",
+        starterCode: "def average_word_length(sentence):\n    pass",
+        tests: [
+          { input: ["the quick brown fox"], expected: 3.75 },
+          { input: ["hello world"], expected: 5.0 },
+          { input: ["a bb ccc"], expected: 2.0 }
         ]
       },
       {
@@ -1449,6 +1587,34 @@
         ]
       },
       {
+        title: "Decimal to Binary",
+        category: "math",
+        tags: ["math", "conversion", "binary"],
+        difficulty: 3,
+        description: "Write a function that converts a decimal number to a binary string.",
+        starterCode: "def decimal_to_binary(n):\n    pass",
+        tests: [
+          { input: [5], expected: "101" },
+          { input: [10], expected: "1010" },
+          { input: [15], expected: "1111" },
+          { input: [0], expected: "0" }
+        ]
+      },
+      {
+        title: "Hexadecimal to Decimal",
+        category: "math",
+        tags: ["math", "conversion", "hex"],
+        difficulty: 3,
+        description: "Write a function that converts a hexadecimal string to decimal.",
+        starterCode: "def hex_to_decimal(hex_str):\n    pass",
+        tests: [
+          { input: ["A"], expected: 10 },
+          { input: ["1F"], expected: 31 },
+          { input: ["FF"], expected: 255 },
+          { input: ["10"], expected: 16 }
+        ]
+      },
+      {
         title: "Two Sum",
         category: "array",
         tags: ["array", "hashmap", "optimization"],
@@ -1459,6 +1625,33 @@
           { input: [[2, 7, 11, 15], 9], expected: [0, 1] },
           { input: [[3, 2, 4], 6], expected: [1, 2] },
           { input: [[3, 3], 6], expected: [0, 1] }
+        ]
+      },
+      {
+        title: "Two Sum Count",
+        category: "array",
+        tags: ["array", "hashmap", "counting"],
+        difficulty: 4,
+        description: "Given a list of numbers and a target, return the count of unique pairs that add up to the target.",
+        starterCode: "def two_sum_count(nums, target):\n    pass",
+        tests: [
+          { input: [[2, 7, 11, 15], 9], expected: 1 },
+          { input: [[1, 1, 1, 1], 2], expected: 1 },
+          { input: [[1, 2, 3, 4, 5], 6], expected: 2 },
+          { input: [[1, 5, 3, 3, 3], 6], expected: 2 }
+        ]
+      },
+      {
+        title: "Two Sum All Pairs",
+        category: "array",
+        tags: ["array", "hashmap", "pairs"],
+        difficulty: 4,
+        description: "Given a list of numbers and a target, return all pairs of indices where the numbers add up to the target.",
+        starterCode: "def two_sum_all_pairs(nums, target):\n    pass",
+        tests: [
+          { input: [[2, 7, 11, 15], 9], expected: [[0, 1]] },
+          { input: [[1, 3, 2, 4, 3], 6], expected: [[1, 3], [2, 4]] },
+          { input: [[1, 1, 1], 2], expected: [[0, 1], [0, 2], [1, 2]] }
         ]
       },
       {
@@ -1476,6 +1669,32 @@
         ]
       },
       {
+        title: "Anagram Groups",
+        category: "string",
+        tags: ["string", "hashmap", "grouping"],
+        difficulty: 3,
+        description: "Write a function that groups anagrams together from a list of strings.",
+        starterCode: "def group_anagrams(words):\n    pass",
+        tests: [
+          { input: [["eat", "tea", "tan", "ate", "nat", "bat"]], expected: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]] },
+          { input: [["a"]], expected: [["a"]] },
+          { input: [["", ""]], expected: [["", ""]] }
+        ]
+      },
+      {
+        title: "First Non-Repeating Anagram",
+        category: "string",
+        tags: ["string", "hashmap", "searching"],
+        difficulty: 3,
+        description: "Write a function that finds the first word in a list that is not an anagram of any other word.",
+        starterCode: "def first_unique_anagram(words):\n    pass",
+        tests: [
+          { input: [["eat", "tea", "tan", "ate", "nat", "bat"]], expected: "bat" },
+          { input: [["abc", "def", "ghi"]], expected: "abc" },
+          { input: [["a", "b", "a"]], expected: "b" }
+        ]
+      },
+      {
         title: "Fibonacci Sequence",
         category: "math",
         tags: ["recursion", "dynamic-programming", "math"],
@@ -1490,6 +1709,34 @@
         ]
       },
       {
+        title: "Fibonacci List",
+        category: "math",
+        tags: ["recursion", "dynamic-programming", "math"],
+        difficulty: 3,
+        description: "Write a function that returns a list of the first n Fibonacci numbers.",
+        starterCode: "def fibonacci_list(n):\n    pass",
+        tests: [
+          { input: [5], expected: [0, 1, 1, 2, 3] },
+          { input: [1], expected: [0] },
+          { input: [7], expected: [0, 1, 1, 2, 3, 5, 8] },
+          { input: [0], expected: [] }
+        ]
+      },
+      {
+        title: "Fibonacci Sum",
+        category: "math",
+        tags: ["recursion", "dynamic-programming", "math"],
+        difficulty: 3,
+        description: "Write a function that returns the sum of the first n Fibonacci numbers.",
+        starterCode: "def fibonacci_sum(n):\n    pass",
+        tests: [
+          { input: [5], expected: 7 },
+          { input: [1], expected: 0 },
+          { input: [7], expected: 20 },
+          { input: [10], expected: 88 }
+        ]
+      },
+      {
         title: "Rotate Array",
         category: "array",
         tags: ["array", "manipulation", "modulo"],
@@ -1500,6 +1747,32 @@
           { input: [[1, 2, 3, 4, 5], 2], expected: [4, 5, 1, 2, 3] },
           { input: [[1, 2], 3], expected: [2, 1] },
           { input: [[1, 2, 3], 0], expected: [1, 2, 3] }
+        ]
+      },
+      {
+        title: "Rotate Array Left",
+        category: "array",
+        tags: ["array", "manipulation", "modulo"],
+        difficulty: 4,
+        description: "Write a function that rotates an array to the left by k steps.",
+        starterCode: "def rotate_left(arr, k):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5], 2], expected: [3, 4, 5, 1, 2] },
+          { input: [[1, 2], 3], expected: [2, 1] },
+          { input: [[1, 2, 3], 0], expected: [1, 2, 3] }
+        ]
+      },
+      {
+        title: "Reverse Array Segments",
+        category: "array",
+        tags: ["array", "manipulation", "reversal"],
+        difficulty: 4,
+        description: "Write a function that reverses every segment of k elements in an array.",
+        starterCode: "def reverse_segments(arr, k):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5, 6], 2], expected: [2, 1, 4, 3, 6, 5] },
+          { input: [[1, 2, 3, 4, 5], 3], expected: [3, 2, 1, 5, 4] },
+          { input: [[1, 2, 3], 1], expected: [1, 2, 3] }
         ]
       },
       {
@@ -1518,6 +1791,34 @@
         ]
       },
       {
+        title: "Min Adds to Balance Parentheses",
+        category: "stack",
+        tags: ["stack", "string", "counting"],
+        difficulty: 4,
+        description: "Write a function that returns the minimum number of parentheses to add to make a string valid (only '(' and ')').",
+        starterCode: "def min_adds_to_balance(s):\n    pass",
+        tests: [
+          { input: ["())"], expected: 1 },
+          { input: ["((("], expected: 3 },
+          { input: ["()"], expected: 0 },
+          { input: ["()))(("], expected: 4 }
+        ]
+      },
+      {
+        title: "Remove Invalid Parentheses Count",
+        category: "stack",
+        tags: ["stack", "string", "counting"],
+        difficulty: 4,
+        description: "Write a function that returns the minimum number of parentheses to remove to make a string valid (only '(' and ')').",
+        starterCode: "def min_remove_to_balance(s):\n    pass",
+        tests: [
+          { input: ["())"], expected: 1 },
+          { input: ["((("], expected: 3 },
+          { input: ["()"], expected: 0 },
+          { input: ["a)b(c)"], expected: 1 }
+        ]
+      },
+      {
         title: "Longest Common Prefix",
         category: "string",
         tags: ["string", "comparison", "iteration"],
@@ -1528,6 +1829,32 @@
           { input: [["flower", "flow", "flight"]], expected: "fl" },
           { input: [["dog", "racecar", "car"]], expected: "" },
           { input: [["interspecies", "interstellar", "interstate"]], expected: "inters" }
+        ]
+      },
+      {
+        title: "Longest Common Suffix",
+        category: "string",
+        tags: ["string", "comparison", "iteration"],
+        difficulty: 3,
+        description: "Write a function that finds the longest common suffix among an array of strings.",
+        starterCode: "def longest_common_suffix(strs):\n    pass",
+        tests: [
+          { input: [["testing", "running", "jumping"]], expected: "ing" },
+          { input: [["dog", "cat", "rat"]], expected: "" },
+          { input: [["faster", "slower", "higher"]], expected: "er" }
+        ]
+      },
+      {
+        title: "Common Prefix Length",
+        category: "string",
+        tags: ["string", "comparison", "counting"],
+        difficulty: 3,
+        description: "Write a function that returns the length of the longest common prefix between two strings.",
+        starterCode: "def common_prefix_length(str1, str2):\n    pass",
+        tests: [
+          { input: ["flower", "flow"], expected: 4 },
+          { input: ["dog", "racecar"], expected: 0 },
+          { input: ["test", "test"], expected: 4 }
         ]
       },
       {
@@ -1545,6 +1872,34 @@
         ]
       },
       {
+        title: "Keep Only Vowels",
+        category: "string",
+        tags: ["string", "filtering", "iteration"],
+        difficulty: 2,
+        description: "Write a function that keeps only vowels from a string.",
+        starterCode: "def keep_vowels(s):\n    pass",
+        tests: [
+          { input: ["hello"], expected: "eo" },
+          { input: ["programming"], expected: "oai" },
+          { input: ["aeiou"], expected: "aeiou" },
+          { input: ["xyz"], expected: "" }
+        ]
+      },
+      {
+        title: "Replace Vowels",
+        category: "string",
+        tags: ["string", "filtering", "replacement"],
+        difficulty: 2,
+        description: "Write a function that replaces all vowels in a string with a given character.",
+        starterCode: "def replace_vowels(s, char):\n    pass",
+        tests: [
+          { input: ["hello", "*"], expected: "h*ll*" },
+          { input: ["programming", "_"], expected: "pr_gr_mm_ng" },
+          { input: ["aeiou", "X"], expected: "XXXXX" },
+          { input: ["xyz", "*"], expected: "xyz" }
+        ]
+      },
+      {
         title: "Title Case",
         category: "string",
         tags: ["string", "string-manipulation", "formatting"],
@@ -1555,6 +1910,34 @@
           { input: ["hello world"], expected: "Hello World" },
           { input: ["the quick brown fox"], expected: "The Quick Brown Fox" },
           { input: ["python"], expected: "Python" },
+          { input: [""], expected: "" }
+        ]
+      },
+      {
+        title: "Snake to Camel Case",
+        category: "string",
+        tags: ["string", "string-manipulation", "formatting"],
+        difficulty: 2,
+        description: "Write a function that converts snake_case to camelCase.",
+        starterCode: "def snake_to_camel(s):\n    pass",
+        tests: [
+          { input: ["hello_world"], expected: "helloWorld" },
+          { input: ["the_quick_brown_fox"], expected: "theQuickBrownFox" },
+          { input: ["python"], expected: "python" },
+          { input: [""], expected: "" }
+        ]
+      },
+      {
+        title: "Camel to Snake Case",
+        category: "string",
+        tags: ["string", "string-manipulation", "formatting"],
+        difficulty: 2,
+        description: "Write a function that converts camelCase to snake_case.",
+        starterCode: "def camel_to_snake(s):\n    pass",
+        tests: [
+          { input: ["helloWorld"], expected: "hello_world" },
+          { input: ["theQuickBrownFox"], expected: "the_quick_brown_fox" },
+          { input: ["python"], expected: "python" },
           { input: [""], expected: "" }
         ]
       },
@@ -1573,6 +1956,34 @@
         ]
       },
       {
+        title: "Find Kth Largest",
+        category: "array",
+        tags: ["array", "sorting", "comparison"],
+        difficulty: 3,
+        description: "Write a function that finds the kth largest number in a list.",
+        starterCode: "def kth_largest(numbers, k):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5], 2], expected: 4 },
+          { input: [[10, 5, 8, 12, 3], 1], expected: 12 },
+          { input: [[7, 7, 7, 1], 3], expected: 7 },
+          { input: [[5, 5], 1], expected: 5 }
+        ]
+      },
+      {
+        title: "Find Second Smallest",
+        category: "array",
+        tags: ["array", "sorting", "comparison"],
+        difficulty: 3,
+        description: "Write a function that finds the second smallest number in a list.",
+        starterCode: "def second_smallest(numbers):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5]], expected: 2 },
+          { input: [[10, 5, 8, 12, 3]], expected: 5 },
+          { input: [[7, 7, 7, 1]], expected: 7 },
+          { input: [[5, 5]], expected: 5 }
+        ]
+      },
+      {
         title: "Flatten List",
         category: "array",
         tags: ["array", "iteration", "nested-structures"],
@@ -1587,6 +1998,34 @@
         ]
       },
       {
+        title: "Deep Flatten List",
+        category: "array",
+        tags: ["array", "recursion", "nested-structures"],
+        difficulty: 3,
+        description: "Write a function that flattens a deeply nested list (all levels).",
+        starterCode: "def deep_flatten(lst):\n    pass",
+        tests: [
+          { input: [[[1, [2, 3]], [4, [5, 6]]]], expected: [1, 2, 3, 4, 5, 6] },
+          { input: [[[1, [2, [3, [4]]]]]], expected: [1, 2, 3, 4] },
+          { input: [[[]]], expected: [] },
+          { input: [[[1, 2, 3]]], expected: [1, 2, 3] }
+        ]
+      },
+      {
+        title: "Chunk List",
+        category: "array",
+        tags: ["array", "iteration", "grouping"],
+        difficulty: 2,
+        description: "Write a function that splits a list into chunks of size n.",
+        starterCode: "def chunk_list(lst, n):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5], 2], expected: [[1, 2], [3, 4], [5]] },
+          { input: [[1, 2, 3, 4, 5, 6], 3], expected: [[1, 2, 3], [4, 5, 6]] },
+          { input: [[1, 2], 3], expected: [[1, 2]] },
+          { input: [[], 2], expected: [] }
+        ]
+      },
+      {
         title: "Reverse Words",
         category: "string",
         tags: ["string", "array", "manipulation"],
@@ -1598,6 +2037,34 @@
           { input: ["the quick brown fox"], expected: "fox brown quick the" },
           { input: ["python"], expected: "python" },
           { input: [""], expected: "" }
+        ]
+      },
+      {
+        title: "Reverse Each Word",
+        category: "string",
+        tags: ["string", "array", "manipulation"],
+        difficulty: 2,
+        description: "Write a function that reverses each word in a sentence but keeps the word order.",
+        starterCode: "def reverse_each_word(sentence):\n    pass",
+        tests: [
+          { input: ["hello world"], expected: "olleh dlrow" },
+          { input: ["the quick brown fox"], expected: "eht kciuq nworb xof" },
+          { input: ["python"], expected: "nohtyp" },
+          { input: [""], expected: "" }
+        ]
+      },
+      {
+        title: "Rotate Words",
+        category: "string",
+        tags: ["string", "array", "manipulation"],
+        difficulty: 2,
+        description: "Write a function that rotates words in a sentence by k positions to the right.",
+        starterCode: "def rotate_words(sentence, k):\n    pass",
+        tests: [
+          { input: ["hello world python", 1], expected: "python hello world" },
+          { input: ["the quick brown fox", 2], expected: "brown fox the quick" },
+          { input: ["python", 1], expected: "python" },
+          { input: ["a b c", 0], expected: "a b c" }
         ]
       },
       {
@@ -1616,6 +2083,34 @@
         ]
       },
       {
+        title: "Count Leap Years",
+        category: "math",
+        tags: ["math", "conditionals", "counting"],
+        difficulty: 2,
+        description: "Write a function that counts how many leap years are in a range from year1 to year2 (inclusive).",
+        starterCode: "def count_leap_years(year1, year2):\n    pass",
+        tests: [
+          { input: [2020, 2024], expected: 2 },
+          { input: [1900, 1904], expected: 1 },
+          { input: [2000, 2000], expected: 1 },
+          { input: [2021, 2022], expected: 0 }
+        ]
+      },
+      {
+        title: "Next Leap Year",
+        category: "math",
+        tags: ["math", "conditionals", "iteration"],
+        difficulty: 2,
+        description: "Write a function that returns the next leap year after the given year.",
+        starterCode: "def next_leap_year(year):\n    pass",
+        tests: [
+          { input: [2021], expected: 2024 },
+          { input: [2020], expected: 2024 },
+          { input: [1900], expected: 1904 },
+          { input: [2000], expected: 2004 }
+        ]
+      },
+      {
         title: "Find Missing Number",
         category: "array",
         tags: ["array", "math", "bit-manipulation"],
@@ -1627,6 +2122,34 @@
           { input: [[0, 1, 2, 3, 4, 6]], expected: 5 },
           { input: [[1]], expected: 0 },
           { input: [[0]], expected: 1 }
+        ]
+      },
+      {
+        title: "Find All Missing Numbers",
+        category: "array",
+        tags: ["array", "hashmap", "finding"],
+        difficulty: 4,
+        description: "Given a list of numbers from 1 to n with some missing, return all missing numbers.",
+        starterCode: "def find_all_missing(numbers, n):\n    pass",
+        tests: [
+          { input: [[1, 3, 5], 5], expected: [2, 4] },
+          { input: [[1, 2, 3, 4], 5], expected: [5] },
+          { input: [[2, 4, 6], 6], expected: [1, 3, 5] },
+          { input: [[1, 2, 3, 4, 5], 5], expected: [] }
+        ]
+      },
+      {
+        title: "First Missing Positive",
+        category: "array",
+        tags: ["array", "hashmap", "optimization"],
+        difficulty: 4,
+        description: "Find the smallest missing positive integer in an unsorted list.",
+        starterCode: "def first_missing_positive(numbers):\n    pass",
+        tests: [
+          { input: [[1, 2, 0]], expected: 3 },
+          { input: [[3, 4, -1, 1]], expected: 2 },
+          { input: [[7, 8, 9, 11, 12]], expected: 1 },
+          { input: [[1, 2, 3, 4]], expected: 5 }
         ]
       },
       {
@@ -1644,6 +2167,34 @@
         ]
       },
       {
+        title: "Decompress String",
+        category: "string",
+        tags: ["string", "iteration", "parsing"],
+        difficulty: 3,
+        description: "Write a function that decompresses a string (e.g., 'a3b2c1' -> 'aaabbc').",
+        starterCode: "def decompress_string(s):\n    pass",
+        tests: [
+          { input: ["a3b2c1"], expected: "aaabbc" },
+          { input: ["a1b1c1"], expected: "abc" },
+          { input: ["a3"], expected: "aaa" },
+          { input: [""], expected: "" }
+        ]
+      },
+      {
+        title: "Compress Better",
+        category: "string",
+        tags: ["string", "iteration", "optimization"],
+        difficulty: 3,
+        description: "Write a function that compresses a string but only if it results in a shorter string (e.g., 'abc' stays 'abc').",
+        starterCode: "def compress_better(s):\n    pass",
+        tests: [
+          { input: ["aaabbc"], expected: "a3b2c1" },
+          { input: ["abc"], expected: "abc" },
+          { input: ["aaa"], expected: "a3" },
+          { input: ["aabb"], expected: "aabb" }
+        ]
+      },
+      {
         title: "Move Zeros",
         category: "array",
         tags: ["array", "two-pointer", "in-place"],
@@ -1658,6 +2209,34 @@
         ]
       },
       {
+        title: "Move Element to End",
+        category: "array",
+        tags: ["array", "two-pointer", "in-place"],
+        difficulty: 3,
+        description: "Write a function that moves all instances of a given value to the end of a list.",
+        starterCode: "def move_to_end(numbers, val):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 2, 4], 2], expected: [1, 3, 4, 2, 2] },
+          { input: [[1, 1, 1], 1], expected: [1, 1, 1] },
+          { input: [[1, 2, 3], 4], expected: [1, 2, 3] },
+          { input: [[5], 5], expected: [5] }
+        ]
+      },
+      {
+        title: "Partition Array",
+        category: "array",
+        tags: ["array", "two-pointer", "partitioning"],
+        difficulty: 3,
+        description: "Write a function that partitions a list so all elements less than x come before elements >= x.",
+        starterCode: "def partition_array(numbers, x):\n    pass",
+        tests: [
+          { input: [[3, 1, 4, 2, 5], 3], expected: [1, 2, 3, 4, 5] },
+          { input: [[5, 4, 3, 2, 1], 3], expected: [2, 1, 5, 4, 3] },
+          { input: [[1, 2, 3], 4], expected: [1, 2, 3] },
+          { input: [[5], 3], expected: [5] }
+        ]
+      },
+      {
         title: "Find Intersection",
         category: "array",
         tags: ["array", "hashmap", "set-operations"],
@@ -1668,6 +2247,34 @@
           { input: [[1, 2, 3], [2, 3, 4]], expected: [2, 3] },
           { input: [[1, 1, 2], [1, 3]], expected: [1] },
           { input: [[1, 2, 3], [4, 5, 6]], expected: [] },
+          { input: [[], [1, 2]], expected: [] }
+        ]
+      },
+      {
+        title: "Find Union",
+        category: "array",
+        tags: ["array", "hashmap", "set-operations"],
+        difficulty: 3,
+        description: "Write a function that finds the union of two lists (all unique elements).",
+        starterCode: "def union(list1, list2):\n    pass",
+        tests: [
+          { input: [[1, 2, 3], [2, 3, 4]], expected: [1, 2, 3, 4] },
+          { input: [[1, 1, 2], [1, 3]], expected: [1, 2, 3] },
+          { input: [[1, 2, 3], [4, 5, 6]], expected: [1, 2, 3, 4, 5, 6] },
+          { input: [[], [1, 2]], expected: [1, 2] }
+        ]
+      },
+      {
+        title: "Find Difference",
+        category: "array",
+        tags: ["array", "hashmap", "set-operations"],
+        difficulty: 3,
+        description: "Write a function that finds elements in list1 that are not in list2.",
+        starterCode: "def difference(list1, list2):\n    pass",
+        tests: [
+          { input: [[1, 2, 3], [2, 3, 4]], expected: [1] },
+          { input: [[1, 1, 2], [1]], expected: [2] },
+          { input: [[1, 2, 3], [4, 5, 6]], expected: [1, 2, 3] },
           { input: [[], [1, 2]], expected: [] }
         ]
       },
@@ -1687,6 +2294,34 @@
         ]
       },
       {
+        title: "Is Power of N",
+        category: "math",
+        tags: ["math", "logarithm", "optimization"],
+        difficulty: 3,
+        description: "Write a function that checks if a number is a power of n.",
+        starterCode: "def is_power_of_n(num, n):\n    pass",
+        tests: [
+          { input: [27, 3], expected: true },
+          { input: [16, 2], expected: true },
+          { input: [18, 3], expected: false },
+          { input: [1, 5], expected: true }
+        ]
+      },
+      {
+        title: "Find Power of Two",
+        category: "math",
+        tags: ["math", "bit-manipulation", "logarithm"],
+        difficulty: 3,
+        description: "Write a function that returns which power of two equals n (e.g., 8 -> 3 because 2^3 = 8). Return -1 if not a power of two.",
+        starterCode: "def power_of_two_exponent(n):\n    pass",
+        tests: [
+          { input: [16], expected: 4 },
+          { input: [8], expected: 3 },
+          { input: [1], expected: 0 },
+          { input: [18], expected: -1 }
+        ]
+      },
+      {
         title: "Chunk Array",
         category: "array",
         tags: ["array", "slicing", "iteration"],
@@ -1701,6 +2336,34 @@
         ]
       },
       {
+        title: "Chunk Array N Parts",
+        category: "array",
+        tags: ["array", "slicing", "math"],
+        difficulty: 3,
+        description: "Write a function that splits a list into n equal (or nearly equal) parts.",
+        starterCode: "def chunk_n_parts(lst, n):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5], 2], expected: [[1, 2, 3], [4, 5]] },
+          { input: [[1, 2, 3, 4], 2], expected: [[1, 2], [3, 4]] },
+          { input: [[1, 2, 3], 1], expected: [[1, 2, 3]] },
+          { input: [[1, 2, 3, 4, 5, 6], 3], expected: [[1, 2], [3, 4], [5, 6]] }
+        ]
+      },
+      {
+        title: "Sliding Window",
+        category: "array",
+        tags: ["array", "sliding-window", "iteration"],
+        difficulty: 3,
+        description: "Write a function that returns all sliding windows of size k from a list.",
+        starterCode: "def sliding_windows(lst, k):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4, 5], 3], expected: [[1, 2, 3], [2, 3, 4], [3, 4, 5]] },
+          { input: [[1, 2, 3], 2], expected: [[1, 2], [2, 3]] },
+          { input: [[1, 2, 3], 1], expected: [[1], [2], [3]] },
+          { input: [[1, 2], 3], expected: [] }
+        ]
+      },
+      {
         title: "First Non-Repeating Character",
         category: "string",
         tags: ["string", "hashmap", "counting"],
@@ -1711,6 +2374,34 @@
           { input: ["leetcode"], expected: "l" },
           { input: ["loveleetcode"], expected: "v" },
           { input: ["aabb"], expected: "" },
+          { input: [""], expected: "" }
+        ]
+      },
+      {
+        title: "All Non-Repeating Characters",
+        category: "string",
+        tags: ["string", "hashmap", "counting"],
+        difficulty: 4,
+        description: "Write a function that returns all non-repeating characters in a string in order.",
+        starterCode: "def all_unique_chars(s):\n    pass",
+        tests: [
+          { input: ["leetcode"], expected: "ltcd" },
+          { input: ["loveleetcode"], expected: "vcd" },
+          { input: ["aabb"], expected: "" },
+          { input: [""], expected: "" }
+        ]
+      },
+      {
+        title: "First Repeating Character",
+        category: "string",
+        tags: ["string", "hashmap", "counting"],
+        difficulty: 4,
+        description: "Write a function that finds the first repeating character in a string.",
+        starterCode: "def first_repeating_char(s):\n    pass",
+        tests: [
+          { input: ["leetcode"], expected: "e" },
+          { input: ["loveleetcode"], expected: "l" },
+          { input: ["abc"], expected: "" },
           { input: [""], expected: "" }
         ]
       },
@@ -1729,12 +2420,68 @@
         ]
       },
       {
+        title: "Least Common Multiple",
+        category: "math",
+        tags: ["math", "gcd", "lcm"],
+        difficulty: 4,
+        description: "Write a function that finds the LCM (least common multiple) of two numbers.",
+        starterCode: "def lcm(a, b):\n    pass",
+        tests: [
+          { input: [12, 8], expected: 24 },
+          { input: [5, 7], expected: 35 },
+          { input: [100, 50], expected: 100 },
+          { input: [7, 7], expected: 7 }
+        ]
+      },
+      {
+        title: "GCD of List",
+        category: "math",
+        tags: ["math", "recursion", "reduction"],
+        difficulty: 4,
+        description: "Write a function that finds the GCD of a list of numbers.",
+        starterCode: "def gcd_list(numbers):\n    pass",
+        tests: [
+          { input: [[12, 8, 16]], expected: 4 },
+          { input: [[5, 10, 15, 20]], expected: 5 },
+          { input: [[7]], expected: 7 },
+          { input: [[100, 50, 25]], expected: 25 }
+        ]
+      },
+      {
         title: "Remove Duplicates Sorted",
         category: "array",
         tags: ["array", "two-pointer", "in-place"],
         difficulty: 3,
         description: "Write a function that removes duplicates from a sorted list and returns the length of unique elements.",
         starterCode: "def remove_duplicates_sorted(numbers):\n    pass",
+        tests: [
+          { input: [[1, 1, 2, 2, 3]], expected: 3 },
+          { input: [[1, 2, 3]], expected: 3 },
+          { input: [[1, 1, 1]], expected: 1 },
+          { input: [[]], expected: 0 }
+        ]
+      },
+      {
+        title: "Get Unique Sorted",
+        category: "array",
+        tags: ["array", "two-pointer", "in-place"],
+        difficulty: 3,
+        description: "Write a function that returns a new list with only unique elements from a sorted list.",
+        starterCode: "def get_unique_sorted(numbers):\n    pass",
+        tests: [
+          { input: [[1, 1, 2, 2, 3]], expected: [1, 2, 3] },
+          { input: [[1, 2, 3]], expected: [1, 2, 3] },
+          { input: [[1, 1, 1]], expected: [1] },
+          { input: [[]], expected: [] }
+        ]
+      },
+      {
+        title: "Count Unique Sorted",
+        category: "array",
+        tags: ["array", "counting", "optimization"],
+        difficulty: 3,
+        description: "Write a function that counts unique elements in a sorted list.",
+        starterCode: "def count_unique_sorted(numbers):\n    pass",
         tests: [
           { input: [[1, 1, 2, 2, 3]], expected: 3 },
           { input: [[1, 2, 3]], expected: 3 },
@@ -1758,6 +2505,34 @@
         ]
       },
       {
+        title: "Pascal's Triangle",
+        category: "math",
+        tags: ["math", "dynamic-programming", "combinatorics"],
+        difficulty: 4,
+        description: "Write a function that returns the first n rows of Pascal's triangle.",
+        starterCode: "def pascal_triangle(n):\n    pass",
+        tests: [
+          { input: [1], expected: [[1]] },
+          { input: [2], expected: [[1], [1, 1]] },
+          { input: [3], expected: [[1], [1, 1], [1, 2, 1]] },
+          { input: [4], expected: [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1]] }
+        ]
+      },
+      {
+        title: "Pascal Element",
+        category: "math",
+        tags: ["math", "combinatorics", "binomial"],
+        difficulty: 4,
+        description: "Write a function that returns the element at position (row, col) in Pascal's triangle.",
+        starterCode: "def pascal_element(row, col):\n    pass",
+        tests: [
+          { input: [2, 1], expected: 2 },
+          { input: [3, 1], expected: 3 },
+          { input: [4, 2], expected: 6 },
+          { input: [0, 0], expected: 1 }
+        ]
+      },
+      {
         title: "String Rotation",
         category: "string",
         tags: ["string", "string-manipulation", "pattern-matching"],
@@ -1769,6 +2544,34 @@
           { input: ["hello", "llohe"], expected: true },
           { input: ["hello", "world"], expected: false },
           { input: ["abc", "bca"], expected: true }
+        ]
+      },
+      {
+        title: "All String Rotations",
+        category: "string",
+        tags: ["string", "string-manipulation", "generation"],
+        difficulty: 4,
+        description: "Write a function that returns all possible rotations of a string.",
+        starterCode: "def all_rotations(s):\n    pass",
+        tests: [
+          { input: ["abc"], expected: ["abc", "bca", "cab"] },
+          { input: ["ab"], expected: ["ab", "ba"] },
+          { input: ["a"], expected: ["a"] },
+          { input: [""], expected: [""] }
+        ]
+      },
+      {
+        title: "Rotation Distance",
+        category: "string",
+        tags: ["string", "string-manipulation", "counting"],
+        difficulty: 4,
+        description: "Write a function that returns the minimum number of rotations needed to transform s1 into s2, or -1 if impossible.",
+        starterCode: "def rotation_distance(s1, s2):\n    pass",
+        tests: [
+          { input: ["abc", "bca"], expected: 1 },
+          { input: ["abc", "cab"], expected: 2 },
+          { input: ["abc", "xyz"], expected: -1 },
+          { input: ["abc", "abc"], expected: 0 }
         ]
       },
       {
@@ -1786,6 +2589,34 @@
         ]
       },
       {
+        title: "Find All Peaks",
+        category: "array",
+        tags: ["array", "iteration", "local-maximum"],
+        difficulty: 5,
+        description: "Write a function that returns all indices of peak elements in a list.",
+        starterCode: "def find_all_peaks(numbers):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 1]], expected: [2] },
+          { input: [[1, 2, 1, 3, 5, 6, 4]], expected: [1, 5] },
+          { input: [[5]], expected: [0] },
+          { input: [[1, 2, 3]], expected: [2] }
+        ]
+      },
+      {
+        title: "Find Valley Element",
+        category: "array",
+        tags: ["array", "iteration", "local-minimum"],
+        difficulty: 5,
+        description: "Write a function that returns the index of a valley element (element less than or equal to its neighbors).",
+        starterCode: "def find_valley(numbers):\n    pass",
+        tests: [
+          { input: [[3, 2, 1, 2]], expected: 2 },
+          { input: [[5, 3, 4, 1, 2]], expected: 3 },
+          { input: [[5]], expected: 0 },
+          { input: [[3, 2, 1]], expected: 2 }
+        ]
+      },
+      {
         title: "Count Consonants",
         category: "string",
         tags: ["string", "counting", "iteration"],
@@ -1797,6 +2628,34 @@
           { input: ["programming"], expected: 8 },
           { input: ["aeiou"], expected: 0 },
           { input: ["xyz"], expected: 3 }
+        ]
+      },
+      {
+        title: "Consonant Percentage",
+        category: "string",
+        tags: ["string", "counting", "math"],
+        difficulty: 2,
+        description: "Write a function that returns the percentage of consonants in a string (0-100).",
+        starterCode: "def consonant_percentage(s):\n    pass",
+        tests: [
+          { input: ["hello"], expected: 60.0 },
+          { input: ["aeiou"], expected: 0.0 },
+          { input: ["bcdfg"], expected: 100.0 },
+          { input: [""], expected: 0.0 }
+        ]
+      },
+      {
+        title: "Extract Consonants",
+        category: "string",
+        tags: ["string", "filtering", "iteration"],
+        difficulty: 2,
+        description: "Write a function that returns a string containing only the consonants from the input.",
+        starterCode: "def extract_consonants(s):\n    pass",
+        tests: [
+          { input: ["hello"], expected: "hll" },
+          { input: ["programming"], expected: "prgrmmng" },
+          { input: ["aeiou"], expected: "" },
+          { input: ["xyz"], expected: "xyz" }
         ]
       },
       {
@@ -1814,6 +2673,34 @@
         ]
       },
       {
+        title: "Has Majority Element",
+        category: "array",
+        tags: ["array", "hashmap", "counting"],
+        difficulty: 4,
+        description: "Write a function that checks if a majority element exists in a list.",
+        starterCode: "def has_majority(numbers):\n    pass",
+        tests: [
+          { input: [[3, 2, 3]], expected: true },
+          { input: [[1, 2, 3]], expected: false },
+          { input: [[1]], expected: true },
+          { input: [[1, 1, 2, 2]], expected: false }
+        ]
+      },
+      {
+        title: "Find All Majorities",
+        category: "array",
+        tags: ["array", "hashmap", "counting"],
+        difficulty: 4,
+        description: "Write a function that finds all elements that appear more than n/3 times in a list.",
+        starterCode: "def find_all_majorities(numbers):\n    pass",
+        tests: [
+          { input: [[3, 2, 3]], expected: [3] },
+          { input: [[1, 1, 1, 3, 3, 2, 2, 2]], expected: [1, 2] },
+          { input: [[1]], expected: [1] },
+          { input: [[1, 2, 3]], expected: [] }
+        ]
+      },
+      {
         title: "Product Except Self",
         category: "array",
         tags: ["array", "prefix-sum", "optimization"],
@@ -1828,6 +2715,34 @@
         ]
       },
       {
+        title: "Sum Except Self",
+        category: "array",
+        tags: ["array", "prefix-sum", "optimization"],
+        difficulty: 5,
+        description: "Write a function that returns a list where each element is the sum of all elements except itself.",
+        starterCode: "def sum_except_self(numbers):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4]], expected: [9, 8, 7, 6] },
+          { input: [[2, 3, 4]], expected: [7, 6, 5] },
+          { input: [[1, 1]], expected: [1, 1] },
+          { input: [[5]], expected: [0] }
+        ]
+      },
+      {
+        title: "Max Except Self",
+        category: "array",
+        tags: ["array", "optimization", "max-finding"],
+        difficulty: 5,
+        description: "Write a function that returns a list where each element is the maximum of all elements except itself.",
+        starterCode: "def max_except_self(numbers):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 4]], expected: [4, 4, 4, 3] },
+          { input: [[5, 3, 4]], expected: [4, 5, 5] },
+          { input: [[1, 1]], expected: [1, 1] },
+          { input: [[5]], expected: 0 }
+        ]
+      },
+      {
         title: "Camel Case to Snake Case",
         category: "string",
         tags: ["string", "regex", "formatting"],
@@ -1838,6 +2753,34 @@
           { input: ["camelCase"], expected: "camel_case" },
           { input: ["helloWorld"], expected: "hello_world" },
           { input: ["myVariable"], expected: "my_variable" },
+          { input: ["simple"], expected: "simple" }
+        ]
+      },
+      {
+        title: "Snake to Pascal Case",
+        category: "string",
+        tags: ["string", "formatting", "case-conversion"],
+        difficulty: 3,
+        description: "Write a function that converts snake_case to PascalCase.",
+        starterCode: "def snake_to_pascal(s):\n    pass",
+        tests: [
+          { input: ["snake_case"], expected: "SnakeCase" },
+          { input: ["hello_world"], expected: "HelloWorld" },
+          { input: ["my_variable"], expected: "MyVariable" },
+          { input: ["simple"], expected: "Simple" }
+        ]
+      },
+      {
+        title: "Kebab to Camel Case",
+        category: "string",
+        tags: ["string", "formatting", "case-conversion"],
+        difficulty: 3,
+        description: "Write a function that converts kebab-case to camelCase.",
+        starterCode: "def kebab_to_camel(s):\n    pass",
+        tests: [
+          { input: ["kebab-case"], expected: "kebabCase" },
+          { input: ["hello-world"], expected: "helloWorld" },
+          { input: ["my-variable"], expected: "myVariable" },
           { input: ["simple"], expected: "simple" }
         ]
       },
@@ -1856,6 +2799,34 @@
         ]
       },
       {
+        title: "Has Duplicates",
+        category: "array",
+        tags: ["array", "hashmap", "boolean"],
+        difficulty: 3,
+        description: "Write a function that checks if a list contains any duplicates.",
+        starterCode: "def has_duplicates(numbers):\n    pass",
+        tests: [
+          { input: [[4, 3, 2, 7, 8, 2, 3, 1]], expected: true },
+          { input: [[1, 2, 3]], expected: false },
+          { input: [[1, 1]], expected: true },
+          { input: [[]], expected: false }
+        ]
+      },
+      {
+        title: "Duplicate Positions",
+        category: "array",
+        tags: ["array", "hashmap", "indexing"],
+        difficulty: 3,
+        description: "Write a function that returns a dict mapping each duplicate element to its list of indices.",
+        starterCode: "def duplicate_positions(numbers):\n    pass",
+        tests: [
+          { input: [[4, 3, 2, 7, 2, 3, 1]], expected: {2: [2, 4], 3: [1, 5]} },
+          { input: [[1, 1, 1]], expected: {1: [0, 1, 2]} },
+          { input: [[1, 2, 3]], expected: {} },
+          { input: [[]], expected: {} }
+        ]
+      },
+      {
         title: "Is Armstrong Number",
         category: "math",
         tags: ["math", "digit-manipulation"],
@@ -1867,6 +2838,33 @@
           { input: [370], expected: true },
           { input: [123], expected: false },
           { input: [9], expected: true }
+        ]
+      },
+      {
+        title: "Find Armstrong Numbers",
+        category: "math",
+        tags: ["math", "digit-manipulation", "generation"],
+        difficulty: 3,
+        description: "Write a function that returns all Armstrong numbers up to n.",
+        starterCode: "def find_armstrong_numbers(n):\n    pass",
+        tests: [
+          { input: [500], expected: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407] },
+          { input: [10], expected: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] },
+          { input: [200], expected: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 153] }
+        ]
+      },
+      {
+        title: "Armstrong Sum",
+        category: "math",
+        tags: ["math", "digit-manipulation"],
+        difficulty: 3,
+        description: "Write a function that returns the Armstrong sum (sum of digits raised to the power of digit count) of a number.",
+        starterCode: "def armstrong_sum(n):\n    pass",
+        tests: [
+          { input: [153], expected: 153 },
+          { input: [123], expected: 36 },
+          { input: [9], expected: 9 },
+          { input: [100], expected: 1 }
         ]
       },
       {
@@ -1884,6 +2882,34 @@
         ]
       },
       {
+        title: "Get Longest Unique Substring",
+        category: "string",
+        tags: ["string", "sliding-window", "hashmap"],
+        difficulty: 6,
+        description: "Write a function that returns the actual longest substring without repeating characters.",
+        starterCode: "def get_longest_unique_substring(s):\n    pass",
+        tests: [
+          { input: ["abcabcbb"], expected: "abc" },
+          { input: ["bbbbb"], expected: "b" },
+          { input: ["pwwkew"], expected: "wke" },
+          { input: [""], expected: "" }
+        ]
+      },
+      {
+        title: "Longest Substring With K Distinct",
+        category: "string",
+        tags: ["string", "sliding-window", "hashmap"],
+        difficulty: 6,
+        description: "Write a function that finds the length of the longest substring with at most k distinct characters.",
+        starterCode: "def longest_k_distinct(s, k):\n    pass",
+        tests: [
+          { input: ["eceba", 2], expected: 3 },
+          { input: ["aa", 1], expected: 2 },
+          { input: ["abcabc", 2], expected: 2 },
+          { input: ["", 2], expected: 0 }
+        ]
+      },
+      {
         title: "Find Union",
         category: "array",
         tags: ["array", "set-operations", "hashmap"],
@@ -1895,6 +2921,34 @@
           { input: [[1, 2], [2, 3]], expected: [1, 2, 3] },
           { input: [[], [1, 2]], expected: [1, 2] },
           { input: [[1, 1], [1, 2]], expected: [1, 2] }
+        ]
+      },
+      {
+        title: "Symmetric Difference",
+        category: "array",
+        tags: ["array", "set-operations", "hashmap"],
+        difficulty: 2,
+        description: "Write a function that finds elements that are in either list but not in both.",
+        starterCode: "def symmetric_difference(list1, list2):\n    pass",
+        tests: [
+          { input: [[1, 2, 3], [3, 4, 5]], expected: [1, 2, 4, 5] },
+          { input: [[1, 2], [2, 3]], expected: [1, 3] },
+          { input: [[], [1, 2]], expected: [1, 2] },
+          { input: [[1, 1], [1, 2]], expected: [2] }
+        ]
+      },
+      {
+        title: "Is Subset",
+        category: "array",
+        tags: ["array", "set-operations", "hashmap"],
+        difficulty: 2,
+        description: "Write a function that checks if list1 is a subset of list2.",
+        starterCode: "def is_subset(list1, list2):\n    pass",
+        tests: [
+          { input: [[1, 2], [1, 2, 3]], expected: true },
+          { input: [[1, 4], [1, 2, 3]], expected: false },
+          { input: [[], [1, 2]], expected: true },
+          { input: [[1, 1], [1, 2]], expected: true }
         ]
       },
       {
@@ -1913,6 +2967,35 @@
         ]
       },
       {
+        title: "Is Perfect Cube",
+        category: "math",
+        tags: ["math", "binary-search", "cube-root"],
+        difficulty: 3,
+        description: "Write a function that checks if a number is a perfect cube.",
+        starterCode: "def is_perfect_cube(n):\n    pass",
+        tests: [
+          { input: [27], expected: true },
+          { input: [14], expected: false },
+          { input: [1], expected: true },
+          { input: [0], expected: true },
+          { input: [64], expected: true }
+        ]
+      },
+      {
+        title: "Next Perfect Square",
+        category: "math",
+        tags: ["math", "sqrt", "arithmetic"],
+        difficulty: 3,
+        description: "Write a function that returns the next perfect square after n.",
+        starterCode: "def next_perfect_square(n):\n    pass",
+        tests: [
+          { input: [16], expected: 25 },
+          { input: [14], expected: 16 },
+          { input: [1], expected: 4 },
+          { input: [0], expected: 1 }
+        ]
+      },
+      {
         title: "Reverse Integer",
         category: "math",
         tags: ["math", "digit-manipulation"],
@@ -1923,6 +3006,34 @@
           { input: [123], expected: 321 },
           { input: [-123], expected: -321 },
           { input: [120], expected: 21 },
+          { input: [0], expected: 0 }
+        ]
+      },
+      {
+        title: "Is Palindrome Number",
+        category: "math",
+        tags: ["math", "digit-manipulation", "palindrome"],
+        difficulty: 3,
+        description: "Write a function that checks if a number is a palindrome.",
+        starterCode: "def is_palindrome_number(n):\n    pass",
+        tests: [
+          { input: [121], expected: true },
+          { input: [-121], expected: false },
+          { input: [10], expected: false },
+          { input: [0], expected: true }
+        ]
+      },
+      {
+        title: "Sum of Digits Until Single",
+        category: "math",
+        tags: ["math", "digit-manipulation", "iteration"],
+        difficulty: 3,
+        description: "Write a function that repeatedly sums digits until a single digit remains (same as digital root).",
+        starterCode: "def sum_until_single(n):\n    pass",
+        tests: [
+          { input: [38], expected: 2 },
+          { input: [123], expected: 6 },
+          { input: [9], expected: 9 },
           { input: [0], expected: 0 }
         ]
       },
@@ -1941,6 +3052,34 @@
         ]
       },
       {
+        title: "Contains Duplicate Within K",
+        category: "array",
+        tags: ["array", "hashmap", "sliding-window"],
+        difficulty: 3,
+        description: "Write a function that checks if there are two distinct indices i and j where nums[i] == nums[j] and abs(i - j) <= k.",
+        starterCode: "def contains_nearby_duplicate(numbers, k):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 1], 3], expected: true },
+          { input: [[1, 0, 1, 1], 1], expected: true },
+          { input: [[1, 2, 3, 1, 2, 3], 2], expected: false },
+          { input: [[], 1], expected: false }
+        ]
+      },
+      {
+        title: "First Duplicate Index",
+        category: "array",
+        tags: ["array", "hashmap", "indexing"],
+        difficulty: 2,
+        description: "Write a function that returns the index of the first element that has a duplicate in the list, or -1 if none.",
+        starterCode: "def first_duplicate_index(numbers):\n    pass",
+        tests: [
+          { input: [[1, 2, 3, 1]], expected: 0 },
+          { input: [[1, 2, 3, 4]], expected: -1 },
+          { input: [[2, 1, 2]], expected: 0 },
+          { input: [[]], expected: -1 }
+        ]
+      },
+      {
         title: "Happy Number",
         category: "math",
         tags: ["math", "hashmap", "cycle-detection"],
@@ -1952,6 +3091,33 @@
           { input: [2], expected: false },
           { input: [1], expected: true },
           { input: [7], expected: true }
+        ]
+      },
+      {
+        title: "Happy Number Steps",
+        category: "math",
+        tags: ["math", "hashmap", "counting"],
+        difficulty: 5,
+        description: "Write a function that returns the number of steps to determine if a number is happy (reaches 1) or sad (cycles). Return -1 if it cycles.",
+        starterCode: "def happy_number_steps(n):\n    pass",
+        tests: [
+          { input: [19], expected: 4 },
+          { input: [2], expected: -1 },
+          { input: [1], expected: 0 },
+          { input: [7], expected: 5 }
+        ]
+      },
+      {
+        title: "Find Happy Numbers",
+        category: "math",
+        tags: ["math", "generation", "cycle-detection"],
+        difficulty: 5,
+        description: "Write a function that returns all happy numbers less than or equal to n.",
+        starterCode: "def find_happy_numbers(n):\n    pass",
+        tests: [
+          { input: [20], expected: [1, 7, 10, 13, 19] },
+          { input: [10], expected: [1, 7, 10] },
+          { input: [1], expected: [1] }
         ]
       },
       {
@@ -1969,6 +3135,32 @@
         ]
       },
       {
+        title: "Bubble Sort Descending",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "array"],
+        difficulty: 3,
+        description: "Write a function that implements bubble sort to sort a list in descending order.",
+        starterCode: "def bubble_sort_desc(arr):\n    pass",
+        tests: [
+          { input: [[64, 34, 25, 12, 22, 11, 90]], expected: [90, 64, 34, 25, 22, 12, 11] },
+          { input: [[5, 1, 4, 2, 8]], expected: [8, 5, 4, 2, 1] },
+          { input: [[1, 2, 3]], expected: [3, 2, 1] }
+        ]
+      },
+      {
+        title: "Bubble Sort Count Swaps",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "counting"],
+        difficulty: 3,
+        description: "Write a function that returns the number of swaps made during bubble sort.",
+        starterCode: "def bubble_sort_swaps(arr):\n    pass",
+        tests: [
+          { input: [[3, 2, 1]], expected: 3 },
+          { input: [[1, 2, 3]], expected: 0 },
+          { input: [[5, 1, 4, 2]], expected: 5 }
+        ]
+      },
+      {
         title: "Selection Sort",
         category: "sorting",
         tags: ["sorting", "algorithm", "array"],
@@ -1980,6 +3172,32 @@
           { input: [[5, 3, 8, 1]], expected: [1, 3, 5, 8] },
           { input: [[1]], expected: [1] },
           { input: [[]], expected: [] }
+        ]
+      },
+      {
+        title: "Selection Sort Descending",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "array"],
+        difficulty: 3,
+        description: "Write a function that implements selection sort to sort a list in descending order.",
+        starterCode: "def selection_sort_desc(arr):\n    pass",
+        tests: [
+          { input: [[64, 25, 12, 22, 11]], expected: [64, 25, 22, 12, 11] },
+          { input: [[5, 3, 8, 1]], expected: [8, 5, 3, 1] },
+          { input: [[1]], expected: [1] }
+        ]
+      },
+      {
+        title: "Selection Sort Comparisons",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "counting"],
+        difficulty: 3,
+        description: "Write a function that returns the number of comparisons made during selection sort.",
+        starterCode: "def selection_sort_comparisons(arr):\n    pass",
+        tests: [
+          { input: [[5, 3, 8, 1]], expected: 6 },
+          { input: [[1, 2, 3]], expected: 3 },
+          { input: [[1]], expected: 0 }
         ]
       },
       {
@@ -1997,6 +3215,32 @@
         ]
       },
       {
+        title: "Merge K Sorted Lists",
+        category: "array",
+        tags: ["array", "merging", "heap"],
+        difficulty: 5,
+        description: "Write a function that merges k sorted lists into one sorted list.",
+        starterCode: "def merge_k_lists(lists):\n    pass",
+        tests: [
+          { input: [[[1, 4], [2, 3], [5, 6]]], expected: [1, 2, 3, 4, 5, 6] },
+          { input: [[[1], [2], [3]]], expected: [1, 2, 3] },
+          { input: [[[1, 5], [2, 4], [3, 6]]], expected: [1, 2, 3, 4, 5, 6] }
+        ]
+      },
+      {
+        title: "Merge Intervals",
+        category: "array",
+        tags: ["array", "intervals", "sorting"],
+        difficulty: 4,
+        description: "Write a function that merges overlapping intervals.",
+        starterCode: "def merge_intervals(intervals):\n    pass",
+        tests: [
+          { input: [[[1, 3], [2, 6], [8, 10], [15, 18]]], expected: [[1, 6], [8, 10], [15, 18]] },
+          { input: [[[1, 4], [4, 5]]], expected: [[1, 5]] },
+          { input: [[[1, 4], [0, 4]]], expected: [[0, 4]] }
+        ]
+      },
+      {
         title: "Binary Search",
         category: "searching",
         tags: ["searching", "binary-search", "algorithm"],
@@ -2008,6 +3252,32 @@
           { input: [[1, 2, 3, 4, 5], 1], expected: 0 },
           { input: [[1, 2, 3, 4, 5], 5], expected: 4 },
           { input: [[1, 2, 3, 4, 5], 6], expected: -1 }
+        ]
+      },
+      {
+        title: "Binary Search First Occurrence",
+        category: "searching",
+        tags: ["searching", "binary-search", "algorithm"],
+        difficulty: 4,
+        description: "Write a function that finds the first occurrence of a target in a sorted array with duplicates.",
+        starterCode: "def binary_search_first(arr, target):\n    pass",
+        tests: [
+          { input: [[1, 2, 2, 2, 3, 4, 5], 2], expected: 1 },
+          { input: [[1, 1, 1, 1, 1], 1], expected: 0 },
+          { input: [[1, 2, 3, 4, 5], 3], expected: 2 }
+        ]
+      },
+      {
+        title: "Binary Search Last Occurrence",
+        category: "searching",
+        tags: ["searching", "binary-search", "algorithm"],
+        difficulty: 4,
+        description: "Write a function that finds the last occurrence of a target in a sorted array with duplicates.",
+        starterCode: "def binary_search_last(arr, target):\n    pass",
+        tests: [
+          { input: [[1, 2, 2, 2, 3, 4, 5], 2], expected: 3 },
+          { input: [[1, 1, 1, 1, 1], 1], expected: 4 },
+          { input: [[1, 2, 3, 4, 5], 3], expected: 2 }
         ]
       },
       {
@@ -2024,6 +3294,32 @@
         ]
       },
       {
+        title: "Count Anagram Groups",
+        category: "string",
+        tags: ["string", "hashmap", "counting"],
+        difficulty: 5,
+        description: "Write a function that counts the number of anagram groups in a list of strings.",
+        starterCode: "def count_anagram_groups(words):\n    pass",
+        tests: [
+          { input: [["eat", "tea", "tan", "ate", "nat", "bat"]], expected: 3 },
+          { input: [["a"]], expected: 1 },
+          { input: [["", ""]], expected: 1 }
+        ]
+      },
+      {
+        title: "Largest Anagram Group",
+        category: "string",
+        tags: ["string", "hashmap", "max-finding"],
+        difficulty: 5,
+        description: "Write a function that returns the size of the largest anagram group.",
+        starterCode: "def largest_anagram_group(words):\n    pass",
+        tests: [
+          { input: [["eat", "tea", "tan", "ate", "nat", "bat"]], expected: 3 },
+          { input: [["a"]], expected: 1 },
+          { input: [["abc", "def", "ghi"]], expected: 1 }
+        ]
+      },
+      {
         title: "Insertion Sort",
         category: "sorting",
         tags: ["sorting", "algorithm", "array"],
@@ -2035,6 +3331,32 @@
           { input: [[5, 2, 4, 6, 1, 3]], expected: [1, 2, 3, 4, 5, 6] },
           { input: [[1, 2, 3]], expected: [1, 2, 3] },
           { input: [[]], expected: [] }
+        ]
+      },
+      {
+        title: "Insertion Sort Descending",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "array"],
+        difficulty: 3,
+        description: "Write a function that implements insertion sort to sort a list in descending order.",
+        starterCode: "def insertion_sort_desc(arr):\n    pass",
+        tests: [
+          { input: [[12, 11, 13, 5, 6]], expected: [13, 12, 11, 6, 5] },
+          { input: [[5, 2, 4, 6, 1, 3]], expected: [6, 5, 4, 3, 2, 1] },
+          { input: [[1, 2, 3]], expected: [3, 2, 1] }
+        ]
+      },
+      {
+        title: "Insertion Sort Shifts",
+        category: "sorting",
+        tags: ["sorting", "algorithm", "counting"],
+        difficulty: 3,
+        description: "Write a function that returns the number of shifts made during insertion sort.",
+        starterCode: "def insertion_sort_shifts(arr):\n    pass",
+        tests: [
+          { input: [[12, 11, 13, 5, 6]], expected: 7 },
+          { input: [[1, 2, 3]], expected: 0 },
+          { input: [[3, 2, 1]], expected: 3 }
         ]
       },
       {
