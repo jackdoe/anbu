@@ -2560,6 +2560,27 @@
 
       document.getElementById('currentNum').textContent = currentChallenge + 1;
       document.getElementById('totalNum').textContent = CHALLENGES.length;
+
+      // Color code the challenge counter based on difficulty
+      const counter = document.querySelector('.challenge-counter');
+      const difficulty = challenge.difficulty;
+      let bgColor;
+
+      if (difficulty <= 2) {
+        // Easy: greenish
+        bgColor = '#c8e6c9';
+      } else if (difficulty <= 4) {
+        // Medium: yellowish
+        bgColor = '#fff9c4';
+      } else if (difficulty <= 6) {
+        // Hard: orangeish
+        bgColor = '#ffe0b2';
+      } else {
+        // Very Hard: reddish
+        bgColor = '#ffcdd2';
+      }
+
+      counter.style.backgroundColor = bgColor;
       
       const testCasesDiv = document.getElementById('testCases');
       testCasesDiv.innerHTML = challenge.tests.map(function(test, idx) {
