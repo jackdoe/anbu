@@ -56,6 +56,31 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .category-filter {
+      background: #fff;
+      border: 4px solid #000;
+      padding: 8px 16px;
+      font-family: 'Lexend Mega', sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 4px 4px 0 #000;
+      transition: all 0.1s;
+      text-transform: uppercase;
+      min-width: 150px;
+    }
+
+    .category-filter:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    .category-filter:focus {
+      outline: none;
+      border-color: #4ecdc4;
     }
 
     .nav-btn {
@@ -564,6 +589,12 @@
         justify-content: center;
       }
 
+      .category-filter {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+
       .nav-btn {
         width: 45px;
         height: 45px;
@@ -682,6 +713,14 @@
       .header h1 {
         font-size: 0.85rem;
         letter-spacing: 1px;
+      }
+
+      .category-filter {
+        font-size: 11px;
+        padding: 6px 10px;
+        border: 3px solid #000;
+        box-shadow: 3px 3px 0 #000;
+        min-width: 120px;
       }
 
       .nav-btn {
@@ -867,6 +906,9 @@
             <span id="currentNum">1</span> / <span id="totalNum">110</span>
           </div>
           <button class="nav-btn" id="nextBtn" onclick="nextChallenge()">▶</button>
+          <select class="category-filter" id="categoryFilter" onchange="filterByCategory()">
+            <option value="all">All Categories</option>
+          </select>
         </div>
         <div class="action-buttons">
           <button class="btn btn-games" onclick="openGames()">
@@ -4104,12 +4146,88 @@
     let pyodide = null;
     let pyodideLoaded = false;
     let storageLoaded = false;
+    let selectedCategory = 'all';
+    let filteredChallenges = [];
 
     // Games Variables
     let currentGame = null;
     let lastPlayedGame = null;
     let gameInterval = null;
     let gameAnimationFrame = null;
+
+    // Initialize category filter
+    function initializeCategoryFilter() {
+      const categorySet = new Set();
+      CHALLENGES.forEach(function(challenge) {
+        categorySet.add(challenge.category);
+      });
+
+      const sortedCategories = Array.from(categorySet).sort();
+      const categoryFilter = document.getElementById('categoryFilter');
+
+      sortedCategories.forEach(function(category) {
+        const option = document.createElement('option');
+        option.value = category;
+        option.textContent = category;
+        categoryFilter.appendChild(option);
+      });
+
+      updateFilteredChallenges();
+    }
+
+    function updateFilteredChallenges() {
+      if (selectedCategory === 'all') {
+        filteredChallenges = CHALLENGES.map(function(_, index) { return index; });
+      } else {
+        filteredChallenges = [];
+        CHALLENGES.forEach(function(challenge, index) {
+          if (challenge.category === selectedCategory) {
+            filteredChallenges.push(index);
+          }
+        });
+      }
+    }
+
+    function filterByCategory() {
+      selectedCategory = document.getElementById('categoryFilter').value;
+      updateFilteredChallenges();
+
+      // Visual indicator when filter is active
+      const categoryFilter = document.getElementById('categoryFilter');
+      if (selectedCategory === 'all') {
+        categoryFilter.style.backgroundColor = '#fff';
+        categoryFilter.style.borderColor = '#000';
+      } else {
+        categoryFilter.style.backgroundColor = '#4ecdc4';
+        categoryFilter.style.borderColor = '#000';
+      }
+
+      // If current challenge is not in filtered list, go to first filtered challenge
+      if (!filteredChallenges.includes(currentChallenge)) {
+        if (filteredChallenges.length > 0) {
+          changeChallenge(filteredChallenges[0]);
+        }
+      } else {
+        // Just update the counter
+        loadChallenge();
+      }
+    }
+
+    function getNextFilteredChallenge() {
+      const currentIndex = filteredChallenges.indexOf(currentChallenge);
+      if (currentIndex < filteredChallenges.length - 1) {
+        return filteredChallenges[currentIndex + 1];
+      }
+      return null;
+    }
+
+    function getPrevFilteredChallenge() {
+      const currentIndex = filteredChallenges.indexOf(currentChallenge);
+      if (currentIndex > 0) {
+        return filteredChallenges[currentIndex - 1];
+      }
+      return null;
+    }
 
     async function loadProgress() {
       // Check URL hash first (e.g., #5 for challenge 5)
@@ -4155,8 +4273,9 @@
       document.getElementById('fileName').textContent = fileName + badge;
       document.getElementById('fileName').style.color = isCompleted ? '#4ecdc4' : '#ffd700';
 
-      document.getElementById('currentNum').textContent = currentChallenge + 1;
-      document.getElementById('totalNum').textContent = CHALLENGES.length;
+      const currentFilteredIndex = filteredChallenges.indexOf(currentChallenge);
+      document.getElementById('currentNum').textContent = currentFilteredIndex + 1;
+      document.getElementById('totalNum').textContent = filteredChallenges.length;
 
       // Color code the challenge counter based on difficulty
       const counter = document.querySelector('.challenge-counter');
@@ -4191,8 +4310,8 @@
         return '<div class="test-case"><div>Input: <code class="test-input">' + inputDisplay + '</code></div><div>Expected: <code class="test-expected">' + JSON.stringify(test.expected) + '</code></div></div>';
       }).join('');
 
-      document.getElementById('prevBtn').disabled = currentChallenge === 0;
-      document.getElementById('nextBtn').disabled = currentChallenge === CHALLENGES.length - 1;
+      document.getElementById('prevBtn').disabled = currentFilteredIndex === 0;
+      document.getElementById('nextBtn').disabled = currentFilteredIndex === filteredChallenges.length - 1;
 
       let code;
       try {
@@ -4222,14 +4341,16 @@
     }
 
     function prevChallenge() {
-      if (currentChallenge > 0) {
-        changeChallenge(currentChallenge - 1);
+      const prevIndex = getPrevFilteredChallenge();
+      if (prevIndex !== null) {
+        changeChallenge(prevIndex);
       }
     }
 
     function nextChallenge() {
-      if (currentChallenge < CHALLENGES.length - 1) {
-        changeChallenge(currentChallenge + 1);
+      const nextIndex = getNextFilteredChallenge();
+      if (nextIndex !== null) {
+        changeChallenge(nextIndex);
       }
     }
 
@@ -4478,6 +4599,9 @@ Please be patient and explain things clearly - I'm here to learn and understand 
 
     // Wait for DOM to be fully ready
     window.addEventListener('DOMContentLoaded', function () {
+      // Initialize category filter
+      initializeCategoryFilter();
+
       require(['vs/editor/editor.main'], async function () {
         // Add a small delay to ensure Monaco is fully loaded
         await new Promise(resolve => setTimeout(resolve, 100));
