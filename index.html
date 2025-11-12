@@ -903,7 +903,7 @@
         <div class="challenge-nav">
           <button class="nav-btn" id="prevBtn" onclick="prevChallenge()">◀</button>
           <div class="challenge-counter">
-            <span id="currentNum">1</span> / <span id="totalNum">110</span>
+            #<span id="currentNum">1</span> / <span id="totalNum">1</span>
           </div>
           <button class="nav-btn" id="nextBtn" onclick="nextChallenge()">▶</button>
           <select class="category-filter" id="categoryFilter" onchange="filterByCategory()">
@@ -4137,6 +4137,335 @@
           { input: [[[5, 6], [7, 8]]], expected: -2 },
           { input: [[[1, 0], [0, 1]]], expected: 1 },
           { input: [[[2, 3], [4, 6]]], expected: 0 }
+        ]
+      },
+      {
+        title: "Create Dictionary",
+        category: "dictionary",
+        tags: ["basics", "dictionary", "creation"],
+        difficulty: 0,
+        description: "Write a function that creates and returns a dictionary with keys 'name', 'age', and 'city' with the provided values.",
+        starterCode: "def create_dict(name, age, city):\n    pass",
+        tests: [
+          { input: ["Alice", 25, "NYC"], expected: { "name": "Alice", "age": 25, "city": "NYC" } },
+          { input: ["Bob", 30, "LA"], expected: { "name": "Bob", "age": 30, "city": "LA" } },
+          { input: ["", 0, ""], expected: { "name": "", "age": 0, "city": "" } }
+        ]
+      },
+      {
+        title: "Get Dictionary Value",
+        category: "dictionary",
+        tags: ["basics", "dictionary", "access"],
+        difficulty: 0,
+        description: "Write a function that returns the value for a given key from a dictionary. Return None if the key doesn't exist.",
+        starterCode: "def get_value(d, key):\n    pass",
+        tests: [
+          { input: [{ "name": "Alice", "age": 25 }, "name"], expected: "Alice" },
+          { input: [{ "name": "Alice", "age": 25 }, "age"], expected: 25 },
+          { input: [{ "name": "Alice", "age": 25 }, "city"], expected: null },
+          { input: [{}, "key"], expected: null }
+        ]
+      },
+      {
+        title: "Add to Dictionary",
+        category: "dictionary",
+        tags: ["basics", "dictionary", "modification"],
+        difficulty: 0,
+        description: "Write a function that adds a new key-value pair to a dictionary and returns it.",
+        starterCode: "def add_to_dict(d, key, value):\n    pass",
+        tests: [
+          { input: [{ "name": "Alice" }, "age", 25], expected: { "name": "Alice", "age": 25 } },
+          { input: [{}, "key", "value"], expected: { "key": "value" } },
+          { input: [{ "a": 1 }, "b", 2], expected: { "a": 1, "b": 2 } }
+        ]
+      },
+      {
+        title: "Dictionary Length",
+        category: "dictionary",
+        tags: ["basics", "dictionary", "counting"],
+        difficulty: 0,
+        description: "Write a function that returns the number of key-value pairs in a dictionary.",
+        starterCode: "def dict_length(d):\n    pass",
+        tests: [
+          { input: [{ "name": "Alice", "age": 25, "city": "NYC" }], expected: 3 },
+          { input: [{}], expected: 0 },
+          { input: [{ "a": 1 }], expected: 1 },
+          { input: [{ "a": 1, "b": 2, "c": 3, "d": 4 }], expected: 4 }
+        ]
+      },
+      {
+        title: "Dictionary Keys",
+        category: "dictionary",
+        tags: ["basics", "dictionary", "keys"],
+        difficulty: 1,
+        description: "Write a function that returns a sorted list of all keys in a dictionary.",
+        starterCode: "def get_keys(d):\n    pass",
+        tests: [
+          { input: [{ "name": "Alice", "age": 25, "city": "NYC" }], expected: ["age", "city", "name"] },
+          { input: [{}], expected: [] },
+          { input: [{ "z": 1, "a": 2, "m": 3 }], expected: ["a", "m", "z"] }
+        ]
+      },
+      {
+        title: "Dictionary Values",
+        category: "dictionary",
+        tags: ["basics", "dictionary", "values"],
+        difficulty: 1,
+        description: "Write a function that returns a list of all values in a dictionary (sorted).",
+        starterCode: "def get_values(d):\n    pass",
+        tests: [
+          { input: [{ "a": 3, "b": 1, "c": 2 }], expected: [1, 2, 3] },
+          { input: [{}], expected: [] },
+          { input: [{ "x": 10, "y": 5, "z": 15 }], expected: [5, 10, 15] }
+        ]
+      },
+      {
+        title: "Dictionary Has Key",
+        category: "dictionary",
+        tags: ["basics", "dictionary", "membership"],
+        difficulty: 1,
+        description: "Write a function that checks if a key exists in a dictionary.",
+        starterCode: "def has_key(d, key):\n    pass",
+        tests: [
+          { input: [{ "name": "Alice", "age": 25 }, "name"], expected: true },
+          { input: [{ "name": "Alice", "age": 25 }, "city"], expected: false },
+          { input: [{}, "key"], expected: false },
+          { input: [{ "a": null }, "a"], expected: true }
+        ]
+      },
+      {
+        title: "Count Character Frequency",
+        category: "dictionary",
+        tags: ["dictionary", "counting", "string"],
+        difficulty: 1,
+        description: "Write a function that returns a dictionary with character frequencies in a string.",
+        starterCode: "def char_frequency(s):\n    pass",
+        tests: [
+          { input: ["hello"], expected: { "h": 1, "e": 1, "l": 2, "o": 1 } },
+          { input: ["aaa"], expected: { "a": 3 } },
+          { input: [""], expected: {} },
+          { input: ["abcabc"], expected: { "a": 2, "b": 2, "c": 2 } }
+        ]
+      },
+      {
+        title: "Merge Dictionaries",
+        category: "dictionary",
+        tags: ["dictionary", "merging", "combination"],
+        difficulty: 1,
+        description: "Write a function that merges two dictionaries. If a key exists in both, use the value from the second dictionary.",
+        starterCode: "def merge_dicts(d1, d2):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2 }, { "c": 3 }], expected: { "a": 1, "b": 2, "c": 3 } },
+          { input: [{ "a": 1 }, { "a": 2 }], expected: { "a": 2 } },
+          { input: [{}, { "x": 1 }], expected: { "x": 1 } },
+          { input: [{ "a": 1, "b": 2 }, { "b": 3, "c": 4 }], expected: { "a": 1, "b": 3, "c": 4 } }
+        ]
+      },
+      {
+        title: "Invert Dictionary",
+        category: "dictionary",
+        tags: ["dictionary", "transformation", "swap"],
+        difficulty: 2,
+        description: "Write a function that swaps keys and values in a dictionary (assume values are unique).",
+        starterCode: "def invert_dict(d):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2, "c": 3 }], expected: { 1: "a", 2: "b", 3: "c" } },
+          { input: [{ "name": "Alice" }], expected: { "Alice": "name" } },
+          { input: [{}], expected: {} }
+        ]
+      },
+      {
+        title: "Filter Dictionary by Value",
+        category: "dictionary",
+        tags: ["dictionary", "filtering", "conditionals"],
+        difficulty: 2,
+        description: "Write a function that returns a new dictionary with only the key-value pairs where the value is greater than n.",
+        starterCode: "def filter_dict(d, n):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 5, "c": 3 }, 2], expected: { "b": 5, "c": 3 } },
+          { input: [{ "a": 10, "b": 20, "c": 5 }, 15], expected: { "b": 20 } },
+          { input: [{ "x": 1, "y": 2 }, 5], expected: {} },
+          { input: [{}, 0], expected: {} }
+        ]
+      },
+      {
+        title: "Dictionary Max Value",
+        category: "dictionary",
+        tags: ["dictionary", "max-finding", "values"],
+        difficulty: 2,
+        description: "Write a function that returns the key with the maximum value in a dictionary.",
+        starterCode: "def dict_max_value(d):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 5, "c": 3 }], expected: "b" },
+          { input: [{ "x": 10 }], expected: "x" },
+          { input: [{ "a": 100, "b": 50, "c": 200 }], expected: "c" }
+        ]
+      },
+      {
+        title: "Dictionary Min Value",
+        category: "dictionary",
+        tags: ["dictionary", "min-finding", "values"],
+        difficulty: 2,
+        description: "Write a function that returns the key with the minimum value in a dictionary.",
+        starterCode: "def dict_min_value(d):\n    pass",
+        tests: [
+          { input: [{ "a": 5, "b": 1, "c": 3 }], expected: "b" },
+          { input: [{ "x": 10 }], expected: "x" },
+          { input: [{ "a": 100, "b": 50, "c": 200 }], expected: "b" }
+        ]
+      },
+      {
+        title: "Sum Dictionary Values",
+        category: "dictionary",
+        tags: ["dictionary", "math", "aggregation"],
+        difficulty: 1,
+        description: "Write a function that returns the sum of all values in a dictionary (assume all values are numbers).",
+        starterCode: "def sum_dict_values(d):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2, "c": 3 }], expected: 6 },
+          { input: [{}], expected: 0 },
+          { input: [{ "x": 10, "y": 20, "z": 30 }], expected: 60 },
+          { input: [{ "a": -5, "b": 5 }], expected: 0 }
+        ]
+      },
+      {
+        title: "Group By Length",
+        category: "dictionary",
+        tags: ["dictionary", "grouping", "string"],
+        difficulty: 2,
+        description: "Write a function that groups words by their length. Return a dictionary where keys are lengths and values are lists of words.",
+        starterCode: "def group_by_length(words):\n    pass",
+        tests: [
+          { input: [["a", "bb", "ccc", "dd"]], expected: { 1: ["a"], 2: ["bb", "dd"], 3: ["ccc"] } },
+          { input: [["hi", "bye", "hey"]], expected: { 2: ["hi"], 3: ["bye", "hey"] } },
+          { input: [[]], expected: {} },
+          { input: [["test"]], expected: { 4: ["test"] } }
+        ]
+      },
+      {
+        title: "Update Dictionary Values",
+        category: "dictionary",
+        tags: ["dictionary", "transformation", "modification"],
+        difficulty: 2,
+        description: "Write a function that multiplies all values in a dictionary by n.",
+        starterCode: "def multiply_values(d, n):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2, "c": 3 }, 2], expected: { "a": 2, "b": 4, "c": 6 } },
+          { input: [{ "x": 10 }, 0], expected: { "x": 0 } },
+          { input: [{}, 5], expected: {} },
+          { input: [{ "a": 5, "b": 10 }, 3], expected: { "a": 15, "b": 30 } }
+        ]
+      },
+      {
+        title: "Dictionary From Lists",
+        category: "dictionary",
+        tags: ["dictionary", "creation", "zip"],
+        difficulty: 1,
+        description: "Write a function that creates a dictionary from two lists (keys and values). Assume both lists have the same length.",
+        starterCode: "def dict_from_lists(keys, values):\n    pass",
+        tests: [
+          { input: [["a", "b", "c"], [1, 2, 3]], expected: { "a": 1, "b": 2, "c": 3 } },
+          { input: [[], []], expected: {} },
+          { input: [["name"], ["Alice"]], expected: { "name": "Alice" } },
+          { input: [["x", "y"], [10, 20]], expected: { "x": 10, "y": 20 } }
+        ]
+      },
+      {
+        title: "Default Dictionary Value",
+        category: "dictionary",
+        tags: ["dictionary", "access", "default"],
+        difficulty: 1,
+        description: "Write a function that returns the value for a key, or a default value if the key doesn't exist.",
+        starterCode: "def get_with_default(d, key, default):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2 }, "a", 0], expected: 1 },
+          { input: [{ "a": 1, "b": 2 }, "c", 0], expected: 0 },
+          { input: [{}, "key", "default"], expected: "default" },
+          { input: [{ "x": null }, "x", 5], expected: null }
+        ]
+      },
+      {
+        title: "Remove Dictionary Keys",
+        category: "dictionary",
+        tags: ["dictionary", "filtering", "removal"],
+        difficulty: 2,
+        description: "Write a function that removes all specified keys from a dictionary and returns the new dictionary.",
+        starterCode: "def remove_keys(d, keys):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2, "c": 3 }, ["a", "c"]], expected: { "b": 2 } },
+          { input: [{ "x": 1, "y": 2 }, []], expected: { "x": 1, "y": 2 } },
+          { input: [{ "a": 1 }, ["b"]], expected: { "a": 1 } },
+          { input: [{}, ["a"]], expected: {} }
+        ]
+      },
+      {
+        title: "Common Dictionary Keys",
+        category: "dictionary",
+        tags: ["dictionary", "set-operations", "keys"],
+        difficulty: 2,
+        description: "Write a function that returns a sorted list of keys that appear in both dictionaries.",
+        starterCode: "def common_keys(d1, d2):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2, "c": 3 }, { "b": 5, "c": 6, "d": 7 }], expected: ["b", "c"] },
+          { input: [{ "x": 1 }, { "y": 2 }], expected: [] },
+          { input: [{ "a": 1, "b": 2 }, { "a": 3, "b": 4 }], expected: ["a", "b"] },
+          { input: [{}, {}], expected: [] }
+        ]
+      },
+      {
+        title: "Dictionary Value Exists",
+        category: "dictionary",
+        tags: ["dictionary", "search", "values"],
+        difficulty: 1,
+        description: "Write a function that checks if a value exists in a dictionary.",
+        starterCode: "def value_exists(d, value):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2, "c": 3 }, 2], expected: true },
+          { input: [{ "a": 1, "b": 2, "c": 3 }, 5], expected: false },
+          { input: [{}, 1], expected: false },
+          { input: [{ "x": "hello", "y": "world" }, "hello"], expected: true }
+        ]
+      },
+      {
+        title: "Count Values in Dictionary",
+        category: "dictionary",
+        tags: ["dictionary", "counting", "frequency"],
+        difficulty: 2,
+        description: "Write a function that counts how many times each value appears in a dictionary. Return a dictionary mapping values to their counts.",
+        starterCode: "def count_values(d):\n    pass",
+        tests: [
+          { input: [{ "a": 1, "b": 2, "c": 1, "d": 2 }], expected: { 1: 2, 2: 2 } },
+          { input: [{ "a": "x", "b": "y", "c": "x" }], expected: { "x": 2, "y": 1 } },
+          { input: [{}], expected: {} },
+          { input: [{ "a": 5, "b": 5, "c": 5 }], expected: { 5: 3 } }
+        ]
+      },
+      {
+        title: "Nested Dictionary Access",
+        category: "dictionary",
+        tags: ["dictionary", "nested", "access"],
+        difficulty: 2,
+        description: "Write a function that accesses a nested dictionary value given a path of keys as a list. Return None if path doesn't exist.",
+        starterCode: "def nested_get(d, path):\n    pass",
+        tests: [
+          { input: [{ "a": { "b": { "c": 1 } } }, ["a", "b", "c"]], expected: 1 },
+          { input: [{ "a": { "b": 2 } }, ["a", "b"]], expected: 2 },
+          { input: [{ "a": { "b": 2 } }, ["a", "c"]], expected: null },
+          { input: [{ "x": 1 }, ["x"]], expected: 1 }
+        ]
+      },
+      {
+        title: "Flatten Dictionary",
+        category: "dictionary",
+        tags: ["dictionary", "nested", "flattening"],
+        difficulty: 3,
+        description: "Write a function that flattens a nested dictionary (one level deep) by joining keys with '_'. Example: {'a': {'b': 1}} becomes {'a_b': 1}.",
+        starterCode: "def flatten_dict(d):\n    pass",
+        tests: [
+          { input: [{ "a": { "b": 1, "c": 2 } }], expected: { "a_b": 1, "a_c": 2 } },
+          { input: [{ "x": 1, "y": { "z": 2 } }], expected: { "x": 1, "y_z": 2 } },
+          { input: [{}], expected: {} },
+          { input: [{ "a": 1 }], expected: { "a": 1 } }
         ]
       }
     ];
