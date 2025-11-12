@@ -2862,8 +2862,8 @@
         description: "Write a function that returns a dict mapping each duplicate element to its list of indices.",
         starterCode: "def duplicate_positions(numbers):\n    pass",
         tests: [
-          { input: [[4, 3, 2, 7, 2, 3, 1]], expected: {2: [2, 4], 3: [1, 5]} },
-          { input: [[1, 1, 1]], expected: {1: [0, 1, 2]} },
+          { input: [[4, 3, 2, 7, 2, 3, 1]], expected: { 2: [2, 4], 3: [1, 5] } },
+          { input: [[1, 1, 1]], expected: { 1: [0, 1, 2] } },
           { input: [[1, 2, 3]], expected: {} },
           { input: [[]], expected: {} }
         ]
@@ -4158,14 +4158,14 @@
     // Initialize category filter
     function initializeCategoryFilter() {
       const categorySet = new Set();
-      CHALLENGES.forEach(function(challenge) {
+      CHALLENGES.forEach(function (challenge) {
         categorySet.add(challenge.category);
       });
 
       const sortedCategories = Array.from(categorySet).sort();
       const categoryFilter = document.getElementById('categoryFilter');
 
-      sortedCategories.forEach(function(category) {
+      sortedCategories.forEach(function (category) {
         const option = document.createElement('option');
         option.value = category;
         option.textContent = category;
@@ -4177,10 +4177,10 @@
 
     function updateFilteredChallenges() {
       if (selectedCategory === 'all') {
-        filteredChallenges = CHALLENGES.map(function(_, index) { return index; });
+        filteredChallenges = CHALLENGES.map(function (_, index) { return index; });
       } else {
         filteredChallenges = [];
-        CHALLENGES.forEach(function(challenge, index) {
+        CHALLENGES.forEach(function (challenge, index) {
           if (challenge.category === selectedCategory) {
             filteredChallenges.push(index);
           }
@@ -4273,8 +4273,8 @@
       document.getElementById('fileName').textContent = fileName + badge;
       document.getElementById('fileName').style.color = isCompleted ? '#4ecdc4' : '#ffd700';
 
-      const currentFilteredIndex = filteredChallenges.indexOf(currentChallenge);
-      document.getElementById('currentNum').textContent = currentFilteredIndex + 1;
+      // Show actual challenge number, not filtered position
+      document.getElementById('currentNum').textContent = currentChallenge + 1;
       document.getElementById('totalNum').textContent = filteredChallenges.length;
 
       // Color code the challenge counter based on difficulty
@@ -4310,6 +4310,8 @@
         return '<div class="test-case"><div>Input: <code class="test-input">' + inputDisplay + '</code></div><div>Expected: <code class="test-expected">' + JSON.stringify(test.expected) + '</code></div></div>';
       }).join('');
 
+      // Calculate filtered index for button states
+      const currentFilteredIndex = filteredChallenges.indexOf(currentChallenge);
       document.getElementById('prevBtn').disabled = currentFilteredIndex === 0;
       document.getElementById('nextBtn').disabled = currentFilteredIndex === filteredChallenges.length - 1;
 
