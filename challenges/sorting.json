@@ -1,0 +1,781 @@
+[
+  {
+    "title": "Bubble Sort",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "array"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that implements bubble sort to sort a list in ascending order.",
+    "starterCode": "def bubble_sort(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            64,
+            34,
+            25,
+            12,
+            22,
+            11,
+            90
+          ]
+        ],
+        "expected": [
+          11,
+          12,
+          22,
+          25,
+          34,
+          64,
+          90
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            1,
+            4,
+            2,
+            8
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          4,
+          5,
+          8
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "id": 150
+  },
+  {
+    "title": "Bubble Sort Descending",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "array"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that implements bubble sort to sort a list in descending order.",
+    "starterCode": "def bubble_sort_desc(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            64,
+            34,
+            25,
+            12,
+            22,
+            11,
+            90
+          ]
+        ],
+        "expected": [
+          90,
+          64,
+          34,
+          25,
+          22,
+          12,
+          11
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            1,
+            4,
+            2,
+            8
+          ]
+        ],
+        "expected": [
+          8,
+          5,
+          4,
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          3,
+          2,
+          1
+        ]
+      }
+    ],
+    "id": 151
+  },
+  {
+    "title": "Bubble Sort Count Swaps",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "counting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the number of swaps made during bubble sort.",
+    "starterCode": "def bubble_sort_swaps(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            5,
+            1,
+            4,
+            2
+          ]
+        ],
+        "expected": 5
+      }
+    ],
+    "id": 152
+  },
+  {
+    "title": "Selection Sort",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "array"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that implements selection sort to sort a list in ascending order.",
+    "starterCode": "def selection_sort(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            64,
+            25,
+            12,
+            22,
+            11
+          ]
+        ],
+        "expected": [
+          11,
+          12,
+          22,
+          25,
+          64
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            3,
+            8,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          3,
+          5,
+          8
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      }
+    ],
+    "id": 153
+  },
+  {
+    "title": "Selection Sort Descending",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "array"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that implements selection sort to sort a list in descending order.",
+    "starterCode": "def selection_sort_desc(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            64,
+            25,
+            12,
+            22,
+            11
+          ]
+        ],
+        "expected": [
+          64,
+          25,
+          22,
+          12,
+          11
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            3,
+            8,
+            1
+          ]
+        ],
+        "expected": [
+          8,
+          5,
+          3,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      }
+    ],
+    "id": 154
+  },
+  {
+    "title": "Selection Sort Comparisons",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "counting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the number of comparisons made during selection sort.",
+    "starterCode": "def selection_sort_comparisons(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            5,
+            3,
+            8,
+            1
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 155
+  },
+  {
+    "title": "Insertion Sort",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "array"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that implements insertion sort to sort a list in ascending order.",
+    "starterCode": "def insertion_sort(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            12,
+            11,
+            13,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          5,
+          6,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            2,
+            4,
+            6,
+            1,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      }
+    ],
+    "id": 165
+  },
+  {
+    "title": "Insertion Sort Descending",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "array"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that implements insertion sort to sort a list in descending order.",
+    "starterCode": "def insertion_sort_desc(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            12,
+            11,
+            13,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          13,
+          12,
+          11,
+          6,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            2,
+            4,
+            6,
+            1,
+            3
+          ]
+        ],
+        "expected": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          3,
+          2,
+          1
+        ]
+      }
+    ],
+    "id": 166
+  },
+  {
+    "title": "Insertion Sort Shifts",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "counting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the number of shifts made during insertion sort.",
+    "starterCode": "def insertion_sort_shifts(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            12,
+            11,
+            13,
+            5,
+            6
+          ]
+        ],
+        "expected": 7
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": 3
+      }
+    ],
+    "id": 167
+  },
+  {
+    "title": "Quick Sort",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "recursion"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that implements quick sort to sort a list in ascending order.",
+    "starterCode": "def quick_sort(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            10,
+            7,
+            8,
+            9,
+            1,
+            5
+          ]
+        ],
+        "expected": [
+          1,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "input": [
+          [
+            3,
+            6,
+            8,
+            10,
+            1,
+            2,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          1,
+          2,
+          3,
+          6,
+          8,
+          10
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      }
+    ],
+    "id": 178
+  },
+  {
+    "title": "Merge Sort",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "algorithm",
+      "recursion",
+      "divide-conquer"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that implements merge sort to sort a list in ascending order.",
+    "starterCode": "def merge_sort(arr):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            12,
+            11,
+            13,
+            5,
+            6,
+            7
+          ]
+        ],
+        "expected": [
+          5,
+          6,
+          7,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "id": 179
+  },
+  {
+    "title": "Sort Colors",
+    "category": "sorting",
+    "tags": [
+      "sorting",
+      "array",
+      "two-pointer"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that sorts an array with values 0, 1, and 2 in-place (Dutch National Flag problem).",
+    "starterCode": "def sort_colors(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            2,
+            0,
+            2,
+            1,
+            1,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "expected": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "id": 200
+  }
+]

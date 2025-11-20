@@ -1,0 +1,355 @@
+[
+  {
+    "title": "Coin Change",
+    "category": "dynamic-programming",
+    "tags": [
+      "dynamic-programming",
+      "array",
+      "optimization"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that finds the minimum number of coins needed to make a given amount.",
+    "starterCode": "def coin_change(coins, amount):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            5
+          ],
+          11
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            2
+          ],
+          3
+        ],
+        "expected": -1
+      },
+      {
+        "input": [
+          [
+            1
+          ],
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            5
+          ],
+          100
+        ],
+        "expected": 20
+      }
+    ],
+    "id": 189
+  },
+  {
+    "title": "Longest Increasing Subsequence",
+    "category": "dynamic-programming",
+    "tags": [
+      "dynamic-programming",
+      "array",
+      "binary-search"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that finds the length of the longest increasing subsequence in an array.",
+    "starterCode": "def length_of_lis(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            10,
+            9,
+            2,
+            5,
+            3,
+            7,
+            101,
+            18
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            0,
+            1,
+            0,
+            3,
+            2,
+            3
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            6,
+            7,
+            9,
+            4,
+            10,
+            5,
+            6
+          ]
+        ],
+        "expected": 6
+      }
+    ],
+    "id": 190
+  },
+  {
+    "title": "House Robber",
+    "category": "dynamic-programming",
+    "tags": [
+      "dynamic-programming",
+      "array"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that finds the maximum money you can rob from houses without robbing adjacent ones.",
+    "starterCode": "def rob(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            2,
+            7,
+            9,
+            3,
+            1
+          ]
+        ],
+        "expected": 12
+      },
+      {
+        "input": [
+          [
+            2,
+            1,
+            1,
+            2
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": 5
+      }
+    ],
+    "id": 191
+  },
+  {
+    "title": "Climbing Stairs",
+    "category": "dynamic-programming",
+    "tags": [
+      "dynamic-programming",
+      "fibonacci",
+      "math"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that calculates how many distinct ways you can climb n stairs (1 or 2 steps at a time).",
+    "starterCode": "def climb_stairs(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": 8
+      }
+    ],
+    "id": 192
+  },
+  {
+    "title": "Decode Ways",
+    "category": "dynamic-programming",
+    "tags": [
+      "dynamic-programming",
+      "string",
+      "recursion"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that counts how many ways a numeric string can be decoded (A=1, B=2, ..., Z=26).",
+    "starterCode": "def num_decodings(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "12"
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          "226"
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          "06"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "10"
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 193
+  },
+  {
+    "title": "Word Break",
+    "category": "dynamic-programming",
+    "tags": [
+      "dynamic-programming",
+      "string",
+      "hashmap"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that checks if a string can be segmented into words from a dictionary.",
+    "starterCode": "def word_break(s, word_dict):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "leetcode",
+          [
+            "leet",
+            "code"
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "applepenapple",
+          [
+            "apple",
+            "pen"
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "catsandog",
+          [
+            "cats",
+            "dog",
+            "sand",
+            "and",
+            "cat"
+          ]
+        ],
+        "expected": false
+      }
+    ],
+    "id": 194
+  },
+  {
+    "title": "Unique Paths",
+    "category": "dynamic-programming",
+    "tags": [
+      "dynamic-programming",
+      "grid",
+      "math"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that counts unique paths from top-left to bottom-right in an m×n grid (only right and down moves).",
+    "starterCode": "def unique_paths(m, n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          3,
+          7
+        ],
+        "expected": 28
+      },
+      {
+        "input": [
+          3,
+          2
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          1,
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          3,
+          3
+        ],
+        "expected": 6
+      }
+    ],
+    "id": 195
+  }
+]

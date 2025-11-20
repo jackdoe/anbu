@@ -1,0 +1,2313 @@
+[
+  {
+    "title": "Reverse a String",
+    "category": "string",
+    "tags": [
+      "basics",
+      "string-manipulation"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that reverses a string.",
+    "starterCode": "def reverse_string(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": "olleh"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          "a"
+        ],
+        "expected": "a"
+      },
+      {
+        "input": [
+          "Python"
+        ],
+        "expected": "nohtyP"
+      }
+    ],
+    "id": 3
+  },
+  {
+    "title": "Reverse Words in String",
+    "category": "string",
+    "tags": [
+      "basics",
+      "string-manipulation"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that reverses each word in a string individually (not the word order).",
+    "starterCode": "def reverse_each_word(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello world"
+        ],
+        "expected": "olleh dlrow"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          "Python"
+        ],
+        "expected": "nohtyP"
+      },
+      {
+        "input": [
+          "a b c"
+        ],
+        "expected": "a b c"
+      }
+    ],
+    "id": 4
+  },
+  {
+    "title": "Check String Reverse",
+    "category": "string",
+    "tags": [
+      "basics",
+      "string-manipulation",
+      "comparison"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that checks if two strings are reverses of each other.",
+    "starterCode": "def are_reverse(s1, s2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello",
+          "olleh"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "abc",
+          "xyz"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "",
+          ""
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "a",
+          "a"
+        ],
+        "expected": true
+      }
+    ],
+    "id": 5
+  },
+  {
+    "title": "Count Vowels",
+    "category": "string",
+    "tags": [
+      "basics",
+      "counting",
+      "iteration"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that counts the number of vowels in a string.",
+    "starterCode": "def count_vowels(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          "xyz"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "Programming"
+        ],
+        "expected": 3
+      }
+    ],
+    "id": 9
+  },
+  {
+    "title": "Count Consonants Advanced",
+    "category": "string",
+    "tags": [
+      "basics",
+      "counting",
+      "iteration"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that counts the number of consonants in a string (ignore non-alphabetic characters).",
+    "starterCode": "def count_consonants_advanced(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "xyz123"
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          "Programming!"
+        ],
+        "expected": 8
+      }
+    ],
+    "id": 10
+  },
+  {
+    "title": "Vowel Percentage",
+    "category": "string",
+    "tags": [
+      "basics",
+      "counting",
+      "math"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that returns the percentage of vowels in a string (letters only). Round to 2 decimal places.",
+    "starterCode": "def vowel_percentage(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": 40
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": 100
+      },
+      {
+        "input": [
+          "xyz"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "ab"
+        ],
+        "expected": 50
+      }
+    ],
+    "id": 11
+  },
+  {
+    "title": "Is Palindrome",
+    "category": "string",
+    "tags": [
+      "basics",
+      "two-pointer",
+      "string-manipulation"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that checks if a string is a palindrome.",
+    "starterCode": "def is_palindrome(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "racecar"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "a"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "madam"
+        ],
+        "expected": true
+      }
+    ],
+    "id": 12
+  },
+  {
+    "title": "Ignore Case Palindrome",
+    "category": "string",
+    "tags": [
+      "basics",
+      "two-pointer",
+      "string-manipulation"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that checks if a string is a palindrome, ignoring case.",
+    "starterCode": "def is_palindrome_ignore_case(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "Racecar"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "Hello"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "A"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "MaDaM"
+        ],
+        "expected": true
+      }
+    ],
+    "id": 13
+  },
+  {
+    "title": "Alphanumeric Palindrome",
+    "category": "string",
+    "tags": [
+      "basics",
+      "two-pointer",
+      "string-manipulation"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that checks if a string is a palindrome, considering only alphanumeric characters and ignoring case.",
+    "starterCode": "def is_alphanumeric_palindrome(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "A man, a plan, a canal: Panama"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "race a car"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "0P"
+        ],
+        "expected": false
+      }
+    ],
+    "id": 14
+  },
+  {
+    "title": "Count Word Frequency",
+    "category": "string",
+    "tags": [
+      "hashmap",
+      "string",
+      "counting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that counts the frequency of each word in a string.",
+    "starterCode": "def word_frequency(text):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello world hello"
+        ],
+        "expected": {
+          "hello": 2,
+          "world": 1
+        }
+      },
+      {
+        "input": [
+          "the quick brown fox"
+        ],
+        "expected": {
+          "the": 1,
+          "quick": 1,
+          "brown": 1,
+          "fox": 1
+        }
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": {}
+      }
+    ],
+    "id": 33
+  },
+  {
+    "title": "Most Frequent Word",
+    "category": "string",
+    "tags": [
+      "hashmap",
+      "string",
+      "max-finding"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the most frequently occurring word in a string. Return the first one if there's a tie.",
+    "starterCode": "def most_frequent_word(text):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello world hello"
+        ],
+        "expected": "hello"
+      },
+      {
+        "input": [
+          "the quick brown fox jumps"
+        ],
+        "expected": "the"
+      },
+      {
+        "input": [
+          "a a b b c c c"
+        ],
+        "expected": "c"
+      },
+      {
+        "input": [
+          "test"
+        ],
+        "expected": "test"
+      }
+    ],
+    "id": 34
+  },
+  {
+    "title": "Words Appearing N Times",
+    "category": "string",
+    "tags": [
+      "hashmap",
+      "string",
+      "filtering"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns a list of words that appear exactly n times in a string.",
+    "starterCode": "def words_appearing_n_times(text, n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello world hello",
+          2
+        ],
+        "expected": [
+          "hello"
+        ]
+      },
+      {
+        "input": [
+          "the quick brown fox jumps",
+          1
+        ],
+        "expected": [
+          "the",
+          "quick",
+          "brown",
+          "fox",
+          "jumps"
+        ]
+      },
+      {
+        "input": [
+          "a a b b c c c",
+          2
+        ],
+        "expected": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "input": [
+          "test",
+          1
+        ],
+        "expected": [
+          "test"
+        ]
+      }
+    ],
+    "id": 35
+  },
+  {
+    "title": "Longest Word",
+    "category": "string",
+    "tags": [
+      "string",
+      "iteration",
+      "comparison"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that finds the longest word in a sentence.",
+    "starterCode": "def longest_word(sentence):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "the quick brown fox"
+        ],
+        "expected": "quick"
+      },
+      {
+        "input": [
+          "hello world"
+        ],
+        "expected": "hello"
+      },
+      {
+        "input": [
+          "Python programming is fun"
+        ],
+        "expected": "programming"
+      }
+    ],
+    "id": 36
+  },
+  {
+    "title": "Shortest Word",
+    "category": "string",
+    "tags": [
+      "string",
+      "iteration",
+      "comparison"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that finds the shortest word in a sentence.",
+    "starterCode": "def shortest_word(sentence):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "the quick brown fox"
+        ],
+        "expected": "the"
+      },
+      {
+        "input": [
+          "hello world"
+        ],
+        "expected": "hello"
+      },
+      {
+        "input": [
+          "Python programming is fun"
+        ],
+        "expected": "is"
+      }
+    ],
+    "id": 37
+  },
+  {
+    "title": "Average Word Length",
+    "category": "string",
+    "tags": [
+      "string",
+      "iteration",
+      "math"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that calculates the average length of words in a sentence.",
+    "starterCode": "def average_word_length(sentence):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "the quick brown fox"
+        ],
+        "expected": 3.75
+      },
+      {
+        "input": [
+          "hello world"
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          "a bb ccc"
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 38
+  },
+  {
+    "title": "Anagram Check",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "sorting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if two strings are anagrams.",
+    "starterCode": "def are_anagrams(str1, str2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "listen",
+          "silent"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "hello",
+          "world"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "anagram",
+          "nagaram"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "rat",
+          "car"
+        ],
+        "expected": false
+      }
+    ],
+    "id": 45
+  },
+  {
+    "title": "Anagram Groups",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "grouping"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that groups anagrams together from a list of strings.",
+    "starterCode": "def group_anagrams(words):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            "eat",
+            "tea",
+            "tan",
+            "ate",
+            "nat",
+            "bat"
+          ]
+        ],
+        "expected": [
+          [
+            "eat",
+            "tea",
+            "ate"
+          ],
+          [
+            "tan",
+            "nat"
+          ],
+          [
+            "bat"
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            "a"
+          ]
+        ],
+        "expected": [
+          [
+            "a"
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            "",
+            ""
+          ]
+        ],
+        "expected": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "id": 46
+  },
+  {
+    "title": "First Non-Repeating Anagram",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "searching"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds the first word in a list that is not an anagram of any other word.",
+    "starterCode": "def first_unique_anagram(words):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            "eat",
+            "tea",
+            "tan",
+            "ate",
+            "nat",
+            "bat"
+          ]
+        ],
+        "expected": "bat"
+      },
+      {
+        "input": [
+          [
+            "abc",
+            "def",
+            "ghi"
+          ]
+        ],
+        "expected": "abc"
+      },
+      {
+        "input": [
+          [
+            "a",
+            "b",
+            "a"
+          ]
+        ],
+        "expected": "b"
+      }
+    ],
+    "id": 47
+  },
+  {
+    "title": "Longest Common Prefix",
+    "category": "string",
+    "tags": [
+      "string",
+      "comparison",
+      "iteration"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds the longest common prefix among an array of strings.",
+    "starterCode": "def longest_common_prefix(strs):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            "flower",
+            "flow",
+            "flight"
+          ]
+        ],
+        "expected": "fl"
+      },
+      {
+        "input": [
+          [
+            "dog",
+            "racecar",
+            "car"
+          ]
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          [
+            "interspecies",
+            "interstellar",
+            "interstate"
+          ]
+        ],
+        "expected": "inters"
+      }
+    ],
+    "id": 57
+  },
+  {
+    "title": "Longest Common Suffix",
+    "category": "string",
+    "tags": [
+      "string",
+      "comparison",
+      "iteration"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds the longest common suffix among an array of strings.",
+    "starterCode": "def longest_common_suffix(strs):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            "testing",
+            "running",
+            "jumping"
+          ]
+        ],
+        "expected": "ing"
+      },
+      {
+        "input": [
+          [
+            "dog",
+            "cat",
+            "rat"
+          ]
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          [
+            "faster",
+            "slower",
+            "higher"
+          ]
+        ],
+        "expected": "er"
+      }
+    ],
+    "id": 58
+  },
+  {
+    "title": "Common Prefix Length",
+    "category": "string",
+    "tags": [
+      "string",
+      "comparison",
+      "counting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the length of the longest common prefix between two strings.",
+    "starterCode": "def common_prefix_length(str1, str2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "flower",
+          "flow"
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          "dog",
+          "racecar"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "test",
+          "test"
+        ],
+        "expected": 4
+      }
+    ],
+    "id": 59
+  },
+  {
+    "title": "Remove Vowels",
+    "category": "string",
+    "tags": [
+      "string",
+      "filtering",
+      "iteration"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that removes all vowels from a string.",
+    "starterCode": "def remove_vowels(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": "hll"
+      },
+      {
+        "input": [
+          "programming"
+        ],
+        "expected": "prgrmmng"
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          "xyz"
+        ],
+        "expected": "xyz"
+      }
+    ],
+    "id": 60
+  },
+  {
+    "title": "Keep Only Vowels",
+    "category": "string",
+    "tags": [
+      "string",
+      "filtering",
+      "iteration"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that keeps only vowels from a string.",
+    "starterCode": "def keep_vowels(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": "eo"
+      },
+      {
+        "input": [
+          "programming"
+        ],
+        "expected": "oai"
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": "aeiou"
+      },
+      {
+        "input": [
+          "xyz"
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 61
+  },
+  {
+    "title": "Replace Vowels",
+    "category": "string",
+    "tags": [
+      "string",
+      "filtering",
+      "replacement"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that replaces all vowels in a string with a given character.",
+    "starterCode": "def replace_vowels(s, char):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello",
+          "*"
+        ],
+        "expected": "h*ll*"
+      },
+      {
+        "input": [
+          "programming",
+          "_"
+        ],
+        "expected": "pr_gr_mm_ng"
+      },
+      {
+        "input": [
+          "aeiou",
+          "X"
+        ],
+        "expected": "XXXXX"
+      },
+      {
+        "input": [
+          "xyz",
+          "*"
+        ],
+        "expected": "xyz"
+      }
+    ],
+    "id": 62
+  },
+  {
+    "title": "Title Case",
+    "category": "string",
+    "tags": [
+      "string",
+      "string-manipulation",
+      "formatting"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that converts a string to title case (first letter of each word capitalized).",
+    "starterCode": "def title_case(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello world"
+        ],
+        "expected": "Hello World"
+      },
+      {
+        "input": [
+          "the quick brown fox"
+        ],
+        "expected": "The Quick Brown Fox"
+      },
+      {
+        "input": [
+          "python"
+        ],
+        "expected": "Python"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 63
+  },
+  {
+    "title": "Snake to Camel Case",
+    "category": "string",
+    "tags": [
+      "string",
+      "string-manipulation",
+      "formatting"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that converts snake_case to camelCase.",
+    "starterCode": "def snake_to_camel(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello_world"
+        ],
+        "expected": "helloWorld"
+      },
+      {
+        "input": [
+          "the_quick_brown_fox"
+        ],
+        "expected": "theQuickBrownFox"
+      },
+      {
+        "input": [
+          "python"
+        ],
+        "expected": "python"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 64
+  },
+  {
+    "title": "Camel to Snake Case",
+    "category": "string",
+    "tags": [
+      "string",
+      "string-manipulation",
+      "formatting"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that converts camelCase to snake_case.",
+    "starterCode": "def camel_to_snake(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "helloWorld"
+        ],
+        "expected": "hello_world"
+      },
+      {
+        "input": [
+          "theQuickBrownFox"
+        ],
+        "expected": "the_quick_brown_fox"
+      },
+      {
+        "input": [
+          "python"
+        ],
+        "expected": "python"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 65
+  },
+  {
+    "title": "Reverse Words",
+    "category": "string",
+    "tags": [
+      "string",
+      "array",
+      "manipulation"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that reverses the order of words in a sentence.",
+    "starterCode": "def reverse_words(sentence):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello world"
+        ],
+        "expected": "world hello"
+      },
+      {
+        "input": [
+          "the quick brown fox"
+        ],
+        "expected": "fox brown quick the"
+      },
+      {
+        "input": [
+          "python"
+        ],
+        "expected": "python"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 72
+  },
+  {
+    "title": "Reverse Each Word",
+    "category": "string",
+    "tags": [
+      "string",
+      "array",
+      "manipulation"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that reverses each word in a sentence but keeps the word order.",
+    "starterCode": "def reverse_each_word(sentence):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello world"
+        ],
+        "expected": "olleh dlrow"
+      },
+      {
+        "input": [
+          "the quick brown fox"
+        ],
+        "expected": "eht kciuq nworb xof"
+      },
+      {
+        "input": [
+          "python"
+        ],
+        "expected": "nohtyp"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 73
+  },
+  {
+    "title": "Rotate Words",
+    "category": "string",
+    "tags": [
+      "string",
+      "array",
+      "manipulation"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that rotates words in a sentence by k positions to the right.",
+    "starterCode": "def rotate_words(sentence, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello world python",
+          1
+        ],
+        "expected": "python hello world"
+      },
+      {
+        "input": [
+          "the quick brown fox",
+          2
+        ],
+        "expected": "brown fox the quick"
+      },
+      {
+        "input": [
+          "python",
+          1
+        ],
+        "expected": "python"
+      },
+      {
+        "input": [
+          "a b c",
+          0
+        ],
+        "expected": "a b c"
+      }
+    ],
+    "id": 74
+  },
+  {
+    "title": "Compress String",
+    "category": "string",
+    "tags": [
+      "string",
+      "iteration",
+      "counting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that compresses a string by counting consecutive characters (e.g., 'aaabbc' -> 'a3b2c1').",
+    "starterCode": "def compress_string(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "aaabbc"
+        ],
+        "expected": "a3b2c1"
+      },
+      {
+        "input": [
+          "abc"
+        ],
+        "expected": "a1b1c1"
+      },
+      {
+        "input": [
+          "aaa"
+        ],
+        "expected": "a3"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 81
+  },
+  {
+    "title": "Decompress String",
+    "category": "string",
+    "tags": [
+      "string",
+      "iteration",
+      "parsing"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that decompresses a string (e.g., 'a3b2c1' -> 'aaabbc').",
+    "starterCode": "def decompress_string(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "a3b2c1"
+        ],
+        "expected": "aaabbc"
+      },
+      {
+        "input": [
+          "a1b1c1"
+        ],
+        "expected": "abc"
+      },
+      {
+        "input": [
+          "a3"
+        ],
+        "expected": "aaa"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 82
+  },
+  {
+    "title": "Compress Better",
+    "category": "string",
+    "tags": [
+      "string",
+      "iteration",
+      "optimization"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that compresses a string but only if it results in a shorter string (e.g., 'abc' stays 'abc').",
+    "starterCode": "def compress_better(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "aaabbc"
+        ],
+        "expected": "a3b2c1"
+      },
+      {
+        "input": [
+          "abc"
+        ],
+        "expected": "abc"
+      },
+      {
+        "input": [
+          "aaa"
+        ],
+        "expected": "a3"
+      },
+      {
+        "input": [
+          "aabb"
+        ],
+        "expected": "aabb"
+      }
+    ],
+    "id": 83
+  },
+  {
+    "title": "First Non-Repeating Character",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the first non-repeating character in a string.",
+    "starterCode": "def first_unique_char(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "leetcode"
+        ],
+        "expected": "l"
+      },
+      {
+        "input": [
+          "loveleetcode"
+        ],
+        "expected": "v"
+      },
+      {
+        "input": [
+          "aabb"
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 96
+  },
+  {
+    "title": "All Non-Repeating Characters",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that returns all non-repeating characters in a string in order.",
+    "starterCode": "def all_unique_chars(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "leetcode"
+        ],
+        "expected": "ltcd"
+      },
+      {
+        "input": [
+          "loveleetcode"
+        ],
+        "expected": "vcd"
+      },
+      {
+        "input": [
+          "aabb"
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 97
+  },
+  {
+    "title": "First Repeating Character",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the first repeating character in a string.",
+    "starterCode": "def first_repeating_char(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "leetcode"
+        ],
+        "expected": "e"
+      },
+      {
+        "input": [
+          "loveleetcode"
+        ],
+        "expected": "l"
+      },
+      {
+        "input": [
+          "abc"
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 98
+  },
+  {
+    "title": "String Rotation",
+    "category": "string",
+    "tags": [
+      "string",
+      "string-manipulation",
+      "pattern-matching"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that checks if one string is a rotation of another.",
+    "starterCode": "def is_rotation(s1, s2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "waterbottle",
+          "erbottlewat"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "hello",
+          "llohe"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "hello",
+          "world"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "abc",
+          "bca"
+        ],
+        "expected": true
+      }
+    ],
+    "id": 108
+  },
+  {
+    "title": "All String Rotations",
+    "category": "string",
+    "tags": [
+      "string",
+      "string-manipulation",
+      "generation"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that returns all possible rotations of a string.",
+    "starterCode": "def all_rotations(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "abc"
+        ],
+        "expected": [
+          "abc",
+          "bca",
+          "cab"
+        ]
+      },
+      {
+        "input": [
+          "ab"
+        ],
+        "expected": [
+          "ab",
+          "ba"
+        ]
+      },
+      {
+        "input": [
+          "a"
+        ],
+        "expected": [
+          "a"
+        ]
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": [
+          ""
+        ]
+      }
+    ],
+    "id": 109
+  },
+  {
+    "title": "Rotation Distance",
+    "category": "string",
+    "tags": [
+      "string",
+      "string-manipulation",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that returns the minimum number of rotations needed to transform s1 into s2, or -1 if impossible.",
+    "starterCode": "def rotation_distance(s1, s2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "abc",
+          "bca"
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          "abc",
+          "cab"
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          "abc",
+          "xyz"
+        ],
+        "expected": -1
+      },
+      {
+        "input": [
+          "abc",
+          "abc"
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 110
+  },
+  {
+    "title": "Count Consonants",
+    "category": "string",
+    "tags": [
+      "string",
+      "counting",
+      "iteration"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that counts the number of consonants in a string.",
+    "starterCode": "def count_consonants(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          "programming"
+        ],
+        "expected": 8
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "xyz"
+        ],
+        "expected": 3
+      }
+    ],
+    "id": 114
+  },
+  {
+    "title": "Consonant Percentage",
+    "category": "string",
+    "tags": [
+      "string",
+      "counting",
+      "math"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns the percentage of consonants in a string (0-100).",
+    "starterCode": "def consonant_percentage(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": 60
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "bcdfg"
+        ],
+        "expected": 100
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 115
+  },
+  {
+    "title": "Extract Consonants",
+    "category": "string",
+    "tags": [
+      "string",
+      "filtering",
+      "iteration"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns a string containing only the consonants from the input.",
+    "starterCode": "def extract_consonants(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": "hll"
+      },
+      {
+        "input": [
+          "programming"
+        ],
+        "expected": "prgrmmng"
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          "xyz"
+        ],
+        "expected": "xyz"
+      }
+    ],
+    "id": 116
+  },
+  {
+    "title": "Camel Case to Snake Case",
+    "category": "string",
+    "tags": [
+      "string",
+      "regex",
+      "formatting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that converts a camelCase string to snake_case.",
+    "starterCode": "def camel_to_snake(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "camelCase"
+        ],
+        "expected": "camel_case"
+      },
+      {
+        "input": [
+          "helloWorld"
+        ],
+        "expected": "hello_world"
+      },
+      {
+        "input": [
+          "myVariable"
+        ],
+        "expected": "my_variable"
+      },
+      {
+        "input": [
+          "simple"
+        ],
+        "expected": "simple"
+      }
+    ],
+    "id": 123
+  },
+  {
+    "title": "Snake to Pascal Case",
+    "category": "string",
+    "tags": [
+      "string",
+      "formatting",
+      "case-conversion"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that converts snake_case to PascalCase.",
+    "starterCode": "def snake_to_pascal(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "snake_case"
+        ],
+        "expected": "SnakeCase"
+      },
+      {
+        "input": [
+          "hello_world"
+        ],
+        "expected": "HelloWorld"
+      },
+      {
+        "input": [
+          "my_variable"
+        ],
+        "expected": "MyVariable"
+      },
+      {
+        "input": [
+          "simple"
+        ],
+        "expected": "Simple"
+      }
+    ],
+    "id": 124
+  },
+  {
+    "title": "Kebab to Camel Case",
+    "category": "string",
+    "tags": [
+      "string",
+      "formatting",
+      "case-conversion"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that converts kebab-case to camelCase.",
+    "starterCode": "def kebab_to_camel(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "kebab-case"
+        ],
+        "expected": "kebabCase"
+      },
+      {
+        "input": [
+          "hello-world"
+        ],
+        "expected": "helloWorld"
+      },
+      {
+        "input": [
+          "my-variable"
+        ],
+        "expected": "myVariable"
+      },
+      {
+        "input": [
+          "simple"
+        ],
+        "expected": "simple"
+      }
+    ],
+    "id": 125
+  },
+  {
+    "title": "Longest Substring Without Repeating",
+    "category": "string",
+    "tags": [
+      "string",
+      "sliding-window",
+      "hashmap"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that finds the length of the longest substring without repeating characters.",
+    "starterCode": "def longest_unique_substring(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "abcabcbb"
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          "bbbbb"
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          "pwwkew"
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 132
+  },
+  {
+    "title": "Get Longest Unique Substring",
+    "category": "string",
+    "tags": [
+      "string",
+      "sliding-window",
+      "hashmap"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that returns the actual longest substring without repeating characters.",
+    "starterCode": "def get_longest_unique_substring(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "abcabcbb"
+        ],
+        "expected": "abc"
+      },
+      {
+        "input": [
+          "bbbbb"
+        ],
+        "expected": "b"
+      },
+      {
+        "input": [
+          "pwwkew"
+        ],
+        "expected": "wke"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 133
+  },
+  {
+    "title": "Longest Substring With K Distinct",
+    "category": "string",
+    "tags": [
+      "string",
+      "sliding-window",
+      "hashmap"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that finds the length of the longest substring with at most k distinct characters.",
+    "starterCode": "def longest_k_distinct(s, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "eceba",
+          2
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          "aa",
+          1
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          "abcabc",
+          2
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          "",
+          2
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 134
+  },
+  {
+    "title": "Group Anagrams",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "sorting"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that groups anagrams together from a list of strings. Return groups sorted by the first word in each group.",
+    "starterCode": "def group_anagrams(words):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            "eat",
+            "tea",
+            "tan",
+            "ate",
+            "nat",
+            "bat"
+          ]
+        ],
+        "expected": [
+          [
+            "bat"
+          ],
+          [
+            "eat",
+            "tea",
+            "ate"
+          ],
+          [
+            "tan",
+            "nat"
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            "a"
+          ]
+        ],
+        "expected": [
+          [
+            "a"
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            "",
+            ""
+          ]
+        ],
+        "expected": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "id": 162
+  },
+  {
+    "title": "Count Anagram Groups",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that counts the number of anagram groups in a list of strings.",
+    "starterCode": "def count_anagram_groups(words):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            "eat",
+            "tea",
+            "tan",
+            "ate",
+            "nat",
+            "bat"
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            "a"
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            "",
+            ""
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 163
+  },
+  {
+    "title": "Largest Anagram Group",
+    "category": "string",
+    "tags": [
+      "string",
+      "hashmap",
+      "max-finding"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns the size of the largest anagram group.",
+    "starterCode": "def largest_anagram_group(words):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            "eat",
+            "tea",
+            "tan",
+            "ate",
+            "nat",
+            "bat"
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            "a"
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            "abc",
+            "def",
+            "ghi"
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 164
+  },
+  {
+    "title": "Minimum Window Substring",
+    "category": "string",
+    "tags": [
+      "string",
+      "sliding-window",
+      "hashmap"
+    ],
+    "difficulty": 8,
+    "description": "Write a function that finds the minimum window substring containing all characters of another string.",
+    "starterCode": "def min_window(s, t):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "ADOBECODEBANC",
+          "ABC"
+        ],
+        "expected": "BANC"
+      },
+      {
+        "input": [
+          "a",
+          "a"
+        ],
+        "expected": "a"
+      },
+      {
+        "input": [
+          "a",
+          "aa"
+        ],
+        "expected": ""
+      }
+    ],
+    "id": 180
+  },
+  {
+    "title": "String to Integer (atoi)",
+    "category": "string",
+    "tags": [
+      "string",
+      "parsing",
+      "conversion"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that converts a string to an integer (implement atoi).",
+    "starterCode": "def my_atoi(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "42"
+        ],
+        "expected": 42
+      },
+      {
+        "input": [
+          "   -42"
+        ],
+        "expected": -42
+      },
+      {
+        "input": [
+          "4193 with words"
+        ],
+        "expected": 4193
+      },
+      {
+        "input": [
+          "words and 987"
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 207
+  },
+  {
+    "title": "Zigzag Conversion",
+    "category": "string",
+    "tags": [
+      "string",
+      "simulation",
+      "pattern"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that converts a string to zigzag pattern with n rows and reads it row by row.",
+    "starterCode": "def convert_zigzag(s, num_rows):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "PAYPALISHIRING",
+          3
+        ],
+        "expected": "PAHNAPLSIIGYIR"
+      },
+      {
+        "input": [
+          "PAYPALISHIRING",
+          4
+        ],
+        "expected": "PINALSIGYAHRPI"
+      },
+      {
+        "input": [
+          "A",
+          1
+        ],
+        "expected": "A"
+      }
+    ],
+    "id": 208
+  },
+  {
+    "title": "Regular Expression Matching",
+    "category": "string",
+    "tags": [
+      "string",
+      "dynamic-programming",
+      "recursion"
+    ],
+    "difficulty": 9,
+    "description": "Write a function that implements regex matching with '.' and '*' support.",
+    "starterCode": "def is_match(s, p):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "aa",
+          "a"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "aa",
+          "a*"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "ab",
+          ".*"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "mississippi",
+          "mis*is*p*."
+        ],
+        "expected": false
+      }
+    ],
+    "id": 209
+  },
+  {
+    "title": "Wildcard Matching",
+    "category": "string",
+    "tags": [
+      "string",
+      "dynamic-programming",
+      "greedy"
+    ],
+    "difficulty": 8,
+    "description": "Write a function that implements wildcard pattern matching with '?' and '*'.",
+    "starterCode": "def is_wildcard_match(s, p):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "aa",
+          "a"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "aa",
+          "*"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "cb",
+          "?a"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "adceb",
+          "*a*b"
+        ],
+        "expected": true
+      }
+    ],
+    "id": 210
+  }
+]

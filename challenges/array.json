@@ -1,0 +1,5061 @@
+[
+  {
+    "title": "Find Maximum",
+    "category": "array",
+    "tags": [
+      "basics",
+      "iteration"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that finds the maximum number in a list.",
+    "starterCode": "def find_max(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            -3
+          ]
+        ],
+        "expected": -1
+      },
+      {
+        "input": [
+          [
+            42
+          ]
+        ],
+        "expected": 42
+      },
+      {
+        "input": [
+          [
+            3,
+            7,
+            2,
+            9,
+            1
+          ]
+        ],
+        "expected": 9
+      }
+    ],
+    "id": 6
+  },
+  {
+    "title": "Find Minimum",
+    "category": "array",
+    "tags": [
+      "basics",
+      "iteration"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that finds the minimum number in a list.",
+    "starterCode": "def find_min(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            -3
+          ]
+        ],
+        "expected": -3
+      },
+      {
+        "input": [
+          [
+            42
+          ]
+        ],
+        "expected": 42
+      },
+      {
+        "input": [
+          [
+            3,
+            7,
+            2,
+            9,
+            1
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 7
+  },
+  {
+    "title": "Find Max Index",
+    "category": "array",
+    "tags": [
+      "basics",
+      "iteration",
+      "index"
+    ],
+    "difficulty": 1,
+    "description": "Write a function that returns the index of the maximum number in a list.",
+    "starterCode": "def find_max_index(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            -3
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            42
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            3,
+            7,
+            2,
+            9,
+            1
+          ]
+        ],
+        "expected": 3
+      }
+    ],
+    "id": 8
+  },
+  {
+    "title": "Remove Duplicates",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "order-preservation"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that removes duplicates from a list while preserving order.",
+    "starterCode": "def remove_duplicates(lst):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            3,
+            4,
+            4,
+            5
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            "a",
+            "b",
+            "a",
+            "c"
+          ]
+        ],
+        "expected": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "id": 18
+  },
+  {
+    "title": "Count Duplicates",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that counts how many elements appear more than once in a list.",
+    "starterCode": "def count_duplicates(lst):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            3,
+            4,
+            4,
+            5
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            "a",
+            "b",
+            "a",
+            "c",
+            "c"
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 19
+  },
+  {
+    "title": "Most Frequent Element",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "frequency"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns the most frequently occurring element in a list.",
+    "starterCode": "def most_frequent(lst):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            5,
+            5,
+            2,
+            2,
+            1
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            "a",
+            "b",
+            "a"
+          ]
+        ],
+        "expected": "a"
+      }
+    ],
+    "id": 20
+  },
+  {
+    "title": "Merge Sorted Lists",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "sorting",
+      "merge"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that merges two sorted lists into one sorted list.",
+    "starterCode": "def merge_sorted(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            5
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          5
+        ]
+      }
+    ],
+    "id": 30
+  },
+  {
+    "title": "Intersection of Sorted Lists",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "set-operations"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the intersection of two sorted lists (elements that appear in both).",
+    "starterCode": "def intersection_sorted(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        "expected": [
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": []
+      }
+    ],
+    "id": 31
+  },
+  {
+    "title": "Union of Sorted Lists",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "set-operations"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the union of two sorted lists without duplicates.",
+    "starterCode": "def union_sorted(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "id": 32
+  },
+  {
+    "title": "Two Sum",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "optimization"
+    ],
+    "difficulty": 4,
+    "description": "Given a list of numbers and a target, return indices of two numbers that add up to the target.",
+    "starterCode": "def two_sum(nums, target):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            2,
+            7,
+            11,
+            15
+          ],
+          9
+        ],
+        "expected": [
+          0,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            4
+          ],
+          6
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            3,
+            3
+          ],
+          6
+        ],
+        "expected": [
+          0,
+          1
+        ]
+      }
+    ],
+    "id": 42
+  },
+  {
+    "title": "Two Sum Count",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Given a list of numbers and a target, return the count of unique pairs that add up to the target.",
+    "starterCode": "def two_sum_count(nums, target):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            2,
+            7,
+            11,
+            15
+          ],
+          9
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          2
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          6
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1,
+            5,
+            3,
+            3,
+            3
+          ],
+          6
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 43
+  },
+  {
+    "title": "Two Sum All Pairs",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "pairs"
+    ],
+    "difficulty": 4,
+    "description": "Given a list of numbers and a target, return all pairs of indices where the numbers add up to the target.",
+    "starterCode": "def two_sum_all_pairs(nums, target):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            2,
+            7,
+            11,
+            15
+          ],
+          9
+        ],
+        "expected": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            2,
+            4,
+            3
+          ],
+          6
+        ],
+        "expected": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ],
+          2
+        ],
+        "expected": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "id": 44
+  },
+  {
+    "title": "Rotate Array",
+    "category": "array",
+    "tags": [
+      "array",
+      "manipulation",
+      "modulo"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that rotates an array to the right by k steps.",
+    "starterCode": "def rotate_array(arr, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          4,
+          5,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          3
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          0
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "id": 51
+  },
+  {
+    "title": "Rotate Array Left",
+    "category": "array",
+    "tags": [
+      "array",
+      "manipulation",
+      "modulo"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that rotates an array to the left by k steps.",
+    "starterCode": "def rotate_left(arr, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          3,
+          4,
+          5,
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          3
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          0
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "id": 52
+  },
+  {
+    "title": "Reverse Array Segments",
+    "category": "array",
+    "tags": [
+      "array",
+      "manipulation",
+      "reversal"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that reverses every segment of k elements in an array.",
+    "starterCode": "def reverse_segments(arr, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          2
+        ],
+        "expected": [
+          2,
+          1,
+          4,
+          3,
+          6,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          3
+        ],
+        "expected": [
+          3,
+          2,
+          1,
+          5,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          1
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "id": 53
+  },
+  {
+    "title": "Find Second Largest",
+    "category": "array",
+    "tags": [
+      "array",
+      "sorting",
+      "comparison"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds the second largest number in a list.",
+    "starterCode": "def second_largest(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            10,
+            5,
+            8,
+            12,
+            3
+          ]
+        ],
+        "expected": 10
+      },
+      {
+        "input": [
+          [
+            7,
+            7,
+            7,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            5,
+            5
+          ]
+        ],
+        "expected": 5
+      }
+    ],
+    "id": 66
+  },
+  {
+    "title": "Find Kth Largest",
+    "category": "array",
+    "tags": [
+      "array",
+      "sorting",
+      "comparison"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds the kth largest number in a list.",
+    "starterCode": "def kth_largest(numbers, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            10,
+            5,
+            8,
+            12,
+            3
+          ],
+          1
+        ],
+        "expected": 12
+      },
+      {
+        "input": [
+          [
+            7,
+            7,
+            7,
+            1
+          ],
+          3
+        ],
+        "expected": 7
+      },
+      {
+        "input": [
+          [
+            5,
+            5
+          ],
+          1
+        ],
+        "expected": 5
+      }
+    ],
+    "id": 67
+  },
+  {
+    "title": "Find Second Smallest",
+    "category": "array",
+    "tags": [
+      "array",
+      "sorting",
+      "comparison"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds the second smallest number in a list.",
+    "starterCode": "def second_smallest(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            10,
+            5,
+            8,
+            12,
+            3
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            7,
+            7,
+            7,
+            1
+          ]
+        ],
+        "expected": 7
+      },
+      {
+        "input": [
+          [
+            5,
+            5
+          ]
+        ],
+        "expected": 5
+      }
+    ],
+    "id": 68
+  },
+  {
+    "title": "Flatten List",
+    "category": "array",
+    "tags": [
+      "array",
+      "iteration",
+      "nested-structures"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that flattens a nested list (one level deep).",
+    "starterCode": "def flatten(lst):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              5
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            []
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              2,
+              3
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "id": 69
+  },
+  {
+    "title": "Deep Flatten List",
+    "category": "array",
+    "tags": [
+      "array",
+      "recursion",
+      "nested-structures"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that flattens a deeply nested list (all levels).",
+    "starterCode": "def deep_flatten(lst):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            [
+              1,
+              [
+                2,
+                3
+              ]
+            ],
+            [
+              4,
+              [
+                5,
+                6
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              [
+                2,
+                [
+                  3,
+                  [
+                    4
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            []
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              2,
+              3
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "id": 70
+  },
+  {
+    "title": "Chunk List",
+    "category": "array",
+    "tags": [
+      "array",
+      "iteration",
+      "grouping"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that splits a list into chunks of size n.",
+    "starterCode": "def chunk_list(lst, n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          3
+        ],
+        "expected": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          3
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "input": [
+          [],
+          2
+        ],
+        "expected": []
+      }
+    ],
+    "id": 71
+  },
+  {
+    "title": "Find Missing Number",
+    "category": "array",
+    "tags": [
+      "array",
+      "math",
+      "bit-manipulation"
+    ],
+    "difficulty": 4,
+    "description": "Given a list containing n-1 numbers from 0 to n, find the missing number.",
+    "starterCode": "def find_missing(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 78
+  },
+  {
+    "title": "Find All Missing Numbers",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "finding"
+    ],
+    "difficulty": 4,
+    "description": "Given a list of numbers from 1 to n with some missing, return all missing numbers.",
+    "starterCode": "def find_all_missing(numbers, n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            5
+          ],
+          5
+        ],
+        "expected": [
+          2,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          5
+        ],
+        "expected": [
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            2,
+            4,
+            6
+          ],
+          6
+        ],
+        "expected": [
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          5
+        ],
+        "expected": []
+      }
+    ],
+    "id": 79
+  },
+  {
+    "title": "First Missing Positive",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "optimization"
+    ],
+    "difficulty": 4,
+    "description": "Find the smallest missing positive integer in an unsorted list.",
+    "starterCode": "def first_missing_positive(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            3,
+            4,
+            -1,
+            1
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            7,
+            8,
+            9,
+            11,
+            12
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": 5
+      }
+    ],
+    "id": 80
+  },
+  {
+    "title": "Move Zeros",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "in-place"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that moves all zeros in a list to the end while maintaining the order of other elements.",
+    "starterCode": "def move_zeros(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            0,
+            1,
+            0,
+            3,
+            12
+          ]
+        ],
+        "expected": [
+          1,
+          3,
+          12,
+          0,
+          0
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      }
+    ],
+    "id": 84
+  },
+  {
+    "title": "Move Element to End",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "in-place"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that moves all instances of a given value to the end of a list.",
+    "starterCode": "def move_to_end(numbers, val):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            2,
+            4
+          ],
+          2
+        ],
+        "expected": [
+          1,
+          3,
+          4,
+          2,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ],
+          1
+        ],
+        "expected": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          4
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            5
+          ],
+          5
+        ],
+        "expected": [
+          5
+        ]
+      }
+    ],
+    "id": 85
+  },
+  {
+    "title": "Partition Array",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "partitioning"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that partitions a list so all elements less than x come before elements >= x.",
+    "starterCode": "def partition_array(numbers, x):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            3,
+            1,
+            4,
+            2,
+            5
+          ],
+          3
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          3
+        ],
+        "expected": [
+          2,
+          1,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          4
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            5
+          ],
+          3
+        ],
+        "expected": [
+          5
+        ]
+      }
+    ],
+    "id": 86
+  },
+  {
+    "title": "Find Intersection",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "set-operations"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds the intersection of two lists (common elements).",
+    "starterCode": "def intersection(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": []
+      }
+    ],
+    "id": 87
+  },
+  {
+    "title": "Find Union",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "set-operations"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds the union of two lists (all unique elements).",
+    "starterCode": "def union(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      }
+    ],
+    "id": 88
+  },
+  {
+    "title": "Find Difference",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "set-operations"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds elements in list1 that are not in list2.",
+    "starterCode": "def difference(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "expected": [
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": []
+      }
+    ],
+    "id": 89
+  },
+  {
+    "title": "Chunk Array",
+    "category": "array",
+    "tags": [
+      "array",
+      "slicing",
+      "iteration"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that splits a list into chunks of a given size.",
+    "starterCode": "def chunk_array(lst, size):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          2
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          5
+        ],
+        "expected": [
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "input": [
+          [],
+          2
+        ],
+        "expected": []
+      }
+    ],
+    "id": 93
+  },
+  {
+    "title": "Chunk Array N Parts",
+    "category": "array",
+    "tags": [
+      "array",
+      "slicing",
+      "math"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that splits a list into n equal (or nearly equal) parts.",
+    "starterCode": "def chunk_n_parts(lst, n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          2
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          1
+        ],
+        "expected": [
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          3
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      }
+    ],
+    "id": 94
+  },
+  {
+    "title": "Sliding Window",
+    "category": "array",
+    "tags": [
+      "array",
+      "sliding-window",
+      "iteration"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns all sliding windows of size k from a list.",
+    "starterCode": "def sliding_windows(lst, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          3
+        ],
+        "expected": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          2
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          1
+        ],
+        "expected": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          3
+        ],
+        "expected": []
+      }
+    ],
+    "id": 95
+  },
+  {
+    "title": "Remove Duplicates Sorted",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "in-place"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that removes duplicates from a sorted list and returns the length of unique elements.",
+    "starterCode": "def remove_duplicates_sorted(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            1,
+            2,
+            2,
+            3
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 102
+  },
+  {
+    "title": "Get Unique Sorted",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "in-place"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns a new list with only unique elements from a sorted list.",
+    "starterCode": "def get_unique_sorted(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            1,
+            2,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      }
+    ],
+    "id": 103
+  },
+  {
+    "title": "Count Unique Sorted",
+    "category": "array",
+    "tags": [
+      "array",
+      "counting",
+      "optimization"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that counts unique elements in a sorted list.",
+    "starterCode": "def count_unique_sorted(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            1,
+            2,
+            2,
+            3
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 104
+  },
+  {
+    "title": "Find Peak Element",
+    "category": "array",
+    "tags": [
+      "array",
+      "binary-search",
+      "optimization"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns the index of a peak element (element greater than or equal to its neighbors).",
+    "starterCode": "def find_peak(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            1,
+            3,
+            5,
+            6,
+            4
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 111
+  },
+  {
+    "title": "Find All Peaks",
+    "category": "array",
+    "tags": [
+      "array",
+      "iteration",
+      "local-maximum"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns all indices of peak elements in a list.",
+    "starterCode": "def find_all_peaks(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": [
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            1,
+            3,
+            5,
+            6,
+            4
+          ]
+        ],
+        "expected": [
+          1,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          2
+        ]
+      }
+    ],
+    "id": 112
+  },
+  {
+    "title": "Find Valley Element",
+    "category": "array",
+    "tags": [
+      "array",
+      "iteration",
+      "local-minimum"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns the index of a valley element (element less than or equal to its neighbors).",
+    "starterCode": "def find_valley(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            3,
+            2,
+            1,
+            2
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            5,
+            3,
+            4,
+            1,
+            2
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 113
+  },
+  {
+    "title": "Majority Element",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "boyer-moore"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the majority element (appears more than n/2 times) in a list.",
+    "starterCode": "def majority_element(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            3,
+            2,
+            3
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            2,
+            2,
+            1,
+            1,
+            1,
+            2,
+            2
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 117
+  },
+  {
+    "title": "Has Majority Element",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that checks if a majority element exists in a list.",
+    "starterCode": "def has_majority(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            3,
+            2,
+            3
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2,
+            2
+          ]
+        ],
+        "expected": false
+      }
+    ],
+    "id": 118
+  },
+  {
+    "title": "Find All Majorities",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds all elements that appear more than n/3 times in a list.",
+    "starterCode": "def find_all_majorities(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            3,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1,
+            3,
+            3,
+            2,
+            2,
+            2
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": []
+      }
+    ],
+    "id": 119
+  },
+  {
+    "title": "Product Except Self",
+    "category": "array",
+    "tags": [
+      "array",
+      "prefix-sum",
+      "optimization"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns a list where each element is the product of all elements except itself.",
+    "starterCode": "def product_except_self(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          24,
+          12,
+          8,
+          6
+        ]
+      },
+      {
+        "input": [
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          12,
+          8,
+          6
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      }
+    ],
+    "id": 120
+  },
+  {
+    "title": "Sum Except Self",
+    "category": "array",
+    "tags": [
+      "array",
+      "prefix-sum",
+      "optimization"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns a list where each element is the sum of all elements except itself.",
+    "starterCode": "def sum_except_self(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          9,
+          8,
+          7,
+          6
+        ]
+      },
+      {
+        "input": [
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          7,
+          6,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      }
+    ],
+    "id": 121
+  },
+  {
+    "title": "Max Except Self",
+    "category": "array",
+    "tags": [
+      "array",
+      "optimization",
+      "max-finding"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns a list where each element is the maximum of all elements except itself.",
+    "starterCode": "def max_except_self(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          4,
+          4,
+          4,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          4,
+          5,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 122
+  },
+  {
+    "title": "Find Duplicates",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "set-operations"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that finds all duplicate elements in a list.",
+    "starterCode": "def find_duplicates(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            7,
+            8,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": [
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      }
+    ],
+    "id": 126
+  },
+  {
+    "title": "Has Duplicates",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "boolean"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if a list contains any duplicates.",
+    "starterCode": "def has_duplicates(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            7,
+            8,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          [
+            1,
+            1
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": false
+      }
+    ],
+    "id": 127
+  },
+  {
+    "title": "Duplicate Positions",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "indexing"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns a dict mapping each duplicate element to its list of indices.",
+    "starterCode": "def duplicate_positions(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            7,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": {
+          "2": [
+            2,
+            4
+          ],
+          "3": [
+            1,
+            5
+          ]
+        }
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": {
+          "1": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": {}
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": {}
+      }
+    ],
+    "id": 128
+  },
+  {
+    "title": "Find Union",
+    "category": "array",
+    "tags": [
+      "array",
+      "set-operations",
+      "hashmap"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that finds the union of two lists (all unique elements from both).",
+    "starterCode": "def union(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      }
+    ],
+    "id": 135
+  },
+  {
+    "title": "Symmetric Difference",
+    "category": "array",
+    "tags": [
+      "array",
+      "set-operations",
+      "hashmap"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that finds elements that are in either list but not in both.",
+    "starterCode": "def symmetric_difference(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          3
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          2
+        ]
+      }
+    ],
+    "id": 136
+  },
+  {
+    "title": "Is Subset",
+    "category": "array",
+    "tags": [
+      "array",
+      "set-operations",
+      "hashmap"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that checks if list1 is a subset of list2.",
+    "starterCode": "def is_subset(list1, list2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "id": 137
+  },
+  {
+    "title": "Contains Duplicate",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "set-operations"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that checks if a list contains any duplicate elements.",
+    "starterCode": "def contains_duplicate(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1,
+            3,
+            3,
+            4,
+            3,
+            2,
+            4,
+            2
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": false
+      }
+    ],
+    "id": 144
+  },
+  {
+    "title": "Contains Duplicate Within K",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "sliding-window"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if there are two distinct indices i and j where nums[i] == nums[j] and abs(i - j) <= k.",
+    "starterCode": "def contains_nearby_duplicate(numbers, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            1
+          ],
+          3
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          1
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            1,
+            2,
+            3
+          ],
+          2
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          [],
+          1
+        ],
+        "expected": false
+      }
+    ],
+    "id": 145
+  },
+  {
+    "title": "First Duplicate Index",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "indexing"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns the index of the first element that has a duplicate in the list, or -1 if none.",
+    "starterCode": "def first_duplicate_index(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": -1
+      },
+      {
+        "input": [
+          [
+            2,
+            1,
+            2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": -1
+      }
+    ],
+    "id": 146
+  },
+  {
+    "title": "Merge Two Sorted Arrays",
+    "category": "array",
+    "tags": [
+      "array",
+      "merging",
+      "two-pointer"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that merges two sorted arrays without using extra space for one array.",
+    "starterCode": "def merge_arrays(arr1, arr2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            7
+          ],
+          [
+            2,
+            4,
+            6,
+            8
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            5,
+            9
+          ],
+          [
+            2,
+            3,
+            10
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          5,
+          9,
+          10
+        ]
+      }
+    ],
+    "id": 156
+  },
+  {
+    "title": "Merge K Sorted Lists",
+    "category": "array",
+    "tags": [
+      "array",
+      "merging",
+      "heap"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that merges k sorted lists into one sorted list.",
+    "starterCode": "def merge_k_lists(lists):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "id": 157
+  },
+  {
+    "title": "Merge Intervals",
+    "category": "array",
+    "tags": [
+      "array",
+      "intervals",
+      "sorting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that merges overlapping intervals.",
+    "starterCode": "def merge_intervals(intervals):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              15,
+              18
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            6
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            15,
+            18
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              4
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            0,
+            4
+          ]
+        ]
+      }
+    ],
+    "id": 158
+  },
+  {
+    "title": "Top K Frequent Elements",
+    "category": "array",
+    "tags": [
+      "hashmap",
+      "sorting",
+      "frequency"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns the k most frequent elements in a list. Return them sorted by frequency (descending), then by value (ascending) if frequencies are equal.",
+    "starterCode": "def top_k_frequent(nums, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            1,
+            1,
+            2,
+            2,
+            3
+          ],
+          2
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ],
+          1
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            4,
+            4,
+            4,
+            2,
+            2,
+            3
+          ],
+          1
+        ],
+        "expected": [
+          4
+        ]
+      }
+    ],
+    "id": 168
+  },
+  {
+    "title": "Subarray Sum Equals K",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "prefix-sum"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that counts the number of continuous subarrays whose sum equals k.",
+    "starterCode": "def subarray_sum(nums, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ],
+          2
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          3
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1,
+            -1,
+            0
+          ],
+          0
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1
+          ],
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 169
+  },
+  {
+    "title": "Longest Consecutive Sequence",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "sequence"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that finds the length of the longest consecutive sequence in an unsorted array.",
+    "starterCode": "def longest_consecutive(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            100,
+            4,
+            200,
+            1,
+            3,
+            2
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            0,
+            3,
+            7,
+            2,
+            5,
+            8,
+            4,
+            6,
+            0,
+            1
+          ]
+        ],
+        "expected": 9
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            9,
+            1,
+            4,
+            7,
+            3
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 170
+  },
+  {
+    "title": "Missing Ranges",
+    "category": "array",
+    "tags": [
+      "array",
+      "intervals",
+      "iteration"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that finds the missing ranges between lower and upper bounds in a sorted array.",
+    "starterCode": "def find_missing_ranges(nums, lower, upper):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            0,
+            1,
+            3,
+            50,
+            75
+          ],
+          0,
+          99
+        ],
+        "expected": [
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            49
+          ],
+          [
+            51,
+            74
+          ],
+          [
+            76,
+            99
+          ]
+        ]
+      },
+      {
+        "input": [
+          [],
+          1,
+          1
+        ],
+        "expected": [
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "input": [
+          [],
+          -3,
+          -1
+        ],
+        "expected": [
+          [
+            -3,
+            -1
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            -1
+          ],
+          -1,
+          -1
+        ],
+        "expected": []
+      }
+    ],
+    "id": 171
+  },
+  {
+    "title": "Valid Sudoku",
+    "category": "array",
+    "tags": [
+      "hashmap",
+      "matrix",
+      "validation"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that checks if a 9x9 Sudoku board is valid (only filled cells need to be validated).",
+    "starterCode": "def is_valid_sudoku(board):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            [
+              "5",
+              "3",
+              ".",
+              ".",
+              "7",
+              ".",
+              ".",
+              ".",
+              "."
+            ],
+            [
+              "6",
+              ".",
+              ".",
+              "1",
+              "9",
+              "5",
+              ".",
+              ".",
+              "."
+            ],
+            [
+              ".",
+              "9",
+              "8",
+              ".",
+              ".",
+              ".",
+              ".",
+              "6",
+              "."
+            ],
+            [
+              "8",
+              ".",
+              ".",
+              ".",
+              "6",
+              ".",
+              ".",
+              ".",
+              "3"
+            ],
+            [
+              "4",
+              ".",
+              ".",
+              "8",
+              ".",
+              "3",
+              ".",
+              ".",
+              "1"
+            ],
+            [
+              "7",
+              ".",
+              ".",
+              ".",
+              "2",
+              ".",
+              ".",
+              ".",
+              "6"
+            ],
+            [
+              ".",
+              "6",
+              ".",
+              ".",
+              ".",
+              ".",
+              "2",
+              "8",
+              "."
+            ],
+            [
+              ".",
+              ".",
+              ".",
+              "4",
+              "1",
+              "9",
+              ".",
+              ".",
+              "5"
+            ],
+            [
+              ".",
+              ".",
+              ".",
+              ".",
+              "8",
+              ".",
+              ".",
+              "7",
+              "9"
+            ]
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "id": 172
+  },
+  {
+    "title": "Kth Largest Element",
+    "category": "array",
+    "tags": [
+      "array",
+      "sorting",
+      "heap"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that finds the kth largest element in an unsorted array.",
+    "starterCode": "def find_kth_largest(nums, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            3,
+            2,
+            1,
+            5,
+            6,
+            4
+          ],
+          2
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            3,
+            1,
+            2,
+            4,
+            5,
+            5,
+            6
+          ],
+          4
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            1
+          ],
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          5
+        ],
+        "expected": 3
+      }
+    ],
+    "id": 173
+  },
+  {
+    "title": "Merge Intervals",
+    "category": "array",
+    "tags": [
+      "array",
+      "sorting",
+      "intervals"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that merges overlapping intervals.",
+    "starterCode": "def merge_intervals(intervals):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              15,
+              18
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            6
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            15,
+            18
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              4
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            [
+              1,
+              4
+            ]
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            4
+          ]
+        ]
+      }
+    ],
+    "id": 174
+  },
+  {
+    "title": "Single Number",
+    "category": "array",
+    "tags": [
+      "array",
+      "bit-manipulation",
+      "hashmap"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the single number in a list where every other number appears twice.",
+    "starterCode": "def single_number(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            2,
+            2,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            4,
+            1,
+            2,
+            1,
+            2
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            7,
+            3,
+            5,
+            3,
+            7
+          ]
+        ],
+        "expected": 5
+      }
+    ],
+    "id": 176
+  },
+  {
+    "title": "Trapping Rain Water",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "stack"
+    ],
+    "difficulty": 7,
+    "description": "Write a function that calculates how much rain water can be trapped given an elevation map.",
+    "starterCode": "def trap_water(heights):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            3,
+            2,
+            1,
+            2,
+            1
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          [
+            4,
+            2,
+            0,
+            3,
+            2,
+            5
+          ]
+        ],
+        "expected": 9
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            3,
+            0,
+            2,
+            0,
+            4
+          ]
+        ],
+        "expected": 7
+      }
+    ],
+    "id": 177
+  },
+  {
+    "title": "Max Sliding Window",
+    "category": "array",
+    "tags": [
+      "array",
+      "sliding-window",
+      "queue"
+    ],
+    "difficulty": 7,
+    "description": "Write a function that finds the maximum value in each sliding window of size k.",
+    "starterCode": "def max_sliding_window(nums, k):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            -1,
+            -3,
+            5,
+            3,
+            6,
+            7
+          ],
+          3
+        ],
+        "expected": [
+          3,
+          3,
+          5,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ],
+          1
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            -1
+          ],
+          1
+        ],
+        "expected": [
+          1,
+          -1
+        ]
+      }
+    ],
+    "id": 181
+  },
+  {
+    "title": "Container With Most Water",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "greedy"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that finds two lines that form a container holding the most water.",
+    "starterCode": "def max_area(heights):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            8,
+            6,
+            2,
+            5,
+            4,
+            8,
+            3,
+            7
+          ]
+        ],
+        "expected": 49
+      },
+      {
+        "input": [
+          [
+            1,
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            1,
+            4
+          ]
+        ],
+        "expected": 16
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 197
+  },
+  {
+    "title": "3Sum",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "sorting"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that finds all unique triplets that sum to zero. Return triplets sorted, and the list of triplets sorted as well.",
+    "starterCode": "def three_sum(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            -1,
+            0,
+            1,
+            2,
+            -1,
+            -4
+          ]
+        ],
+        "expected": [
+          [
+            -1,
+            -1,
+            2
+          ],
+          [
+            -1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "expected": [
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "id": 198
+  },
+  {
+    "title": "Find Median of Two Sorted Arrays",
+    "category": "array",
+    "tags": [
+      "binary-search",
+      "array",
+      "divide-conquer"
+    ],
+    "difficulty": 8,
+    "description": "Write a function that finds the median of two sorted arrays.",
+    "starterCode": "def find_median_sorted_arrays(nums1, nums2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            3
+          ],
+          [
+            2
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "expected": 2.5
+      },
+      {
+        "input": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [],
+          [
+            1
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 202
+  },
+  {
+    "title": "Find All Duplicates",
+    "category": "array",
+    "tags": [
+      "array",
+      "hashmap",
+      "in-place"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that finds all elements that appear twice in an array (1 ≤ a[i] ≤ n).",
+    "starterCode": "def find_all_duplicates(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            7,
+            8,
+            2,
+            3,
+            1
+          ]
+        ],
+        "expected": [
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            10,
+            2,
+            5,
+            10,
+            9,
+            1,
+            1,
+            4,
+            3,
+            7
+          ]
+        ],
+        "expected": [
+          10,
+          1
+        ]
+      }
+    ],
+    "id": 206
+  },
+  {
+    "title": "Next Permutation",
+    "category": "array",
+    "tags": [
+      "array",
+      "two-pointer",
+      "algorithm"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that rearranges a list into the next lexicographically greater permutation in-place.",
+    "starterCode": "def next_permutation(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          3,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            5
+          ]
+        ],
+        "expected": [
+          1,
+          5,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            2
+          ]
+        ],
+        "expected": [
+          2,
+          1,
+          3
+        ]
+      }
+    ],
+    "id": 211
+  }
+]

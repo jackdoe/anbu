@@ -1,0 +1,1916 @@
+[
+  {
+    "title": "Add Two Numbers",
+    "category": "math",
+    "tags": [
+      "basics",
+      "arithmetic"
+    ],
+    "difficulty": 0,
+    "description": "Write a function that adds two numbers together.",
+    "starterCode": "def add(a, b):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2,
+          3
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          -1,
+          1
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          100,
+          200
+        ],
+        "expected": 300
+      }
+    ],
+    "id": 0
+  },
+  {
+    "title": "Subtract Two Numbers",
+    "category": "math",
+    "tags": [
+      "basics",
+      "arithmetic"
+    ],
+    "difficulty": 0,
+    "description": "Write a function that subtracts the second number from the first.",
+    "starterCode": "def subtract(a, b):\n    pass",
+    "tests": [
+      {
+        "input": [
+          5,
+          3
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          1,
+          -1
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          100,
+          50
+        ],
+        "expected": 50
+      }
+    ],
+    "id": 1
+  },
+  {
+    "title": "Multiply Two Numbers",
+    "category": "math",
+    "tags": [
+      "basics",
+      "arithmetic"
+    ],
+    "difficulty": 0,
+    "description": "Write a function that multiplies two numbers together.",
+    "starterCode": "def multiply(a, b):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2,
+          3
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          -2,
+          3
+        ],
+        "expected": -6
+      },
+      {
+        "input": [
+          10,
+          10
+        ],
+        "expected": 100
+      }
+    ],
+    "id": 2
+  },
+  {
+    "title": "Factorial",
+    "category": "math",
+    "tags": [
+      "recursion",
+      "iteration",
+      "math"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that calculates the factorial of a number.",
+    "starterCode": "def factorial(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          5
+        ],
+        "expected": 120
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": 24
+      }
+    ],
+    "id": 15
+  },
+  {
+    "title": "Double Factorial",
+    "category": "math",
+    "tags": [
+      "recursion",
+      "iteration",
+      "math"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that calculates the double factorial (n!! = n × (n-2) × (n-4) × ... × 2 or 1).",
+    "starterCode": "def double_factorial(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          5
+        ],
+        "expected": 15
+      },
+      {
+        "input": [
+          6
+        ],
+        "expected": 48
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 16
+  },
+  {
+    "title": "Factorial Digits Sum",
+    "category": "math",
+    "tags": [
+      "recursion",
+      "iteration",
+      "math"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns the sum of digits in the factorial of a number.",
+    "starterCode": "def factorial_digit_sum(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          5
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 27
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 17
+  },
+  {
+    "title": "Sum of Digits",
+    "category": "math",
+    "tags": [
+      "math",
+      "string-manipulation",
+      "iteration"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns the sum of all digits in a number.",
+    "starterCode": "def sum_of_digits(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          123
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          9999
+        ],
+        "expected": 36
+      },
+      {
+        "input": [
+          100
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 24
+  },
+  {
+    "title": "Product of Digits",
+    "category": "math",
+    "tags": [
+      "math",
+      "string-manipulation",
+      "iteration"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns the product of all digits in a number. Return 0 if any digit is 0.",
+    "starterCode": "def product_of_digits(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          123
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          999
+        ],
+        "expected": 729
+      },
+      {
+        "input": [
+          105
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 25
+  },
+  {
+    "title": "Digital Root",
+    "category": "math",
+    "tags": [
+      "math",
+      "iteration",
+      "recursion"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns the digital root of a number (repeatedly sum digits until a single digit remains).",
+    "starterCode": "def digital_root(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          38
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          9999
+        ],
+        "expected": 9
+      },
+      {
+        "input": [
+          123
+        ],
+        "expected": 6
+      }
+    ],
+    "id": 26
+  },
+  {
+    "title": "Is Prime",
+    "category": "math",
+    "tags": [
+      "math",
+      "optimization",
+      "iteration"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if a number is prime.",
+    "starterCode": "def is_prime(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          7
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          17
+        ],
+        "expected": true
+      }
+    ],
+    "id": 27
+  },
+  {
+    "title": "Prime Count",
+    "category": "math",
+    "tags": [
+      "math",
+      "optimization",
+      "counting"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that counts how many prime numbers are less than or equal to n.",
+    "starterCode": "def prime_count(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          10
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          20
+        ],
+        "expected": 8
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 28
+  },
+  {
+    "title": "Next Prime",
+    "category": "math",
+    "tags": [
+      "math",
+      "optimization",
+      "iteration"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the smallest prime number greater than n.",
+    "starterCode": "def next_prime(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          10
+        ],
+        "expected": 11
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": 11
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          13
+        ],
+        "expected": 17
+      }
+    ],
+    "id": 29
+  },
+  {
+    "title": "Binary to Decimal",
+    "category": "math",
+    "tags": [
+      "math",
+      "conversion",
+      "binary"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that converts a binary string to decimal.",
+    "starterCode": "def binary_to_decimal(binary_str):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "101"
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          "1010"
+        ],
+        "expected": 10
+      },
+      {
+        "input": [
+          "1111"
+        ],
+        "expected": 15
+      },
+      {
+        "input": [
+          "10000"
+        ],
+        "expected": 16
+      }
+    ],
+    "id": 39
+  },
+  {
+    "title": "Decimal to Binary",
+    "category": "math",
+    "tags": [
+      "math",
+      "conversion",
+      "binary"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that converts a decimal number to a binary string.",
+    "starterCode": "def decimal_to_binary(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          5
+        ],
+        "expected": "101"
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": "1010"
+      },
+      {
+        "input": [
+          15
+        ],
+        "expected": "1111"
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": "0"
+      }
+    ],
+    "id": 40
+  },
+  {
+    "title": "Hexadecimal to Decimal",
+    "category": "math",
+    "tags": [
+      "math",
+      "conversion",
+      "hex"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that converts a hexadecimal string to decimal.",
+    "starterCode": "def hex_to_decimal(hex_str):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "A"
+        ],
+        "expected": 10
+      },
+      {
+        "input": [
+          "1F"
+        ],
+        "expected": 31
+      },
+      {
+        "input": [
+          "FF"
+        ],
+        "expected": 255
+      },
+      {
+        "input": [
+          "10"
+        ],
+        "expected": 16
+      }
+    ],
+    "id": 41
+  },
+  {
+    "title": "Fibonacci Sequence",
+    "category": "math",
+    "tags": [
+      "recursion",
+      "dynamic-programming",
+      "math"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the nth Fibonacci number.",
+    "starterCode": "def fibonacci(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 55
+      }
+    ],
+    "id": 48
+  },
+  {
+    "title": "Fibonacci List",
+    "category": "math",
+    "tags": [
+      "recursion",
+      "dynamic-programming",
+      "math"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns a list of the first n Fibonacci numbers.",
+    "starterCode": "def fibonacci_list(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          5
+        ],
+        "expected": [
+          0,
+          1,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          5,
+          8
+        ]
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": []
+      }
+    ],
+    "id": 49
+  },
+  {
+    "title": "Fibonacci Sum",
+    "category": "math",
+    "tags": [
+      "recursion",
+      "dynamic-programming",
+      "math"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the sum of the first n Fibonacci numbers.",
+    "starterCode": "def fibonacci_sum(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          5
+        ],
+        "expected": 7
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": 20
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 88
+      }
+    ],
+    "id": 50
+  },
+  {
+    "title": "Is Leap Year",
+    "category": "math",
+    "tags": [
+      "math",
+      "conditionals",
+      "date"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that checks if a year is a leap year.",
+    "starterCode": "def is_leap_year(year):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2020
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          2021
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          2000
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          1900
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          2024
+        ],
+        "expected": true
+      }
+    ],
+    "id": 75
+  },
+  {
+    "title": "Count Leap Years",
+    "category": "math",
+    "tags": [
+      "math",
+      "conditionals",
+      "counting"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that counts how many leap years are in a range from year1 to year2 (inclusive).",
+    "starterCode": "def count_leap_years(year1, year2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2020,
+          2024
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          1900,
+          1904
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          2000,
+          2000
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          2021,
+          2022
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 76
+  },
+  {
+    "title": "Next Leap Year",
+    "category": "math",
+    "tags": [
+      "math",
+      "conditionals",
+      "iteration"
+    ],
+    "difficulty": 2,
+    "description": "Write a function that returns the next leap year after the given year.",
+    "starterCode": "def next_leap_year(year):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2021
+        ],
+        "expected": 2024
+      },
+      {
+        "input": [
+          2020
+        ],
+        "expected": 2024
+      },
+      {
+        "input": [
+          1900
+        ],
+        "expected": 1904
+      },
+      {
+        "input": [
+          2000
+        ],
+        "expected": 2004
+      }
+    ],
+    "id": 77
+  },
+  {
+    "title": "Is Power of Two",
+    "category": "math",
+    "tags": [
+      "math",
+      "bit-manipulation",
+      "optimization"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if a number is a power of two.",
+    "starterCode": "def is_power_of_two(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          16
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          18
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          64
+        ],
+        "expected": true
+      }
+    ],
+    "id": 90
+  },
+  {
+    "title": "Is Power of N",
+    "category": "math",
+    "tags": [
+      "math",
+      "logarithm",
+      "optimization"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if a number is a power of n.",
+    "starterCode": "def is_power_of_n(num, n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          27,
+          3
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          16,
+          2
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          18,
+          3
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          1,
+          5
+        ],
+        "expected": true
+      }
+    ],
+    "id": 91
+  },
+  {
+    "title": "Find Power of Two",
+    "category": "math",
+    "tags": [
+      "math",
+      "bit-manipulation",
+      "logarithm"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns which power of two equals n (e.g., 8 -> 3 because 2^3 = 8). Return -1 if not a power of two.",
+    "starterCode": "def power_of_two_exponent(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          16
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          8
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          18
+        ],
+        "expected": -1
+      }
+    ],
+    "id": 92
+  },
+  {
+    "title": "Greatest Common Divisor",
+    "category": "math",
+    "tags": [
+      "math",
+      "recursion",
+      "euclidean-algorithm"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the GCD (greatest common divisor) of two numbers.",
+    "starterCode": "def gcd(a, b):\n    pass",
+    "tests": [
+      {
+        "input": [
+          12,
+          8
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          17,
+          5
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          100,
+          50
+        ],
+        "expected": 50
+      },
+      {
+        "input": [
+          7,
+          7
+        ],
+        "expected": 7
+      }
+    ],
+    "id": 99
+  },
+  {
+    "title": "Least Common Multiple",
+    "category": "math",
+    "tags": [
+      "math",
+      "gcd",
+      "lcm"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the LCM (least common multiple) of two numbers.",
+    "starterCode": "def lcm(a, b):\n    pass",
+    "tests": [
+      {
+        "input": [
+          12,
+          8
+        ],
+        "expected": 24
+      },
+      {
+        "input": [
+          5,
+          7
+        ],
+        "expected": 35
+      },
+      {
+        "input": [
+          100,
+          50
+        ],
+        "expected": 100
+      },
+      {
+        "input": [
+          7,
+          7
+        ],
+        "expected": 7
+      }
+    ],
+    "id": 100
+  },
+  {
+    "title": "GCD of List",
+    "category": "math",
+    "tags": [
+      "math",
+      "recursion",
+      "reduction"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the GCD of a list of numbers.",
+    "starterCode": "def gcd_list(numbers):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            12,
+            8,
+            16
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            5,
+            10,
+            15,
+            20
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            7
+          ]
+        ],
+        "expected": 7
+      },
+      {
+        "input": [
+          [
+            100,
+            50,
+            25
+          ]
+        ],
+        "expected": 25
+      }
+    ],
+    "id": 101
+  },
+  {
+    "title": "Pascal's Triangle Row",
+    "category": "math",
+    "tags": [
+      "math",
+      "dynamic-programming",
+      "combinatorics"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that returns the nth row of Pascal's triangle (0-indexed).",
+    "starterCode": "def pascal_row(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          0
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": [
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": [
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": [
+          1,
+          3,
+          3,
+          1
+        ]
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": [
+          1,
+          4,
+          6,
+          4,
+          1
+        ]
+      }
+    ],
+    "id": 105
+  },
+  {
+    "title": "Pascal's Triangle",
+    "category": "math",
+    "tags": [
+      "math",
+      "dynamic-programming",
+      "combinatorics"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that returns the first n rows of Pascal's triangle.",
+    "starterCode": "def pascal_triangle(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          1
+        ],
+        "expected": [
+          [
+            1
+          ]
+        ]
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": [
+          [
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": [
+          [
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": [
+          [
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            3,
+            1
+          ]
+        ]
+      }
+    ],
+    "id": 106
+  },
+  {
+    "title": "Pascal Element",
+    "category": "math",
+    "tags": [
+      "math",
+      "combinatorics",
+      "binomial"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that returns the element at position (row, col) in Pascal's triangle.",
+    "starterCode": "def pascal_element(row, col):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2,
+          1
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          3,
+          1
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          4,
+          2
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 107
+  },
+  {
+    "title": "Is Armstrong Number",
+    "category": "math",
+    "tags": [
+      "math",
+      "digit-manipulation"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if a number is an Armstrong number (sum of each digit raised to the power of the number of digits equals the number). Example: 153 = 1³ + 5³ + 3³, 9 = 9¹.",
+    "starterCode": "def is_armstrong(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          153
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          370
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          123
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          9
+        ],
+        "expected": true
+      }
+    ],
+    "id": 129
+  },
+  {
+    "title": "Find Armstrong Numbers",
+    "category": "math",
+    "tags": [
+      "math",
+      "digit-manipulation",
+      "generation"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns all Armstrong numbers up to n.",
+    "starterCode": "def find_armstrong_numbers(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          500
+        ],
+        "expected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          153,
+          370,
+          371,
+          407
+        ]
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "input": [
+          200
+        ],
+        "expected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          153
+        ]
+      }
+    ],
+    "id": 130
+  },
+  {
+    "title": "Armstrong Sum",
+    "category": "math",
+    "tags": [
+      "math",
+      "digit-manipulation"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the Armstrong sum (sum of digits raised to the power of digit count) of a number.",
+    "starterCode": "def armstrong_sum(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          153
+        ],
+        "expected": 153
+      },
+      {
+        "input": [
+          123
+        ],
+        "expected": 36
+      },
+      {
+        "input": [
+          9
+        ],
+        "expected": 9
+      },
+      {
+        "input": [
+          100
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 131
+  },
+  {
+    "title": "Is Perfect Square",
+    "category": "math",
+    "tags": [
+      "math",
+      "binary-search",
+      "sqrt"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if a number is a perfect square.",
+    "starterCode": "def is_perfect_square(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          16
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          14
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          25
+        ],
+        "expected": true
+      }
+    ],
+    "id": 138
+  },
+  {
+    "title": "Is Perfect Cube",
+    "category": "math",
+    "tags": [
+      "math",
+      "binary-search",
+      "cube-root"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if a number is a perfect cube.",
+    "starterCode": "def is_perfect_cube(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          27
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          14
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          64
+        ],
+        "expected": true
+      }
+    ],
+    "id": 139
+  },
+  {
+    "title": "Next Perfect Square",
+    "category": "math",
+    "tags": [
+      "math",
+      "sqrt",
+      "arithmetic"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that returns the next perfect square after n.",
+    "starterCode": "def next_perfect_square(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          16
+        ],
+        "expected": 25
+      },
+      {
+        "input": [
+          14
+        ],
+        "expected": 16
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 140
+  },
+  {
+    "title": "Reverse Integer",
+    "category": "math",
+    "tags": [
+      "math",
+      "digit-manipulation"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that reverses the digits of an integer.",
+    "starterCode": "def reverse_integer(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          123
+        ],
+        "expected": 321
+      },
+      {
+        "input": [
+          -123
+        ],
+        "expected": -321
+      },
+      {
+        "input": [
+          120
+        ],
+        "expected": 21
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 141
+  },
+  {
+    "title": "Is Palindrome Number",
+    "category": "math",
+    "tags": [
+      "math",
+      "digit-manipulation",
+      "palindrome"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that checks if a number is a palindrome.",
+    "starterCode": "def is_palindrome_number(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          121
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          -121
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": true
+      }
+    ],
+    "id": 142
+  },
+  {
+    "title": "Sum of Digits Until Single",
+    "category": "math",
+    "tags": [
+      "math",
+      "digit-manipulation",
+      "iteration"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that repeatedly sums digits until a single digit remains (same as digital root).",
+    "starterCode": "def sum_until_single(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          38
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          123
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          9
+        ],
+        "expected": 9
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "id": 143
+  },
+  {
+    "title": "Happy Number",
+    "category": "math",
+    "tags": [
+      "math",
+      "hashmap",
+      "cycle-detection"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that checks if a number is a happy number (repeatedly sum squares of digits until reaching 1 or a cycle).",
+    "starterCode": "def is_happy(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          19
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": true
+      }
+    ],
+    "id": 147
+  },
+  {
+    "title": "Happy Number Steps",
+    "category": "math",
+    "tags": [
+      "math",
+      "hashmap",
+      "counting"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns the number of steps to determine if a number is happy (reaches 1) or sad (cycles). Return -1 if it cycles.",
+    "starterCode": "def happy_number_steps(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          19
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": -1
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": 5
+      }
+    ],
+    "id": 148
+  },
+  {
+    "title": "Find Happy Numbers",
+    "category": "math",
+    "tags": [
+      "math",
+      "generation",
+      "cycle-detection"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns all happy numbers less than or equal to n.",
+    "starterCode": "def find_happy_numbers(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          20
+        ],
+        "expected": [
+          1,
+          7,
+          10,
+          13,
+          19
+        ]
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": [
+          1,
+          7,
+          10
+        ]
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": [
+          1
+        ]
+      }
+    ],
+    "id": 149
+  },
+  {
+    "title": "Set Bits Count",
+    "category": "math",
+    "tags": [
+      "bit-manipulation",
+      "binary"
+    ],
+    "difficulty": 3,
+    "description": "Write a function that counts the number of 1 bits (set bits) in a number.",
+    "starterCode": "def count_bits(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          11
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          128
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": 3
+      }
+    ],
+    "id": 175
+  },
+  {
+    "title": "Pow(x, n)",
+    "category": "math",
+    "tags": [
+      "math",
+      "recursion",
+      "binary-exponentiation"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that calculates x raised to the power n (x^n). Round the result to 5 decimal places.",
+    "starterCode": "def my_pow(x, n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2,
+          10
+        ],
+        "expected": 1024
+      },
+      {
+        "input": [
+          2.1,
+          3
+        ],
+        "expected": 9.261
+      },
+      {
+        "input": [
+          2,
+          -2
+        ],
+        "expected": 0.25
+      },
+      {
+        "input": [
+          1,
+          2147483647
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 205
+  }
+]

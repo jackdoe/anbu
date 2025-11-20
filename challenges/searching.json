@@ -1,0 +1,247 @@
+[
+  {
+    "title": "Binary Search",
+    "category": "searching",
+    "tags": [
+      "searching",
+      "binary-search",
+      "algorithm"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that implements binary search to find the index of a target in a sorted array. Return -1 if not found.",
+    "starterCode": "def binary_search(arr, target):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          4
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          1
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          5
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          6
+        ],
+        "expected": -1
+      }
+    ],
+    "id": 159
+  },
+  {
+    "title": "Binary Search First Occurrence",
+    "category": "searching",
+    "tags": [
+      "searching",
+      "binary-search",
+      "algorithm"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the first occurrence of a target in a sorted array with duplicates.",
+    "starterCode": "def binary_search_first(arr, target):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          1
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          3
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 160
+  },
+  {
+    "title": "Binary Search Last Occurrence",
+    "category": "searching",
+    "tags": [
+      "searching",
+      "binary-search",
+      "algorithm"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that finds the last occurrence of a target in a sorted array with duplicates.",
+    "starterCode": "def binary_search_last(arr, target):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          1
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          3
+        ],
+        "expected": 2
+      }
+    ],
+    "id": 161
+  },
+  {
+    "title": "Search in Rotated Array",
+    "category": "searching",
+    "tags": [
+      "binary-search",
+      "array",
+      "algorithm"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that searches for a target in a rotated sorted array.",
+    "starterCode": "def search_rotated(nums, target):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            4,
+            5,
+            6,
+            7,
+            0,
+            1,
+            2
+          ],
+          0
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          [
+            4,
+            5,
+            6,
+            7,
+            0,
+            1,
+            2
+          ],
+          3
+        ],
+        "expected": -1
+      },
+      {
+        "input": [
+          [
+            1
+          ],
+          0
+        ],
+        "expected": -1
+      },
+      {
+        "input": [
+          [
+            1,
+            3
+          ],
+          3
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 201
+  }
+]

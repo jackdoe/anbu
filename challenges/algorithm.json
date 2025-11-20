@@ -1,0 +1,169 @@
+[
+  {
+    "title": "FizzBuzz",
+    "category": "algorithm",
+    "tags": [
+      "iteration",
+      "conditionals",
+      "modulo"
+    ],
+    "difficulty": 2,
+    "description": "Return a list of numbers from 1 to n, replacing multiples of 3 with 'Fizz', multiples of 5 with 'Buzz', and multiples of both with 'FizzBuzz'.",
+    "starterCode": "def fizzbuzz(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          15
+        ],
+        "expected": [
+          1,
+          2,
+          "Fizz",
+          4,
+          "Buzz",
+          "Fizz",
+          7,
+          8,
+          "Fizz",
+          "Buzz",
+          11,
+          "Fizz",
+          13,
+          14,
+          "FizzBuzz"
+        ]
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": [
+          1,
+          2,
+          "Fizz",
+          4,
+          "Buzz"
+        ]
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": [
+          1,
+          2,
+          "Fizz"
+        ]
+      }
+    ],
+    "id": 21
+  },
+  {
+    "title": "Custom FizzBuzz",
+    "category": "algorithm",
+    "tags": [
+      "iteration",
+      "conditionals",
+      "modulo"
+    ],
+    "difficulty": 2,
+    "description": "Return a list of numbers from 1 to n, replacing multiples of a with first string, multiples of b with second string, and multiples of both with both strings concatenated.",
+    "starterCode": "def custom_fizzbuzz(n, a, b, str1, str2):\n    pass",
+    "tests": [
+      {
+        "input": [
+          10,
+          2,
+          3,
+          "Even",
+          "Triple"
+        ],
+        "expected": [
+          1,
+          "Even",
+          "Triple",
+          "Even",
+          5,
+          "EvenTriple",
+          7,
+          "Even",
+          "Triple",
+          "Even"
+        ]
+      },
+      {
+        "input": [
+          5,
+          2,
+          5,
+          "X",
+          "Y"
+        ],
+        "expected": [
+          1,
+          "X",
+          3,
+          "X",
+          "Y"
+        ]
+      },
+      {
+        "input": [
+          6,
+          3,
+          3,
+          "A",
+          "A"
+        ],
+        "expected": [
+          1,
+          2,
+          "AA",
+          4,
+          5,
+          "AA"
+        ]
+      }
+    ],
+    "id": 22
+  },
+  {
+    "title": "FizzBuzz Sum",
+    "category": "algorithm",
+    "tags": [
+      "iteration",
+      "conditionals",
+      "math"
+    ],
+    "difficulty": 2,
+    "description": "Return the sum of numbers from 1 to n that are NOT replaced in FizzBuzz (not divisible by 3 or 5).",
+    "starterCode": "def fizzbuzz_sum(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          15
+        ],
+        "expected": 60
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 23
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": 7
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": 3
+      }
+    ],
+    "id": 23
+  }
+]

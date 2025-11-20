@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Jump Game",
+    "category": "greedy",
+    "tags": [
+      "greedy",
+      "array",
+      "dynamic-programming"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that checks if you can jump from the first to last index (each element is max jump length).",
+    "starterCode": "def can_jump(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            2,
+            3,
+            1,
+            1,
+            4
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            1,
+            0,
+            4
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "expected": true
+      }
+    ],
+    "id": 196
+  }
+]

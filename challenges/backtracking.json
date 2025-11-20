@@ -1,0 +1,344 @@
+[
+  {
+    "title": "Word Search",
+    "category": "backtracking",
+    "tags": [
+      "backtracking",
+      "dfs",
+      "matrix"
+    ],
+    "difficulty": 7,
+    "description": "Write a function that checks if a word exists in a 2D board by connecting adjacent cells.",
+    "starterCode": "def exist(board, word):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            [
+              "A",
+              "B",
+              "C",
+              "E"
+            ],
+            [
+              "S",
+              "F",
+              "C",
+              "S"
+            ],
+            [
+              "A",
+              "D",
+              "E",
+              "E"
+            ]
+          ],
+          "ABCCED"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            [
+              "A",
+              "B",
+              "C",
+              "E"
+            ],
+            [
+              "S",
+              "F",
+              "C",
+              "S"
+            ],
+            [
+              "A",
+              "D",
+              "E",
+              "E"
+            ]
+          ],
+          "SEE"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          [
+            [
+              "A",
+              "B",
+              "C",
+              "E"
+            ],
+            [
+              "S",
+              "F",
+              "C",
+              "S"
+            ],
+            [
+              "A",
+              "D",
+              "E",
+              "E"
+            ]
+          ],
+          "ABCB"
+        ],
+        "expected": false
+      }
+    ],
+    "id": 185
+  },
+  {
+    "title": "Permutations",
+    "category": "backtracking",
+    "tags": [
+      "backtracking",
+      "recursion",
+      "array"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns all possible permutations of a list of numbers.",
+    "starterCode": "def permutations(nums):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          [
+            1
+          ]
+        ]
+      }
+    ],
+    "id": 186
+  },
+  {
+    "title": "Combination Sum",
+    "category": "backtracking",
+    "tags": [
+      "backtracking",
+      "recursion",
+      "array"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that finds all unique combinations that sum to a target (numbers can be reused).",
+    "starterCode": "def combination_sum(candidates, target):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            2,
+            3,
+            6,
+            7
+          ],
+          7
+        ],
+        "expected": [
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            7
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            2,
+            3,
+            5
+          ],
+          8
+        ],
+        "expected": [
+          [
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            2
+          ],
+          1
+        ],
+        "expected": []
+      }
+    ],
+    "id": 187
+  },
+  {
+    "title": "Generate Parentheses",
+    "category": "backtracking",
+    "tags": [
+      "backtracking",
+      "string",
+      "recursion"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that generates all valid combinations of n pairs of parentheses.",
+    "starterCode": "def generate_parentheses(n):\n    pass",
+    "tests": [
+      {
+        "input": [
+          3
+        ],
+        "expected": [
+          "((()))",
+          "(()())",
+          "(())()",
+          "()(())",
+          "()()()"
+        ]
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": [
+          "()"
+        ]
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": [
+          "(())",
+          "()()"
+        ]
+      }
+    ],
+    "id": 188
+  },
+  {
+    "title": "Letter Combinations",
+    "category": "backtracking",
+    "tags": [
+      "backtracking",
+      "string",
+      "recursion"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that returns all letter combinations of a phone number (2-9).",
+    "starterCode": "def letter_combinations(digits):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "23"
+        ],
+        "expected": [
+          "ad",
+          "ae",
+          "af",
+          "bd",
+          "be",
+          "bf",
+          "cd",
+          "ce",
+          "cf"
+        ]
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          "2"
+        ],
+        "expected": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "id": 199
+  }
+]

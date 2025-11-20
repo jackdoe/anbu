@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Valid Parentheses",
+    "category": "stack",
+    "tags": [
+      "stack",
+      "string",
+      "matching"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that checks if a string of parentheses is valid.",
+    "starterCode": "def valid_parentheses(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "()"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "()[]{}"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "(]"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "([)]"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "{[]}"
+        ],
+        "expected": true
+      }
+    ],
+    "id": 54
+  },
+  {
+    "title": "Min Adds to Balance Parentheses",
+    "category": "stack",
+    "tags": [
+      "stack",
+      "string",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that returns the minimum number of parentheses to add to make a string valid (only '(' and ')').",
+    "starterCode": "def min_adds_to_balance(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "())"
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          "((("
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          "()"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "()))(("
+        ],
+        "expected": 4
+      }
+    ],
+    "id": 55
+  },
+  {
+    "title": "Remove Invalid Parentheses Count",
+    "category": "stack",
+    "tags": [
+      "stack",
+      "string",
+      "counting"
+    ],
+    "difficulty": 4,
+    "description": "Write a function that returns the minimum number of parentheses to remove to make a string valid (only '(' and ')').",
+    "starterCode": "def min_remove_to_balance(s):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "())"
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          "((("
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          "()"
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          "a)b(c)"
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 56
+  },
+  {
+    "title": "Simplify Path",
+    "category": "stack",
+    "tags": [
+      "stack",
+      "string",
+      "parsing"
+    ],
+    "difficulty": 5,
+    "description": "Write a function that simplifies a Unix-style file path (resolve '.', '..', and multiple slashes).",
+    "starterCode": "def simplify_path(path):\n    pass",
+    "tests": [
+      {
+        "input": [
+          "/home/"
+        ],
+        "expected": "/home"
+      },
+      {
+        "input": [
+          "/../"
+        ],
+        "expected": "/"
+      },
+      {
+        "input": [
+          "/home//foo/"
+        ],
+        "expected": "/home/foo"
+      },
+      {
+        "input": [
+          "/a/./b/../../c/"
+        ],
+        "expected": "/c"
+      },
+      {
+        "input": [
+          "/a/../../b/../c//.//"
+        ],
+        "expected": "/c"
+      }
+    ],
+    "id": 182
+  }
+]

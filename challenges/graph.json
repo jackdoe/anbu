@@ -1,0 +1,141 @@
+[
+  {
+    "title": "Course Schedule",
+    "category": "graph",
+    "tags": [
+      "graph",
+      "topological-sort",
+      "dfs"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that checks if you can finish all courses given prerequisites (detect cycle in directed graph).",
+    "starterCode": "def can_finish(num_courses, prerequisites):\n    pass",
+    "tests": [
+      {
+        "input": [
+          2,
+          [
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          2,
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          3,
+          [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          1,
+          []
+        ],
+        "expected": true
+      }
+    ],
+    "id": 183
+  },
+  {
+    "title": "Number of Islands",
+    "category": "graph",
+    "tags": [
+      "graph",
+      "dfs",
+      "bfs",
+      "matrix"
+    ],
+    "difficulty": 6,
+    "description": "Write a function that counts the number of islands in a 2D grid (1 = land, 0 = water).",
+    "starterCode": "def num_islands(grid):\n    pass",
+    "tests": [
+      {
+        "input": [
+          [
+            [
+              "1",
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "1"
+            ]
+          ]
+        ],
+        "expected": 3
+      },
+      {
+        "input": [
+          [
+            [
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "1",
+              "1"
+            ]
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "id": 184
+  }
+]
